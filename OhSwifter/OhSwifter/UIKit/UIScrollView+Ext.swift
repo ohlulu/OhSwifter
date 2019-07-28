@@ -8,10 +8,6 @@
 
 import UIKit
 
-#if canImport(SnapKit)
-
-import SnapKit
-
 @available(iOS 11, *)
 struct AssociatedKeys {
     static var enableHeightToFit: UInt8 = 0
@@ -89,9 +85,16 @@ fileprivate extension UIScrollView {
                 obj.isScrollEnabled = height > maxHeight
                 height = height > maxHeight ? maxHeight : height
             }
-            obj.snp.updateConstraints({ (make) in
-                make.height.equalTo(height)
+            
+            let heightContraint = obj.constraints.first(where: {
+                $0.firstAttribute == .height && $0.relation == .equal
             })
+            
+            if let heightContraint = heightContraint {
+                heightContraint.constant = height
+            } else {
+                obj.heightAnchor.constraint(equalToConstant: height).isActive = true
+            }
         }
     }
     
@@ -99,5 +102,3 @@ fileprivate extension UIScrollView {
         objc_removeAssociatedObjects(self)
     }
 }
-
-#endif
