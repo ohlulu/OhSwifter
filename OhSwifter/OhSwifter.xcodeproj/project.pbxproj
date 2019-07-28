@@ -64,6 +64,8 @@
 		BE6849FF22E8B8C80042609B /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6849CA22E8B8C80042609B /* UIView+Ext.swift */; };
 		BE684A0022E8B8C80042609B /* PrintDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6849CB22E8B8C80042609B /* PrintDebug.swift */; };
 		BE684A0122E8B8C80042609B /* PrintDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6849CB22E8B8C80042609B /* PrintDebug.swift */; };
+		BE684A0622E954110042609B /* OhSwifterTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = BE68499A22E8B8360042609B /* OhSwifterTests.xctest */; };
+		BE684A0722E9541D0042609B /* OhSwifterTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = BE68499A22E8B8360042609B /* OhSwifterTests.xctest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -334,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE684A0722E9541D0042609B /* OhSwifterTests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE684A0622E954110042609B /* OhSwifterTests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

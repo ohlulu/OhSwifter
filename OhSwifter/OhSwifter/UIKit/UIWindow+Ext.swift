@@ -12,8 +12,8 @@ extension UIWindow {
     static var topVC: UIViewController? {
         var rs: UIViewController? = nil
         Thread.mainThread {
-            guard let window = (UIApplication.shared.delegate as! AppDelegate).window,
-                var topVC = window.rootViewController else {
+            guard let window = UIApplication.shared.delegate?.window,
+                var topVC = window?.rootViewController else {
                     return
             }
             while let presentedVC = topVC.presentedViewController {
