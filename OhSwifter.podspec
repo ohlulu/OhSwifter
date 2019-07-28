@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '11.0'
   spec.swift_version = '5.1'
 
-  spec.source_files = 'OhSwifter/OhSwifter/*'
+  spec.source_files = 'OhSwifter/OhSwifter/**'
   spec.exclude_files = 'OhSwifter/**/*.plist'
 
 end
