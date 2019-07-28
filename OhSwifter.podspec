@@ -21,5 +21,6 @@ Pod::Spec.new do |spec|
   spec.swift_version = '5.1'
 
   spec.source_files = 'OhSwifter/**/*'
+  spec.exclude_files = 'OhSwifter/**/*.plist'
 
 end
