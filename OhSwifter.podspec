@@ -15,10 +15,10 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/z30262226/OhSwifter"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "ohlulu" => "z30262226@gmail.com" }
 
-  spec.source       = { :git => "https://github.com/z30262226/OhSwifter.git", :tag => 'podTest' }
+  spec.source       = { :git => "https://github.com/z30262226/OhSwifter.git", :tag => '0.0.1' }
   spec.ios.deployment_target = '11.0'
   spec.swift_version = '5.1'
 
