@@ -16,11 +16,11 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.author       = { 'ohlulu' => 'z30262226@gmail.com' }
 
-  spec.source       = { :git => 'https://github.com/z30262226/OhSwifter/OhSwifter.git', :tag => '0.0.1' }
+  spec.source       = { :git => 'https://github.com/z30262226/OhSwifter.git', :tag => '0.0.1' }
   spec.ios.deployment_target = '11.0'
   spec.swift_version = '5.1'
 
-  spec.source_files = 'OhSwifter/**/*'
+  spec.source_files = 'OhSwifter/OhSwifter/**/*'
   spec.exclude_files = 'OhSwifter/**/*.plist'
 
 end
