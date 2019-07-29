@@ -9,14 +9,14 @@
 Pod::Spec.new do |spec|
 
   spec.name         = 'OhSwifter'
-  spec.version      = '0.1.3'
+  spec.version      = '0.1.4'
   spec.summary      = 'A convenicence swift library.'
   spec.homepage     = 'https://github.com/z30262226/OhSwifter'
 
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.author       = { 'ohlulu' => 'z30262226@gmail.com' }
 
-  spec.source       = { :git => 'https://github.com/z30262226/OhSwifter.git', :tag => spec.version.to_s }
+  spec.source       = { :git => 'https://github.com/z30262226/OhSwifter.git', :tag => spec.version}
   spec.ios.deployment_target = '11.0'
   spec.swift_version = '5.1'
 
