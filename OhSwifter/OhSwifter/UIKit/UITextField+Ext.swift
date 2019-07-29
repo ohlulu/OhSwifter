@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITextField {
+public extension UITextField {
     func setIsFirstResponder(_ isFirst: Bool) {
         if !canBecomeFirstResponder { return }
         if isFirst {

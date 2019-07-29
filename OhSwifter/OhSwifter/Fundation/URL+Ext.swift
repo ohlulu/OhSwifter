@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum ImageType {
+public enum ImageType {
     case jpeg
     case png
 }
 
-extension URL {
+public extension URL {
     enum FileType {
         case unknown
         case pdf
@@ -22,7 +22,7 @@ extension URL {
 }
 
 extension URL.FileType: Equatable {
-    static func ==(lhs: URL.FileType, rhs: URL.FileType) -> Bool {
+    public static func ==(lhs: URL.FileType, rhs: URL.FileType) -> Bool {
         switch (lhs, rhs) {
         case (.unknown, .unknown):
             return true
@@ -36,7 +36,7 @@ extension URL.FileType: Equatable {
     }
 }
 
-extension URL {
+public extension URL {
     func fileType() -> FileType {
         
         let nonfileType = FileType.unknown

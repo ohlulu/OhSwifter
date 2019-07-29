@@ -8,12 +8,12 @@
 
 import UIKit
 
-enum ButtonImagePosition {
+public enum ButtonImagePosition {
     case right
     case top
 }
 
-extension UIButton {
+public extension UIButton {
     
     @discardableResult
     func setImagePosition(_ position: ButtonImagePosition) -> Self {

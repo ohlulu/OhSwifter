@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     
     func resizeImage(to size: CGSize, isCircle: Bool = false) -> UIImage? {
         // 找出目前螢幕的scale，是網膜技術為2.0 or 3.0

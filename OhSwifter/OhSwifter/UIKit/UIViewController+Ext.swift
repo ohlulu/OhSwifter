@@ -8,13 +8,13 @@
 
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
     @objc func dismissSelf(_ animation: Bool = true, _ completion: Completion? = nil) {
         dismiss(animated: true, completion: completion)
     }
 }
 
-extension UIViewController {
+public extension UIViewController {
     
     var isPresent: Bool {
         if let navigationController = navigationController {
@@ -26,7 +26,7 @@ extension UIViewController {
     }
 }
 
-extension UIViewController {
+public extension UIViewController {
     func addChild(_ child: UIViewController, containerView: UIView) {
         addChild(child)
         containerView.bounds = child.view.bounds

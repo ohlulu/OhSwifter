@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Array {
+public extension Array {
     
     /// Return `nil` if index out of range
     ///

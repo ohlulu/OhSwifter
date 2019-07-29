@@ -10,7 +10,7 @@ import Foundation
 
 /// Xcode Build Setting -> Other Swift flags -> Debug, add `-D DEBUG`
 
-func printDebug<T> (_ message: T,
+public func printDebug<T> (_ message: T,
                     file: String = #file,
                     method: String = #function,
                     line: Int = #line){

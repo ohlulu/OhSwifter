@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension Int {
+public extension Int {
     var double: Double {
         return Double(self)
     }
@@ -18,7 +18,7 @@ extension Int {
     }
 }
 
-extension Double {
+public extension Double {
     var int: Int {
         return Int(self)
     }
@@ -28,7 +28,7 @@ extension Double {
     }
 }
 
-extension CGFloat {
+public extension CGFloat {
     var int: Int {
         return Int(self)
     }

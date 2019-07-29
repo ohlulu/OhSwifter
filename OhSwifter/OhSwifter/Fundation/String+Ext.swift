@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     func base64(encoding: String.Encoding = .utf8) -> String? {
         guard let decodeData = Data(base64Encoded: self, options: .ignoreUnknownCharacters) else {
             return nil

@@ -9,7 +9,7 @@
 import Foundation
 
 
-extension TimeInterval {
+public extension TimeInterval {
     
     var dateSince1970: Date{
         return Date(timeIntervalSince1970: self)

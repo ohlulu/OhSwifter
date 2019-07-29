@@ -9,7 +9,7 @@
 import UIKit
 
 @available(iOS 11, *)
-struct AssociatedKeys {
+public struct AssociatedKeys {
     static var enableHeightToFit: UInt8 = 0
     static var scrollViewObserverObj: UInt8 = 0
     static var minimunHeightToFit: UInt8 = 0
@@ -17,7 +17,7 @@ struct AssociatedKeys {
 }
 
 @available(iOS 11, *)
-extension UIScrollView {
+public extension UIScrollView {
     var enableHeightToFit: Bool {
         get {
             guard let enable = objc_getAssociatedObject(self, &AssociatedKeys.enableHeightToFit) as? Bool else {

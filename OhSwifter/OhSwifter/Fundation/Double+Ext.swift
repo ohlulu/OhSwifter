@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Double {
+public extension Double {
     var cleanDecimalPoint: String {
         let isInt = truncatingRemainder(dividingBy: 1) == 0
         return isInt ? String(format: "%.0f", self) : String(self)

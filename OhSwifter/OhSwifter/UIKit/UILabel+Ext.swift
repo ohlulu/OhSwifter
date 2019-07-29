@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable class PaddingLabel: UILabel {
+@IBDesignable open class PaddingLabel: UILabel {
     
     @IBInspectable var inset: UIEdgeInsets = .zero {
         didSet {
@@ -24,12 +24,12 @@ import UIKit
     @IBInspectable var leftInset: CGFloat = 0.0
     @IBInspectable var rightInset: CGFloat = 0.0
     
-    override func drawText(in rect: CGRect) {
+    override open func drawText(in rect: CGRect) {
         let insets = UIEdgeInsets(top: topInset, left: leftInset, bottom: bottomInset, right: rightInset)
         super.drawText(in: rect.inset(by: insets))
     }
     
-    override var intrinsicContentSize : CGSize {
+    override open var intrinsicContentSize : CGSize {
         var intrinsicSuperViewContentSize = super.intrinsicContentSize
         intrinsicSuperViewContentSize.height += topInset + bottomInset
         intrinsicSuperViewContentSize.width += leftInset + rightInset
