@@ -34,7 +34,8 @@ public extension UIColor {
     
     @discardableResult
     func alpha(_ alpha: CGFloat) -> UIColor {
-        return withAlphaComponent(alpha)
+        self = withAlphaComponent(alpha)
+        return self
     }
 }
 
