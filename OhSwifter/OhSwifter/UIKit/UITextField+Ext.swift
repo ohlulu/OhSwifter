@@ -8,23 +8,4 @@
 
 import UIKit
 
-public extension UITextField {
-    func setIsFirstResponder(_ isFirst: Bool) {
-        if !canBecomeFirstResponder { return }
-        if isFirst {
-            becomeFirstResponder()
-        } else {
-            resignFirstResponder()
-        }
-    }
-    
-    func reversedIsFirstResponder() {
-        if !canBecomeFirstResponder { return }
-        if isFirstResponder {
-            resignFirstResponder()
-        } else {
-            becomeFirstResponder()
-        }
-    }
-}
 

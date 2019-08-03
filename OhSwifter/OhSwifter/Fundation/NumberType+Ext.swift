@@ -8,7 +8,7 @@
 
 import UIKit
 
-open extension Int {
+public extension Int {
     
     var double: Double {
         return Double(self)
