@@ -42,6 +42,8 @@
 		BE51DCCE22F5F53A0018110B /* ScreenRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCCD22F5F53A0018110B /* ScreenRatio.swift */; };
 		BE51DCD022F5F6730018110B /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCCF22F5F6730018110B /* PaddingLabel.swift */; };
 		BE51DCD322F5F6EC0018110B /* CGSize+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCD222F5F6EC0018110B /* CGSize+Ext.swift */; };
+		BE51DCD422F600CB0018110B /* OhSwifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE04550C22EDFAC000255267 /* OhSwifter.framework */; };
+		BE51DCD522F600CB0018110B /* OhSwifter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE04550C22EDFAC000255267 /* OhSwifter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE6FD66722EF417C0003B6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6FD66622EF417C0003B6C6 /* AppDelegate.swift */; };
 		BE6FD66922EF417C0003B6C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6FD66822EF417C0003B6C6 /* ViewController.swift */; };
 		BE6FD66C22EF417C0003B6C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6FD66A22EF417C0003B6C6 /* Main.storyboard */; };
@@ -49,6 +51,30 @@
 		BE6FD67122EF417E0003B6C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6FD66F22EF417E0003B6C6 /* LaunchScreen.storyboard */; };
 		BEE4A30D22F5B5B700C0F81D /* Float+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE4A30C22F5B5B700C0F81D /* Float+Ext.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE51DCD622F600CB0018110B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE04550322EDFAC000255267 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE04550B22EDFAC000255267;
+			remoteInfo = OhSwifter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE51DCD822F600CB0018110B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE51DCD522F600CB0018110B /* OhSwifter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BE04550C22EDFAC000255267 /* OhSwifter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OhSwifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE51DCD422F600CB0018110B /* OhSwifter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,10 +329,12 @@
 				BE6FD66022EF417C0003B6C6 /* Sources */,
 				BE6FD66122EF417C0003B6C6 /* Frameworks */,
 				BE6FD66222EF417C0003B6C6 /* Resources */,
+				BE51DCD822F600CB0018110B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BE51DCD722F600CB0018110B /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -422,6 +451,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE51DCD722F600CB0018110B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE04550B22EDFAC000255267 /* OhSwifter */;
+			targetProxy = BE51DCD622F600CB0018110B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BE6FD66A22EF417C0003B6C6 /* Main.storyboard */ = {
@@ -620,6 +657,7 @@
 		BE6FD67322EF417E0003B6C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSTQSY2TJN;
@@ -638,6 +676,7 @@
 		BE6FD67422EF417E0003B6C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSTQSY2TJN;
