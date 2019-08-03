@@ -31,6 +31,11 @@ public extension UIColor {
             blue: CGFloat(color & 0x0000FF) / 255.0,
             alpha: alpha)
     }
+    
+    @discardableResult
+    func alpha(_ alpha: CGFloat) -> UIColor {
+        return withAlphaComponent(alpha)
+    }
 }
 
 public extension UIColor {
