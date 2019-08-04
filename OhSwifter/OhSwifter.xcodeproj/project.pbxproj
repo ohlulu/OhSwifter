@@ -35,6 +35,7 @@
 		BE04556E22EE00AF00255267 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04556522EE00AF00255267 /* String+Ext.swift */; };
 		BE04556F22EE00AF00255267 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04556622EE00AF00255267 /* Array+Ext.swift */; };
 		BE04557022EE00AF00255267 /* URL+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04556722EE00AF00255267 /* URL+Ext.swift */; };
+		BE51100B22F706AC00C3A847 /* UIButton+OhConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51100A22F706AC00C3A847 /* UIButton+OhConfigurator.swift */; };
 		BE51DCC422F5F0B50018110B /* DispatchQueue+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCC322F5F0B50018110B /* DispatchQueue+Ext.swift */; };
 		BE51DCC622F5F1710018110B /* NSAttributedString+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCC522F5F1710018110B /* NSAttributedString+Ext.swift */; };
 		BE51DCC822F5F2B00018110B /* UseerDefault+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCC722F5F2B00018110B /* UseerDefault+Ext.swift */; };
@@ -110,6 +111,7 @@
 		BE04556522EE00AF00255267 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		BE04556622EE00AF00255267 /* Array+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
 		BE04556722EE00AF00255267 /* URL+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Ext.swift"; sourceTree = "<group>"; };
+		BE51100A22F706AC00C3A847 /* UIButton+OhConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+OhConfigurator.swift"; sourceTree = "<group>"; };
 		BE51DCC322F5F0B50018110B /* DispatchQueue+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Ext.swift"; sourceTree = "<group>"; };
 		BE51DCC522F5F1710018110B /* NSAttributedString+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Ext.swift"; sourceTree = "<group>"; };
 		BE51DCC722F5F2B00018110B /* UseerDefault+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UseerDefault+Ext.swift"; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				BE51DCDC22F6B1570018110B /* OhConfigurator.swift */,
 				BE51DCDE22F6B3FD0018110B /* UILabel+OhConfigurator.swift */,
 				BE51DCE022F6BF000018110B /* UIView+OhConfigurator.swift */,
+				BE51100A22F706AC00C3A847 /* UIButton+OhConfigurator.swift */,
 			);
 			path = OhConfigure;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				BE04555122EE00A400255267 /* UIImage+Ext.swift in Sources */,
 				BE04555322EE00A400255267 /* UITableView+Ext.swift in Sources */,
 				BE51DCC822F5F2B00018110B /* UseerDefault+Ext.swift in Sources */,
+				BE51100B22F706AC00C3A847 /* UIButton+OhConfigurator.swift in Sources */,
 				BE04556922EE00AF00255267 /* TimeInterval+Ext.swift in Sources */,
 				BE04555722EE00A400255267 /* UIAlertController+Ext.swift in Sources */,
 				BE04556822EE00AF00255267 /* NumberType+Ext.swift in Sources */,
