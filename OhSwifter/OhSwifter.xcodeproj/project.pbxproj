@@ -44,6 +44,9 @@
 		BE51DCD322F5F6EC0018110B /* CGSize+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCD222F5F6EC0018110B /* CGSize+Ext.swift */; };
 		BE51DCD422F600CB0018110B /* OhSwifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE04550C22EDFAC000255267 /* OhSwifter.framework */; };
 		BE51DCD522F600CB0018110B /* OhSwifter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE04550C22EDFAC000255267 /* OhSwifter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE51DCDD22F6B1570018110B /* OhConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCDC22F6B1570018110B /* OhConfigurator.swift */; };
+		BE51DCDF22F6B3FD0018110B /* UILabel+OhConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCDE22F6B3FD0018110B /* UILabel+OhConfigurator.swift */; };
+		BE51DCE122F6BF000018110B /* UIView+OhConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCE022F6BF000018110B /* UIView+OhConfigurator.swift */; };
 		BE6FD66722EF417C0003B6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6FD66622EF417C0003B6C6 /* AppDelegate.swift */; };
 		BE6FD66922EF417C0003B6C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6FD66822EF417C0003B6C6 /* ViewController.swift */; };
 		BE6FD66C22EF417C0003B6C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6FD66A22EF417C0003B6C6 /* Main.storyboard */; };
@@ -114,6 +117,9 @@
 		BE51DCCD22F5F53A0018110B /* ScreenRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRatio.swift; sourceTree = "<group>"; };
 		BE51DCCF22F5F6730018110B /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		BE51DCD222F5F6EC0018110B /* CGSize+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Ext.swift"; sourceTree = "<group>"; };
+		BE51DCDC22F6B1570018110B /* OhConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhConfigurator.swift; sourceTree = "<group>"; };
+		BE51DCDE22F6B3FD0018110B /* UILabel+OhConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+OhConfigurator.swift"; sourceTree = "<group>"; };
+		BE51DCE022F6BF000018110B /* UIView+OhConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+OhConfigurator.swift"; sourceTree = "<group>"; };
 		BE6FD66422EF417C0003B6C6 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6FD66622EF417C0003B6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE6FD66822EF417C0003B6C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +170,7 @@
 		BE04550E22EDFAC000255267 /* OhSwifter */ = {
 			isa = PBXGroup;
 			children = (
+				BE51DCDB22F6B10B0018110B /* OhConfigure */,
 				BE04555E22EE00AF00255267 /* Fundation */,
 				BE04553A22EE00A400255267 /* UIKit */,
 				BE04553822EE00A400255267 /* PrivacyAuthorizedCheck */,
@@ -275,6 +282,16 @@
 				BE51DCCF22F5F6730018110B /* PaddingLabel.swift */,
 			);
 			path = ConvenienceUI;
+			sourceTree = "<group>";
+		};
+		BE51DCDB22F6B10B0018110B /* OhConfigure */ = {
+			isa = PBXGroup;
+			children = (
+				BE51DCDC22F6B1570018110B /* OhConfigurator.swift */,
+				BE51DCDE22F6B3FD0018110B /* UILabel+OhConfigurator.swift */,
+				BE51DCE022F6BF000018110B /* UIView+OhConfigurator.swift */,
+			);
+			path = OhConfigure;
 			sourceTree = "<group>";
 		};
 		BE6FD66522EF417C0003B6C6 /* Example */ = {
@@ -406,6 +423,7 @@
 				BE04555B22EE00A400255267 /* UIView+Ext.swift in Sources */,
 				BE04556F22EE00AF00255267 /* Array+Ext.swift in Sources */,
 				BE04554D22EE00A400255267 /* PrivacyAuthorization.swift in Sources */,
+				BE51DCDF22F6B3FD0018110B /* UILabel+OhConfigurator.swift in Sources */,
 				BE51DCC622F5F1710018110B /* NSAttributedString+Ext.swift in Sources */,
 				BE04555922EE00A400255267 /* UIWindow+Ext.swift in Sources */,
 				BE04555A22EE00A400255267 /* UIViewController+Ext.swift in Sources */,
@@ -420,6 +438,7 @@
 				BE51DCD322F5F6EC0018110B /* CGSize+Ext.swift in Sources */,
 				BE04555C22EE00A400255267 /* RunTime+Ext.swift in Sources */,
 				BE04556A22EE00AF00255267 /* Double+Ext.swift in Sources */,
+				BE51DCE122F6BF000018110B /* UIView+OhConfigurator.swift in Sources */,
 				BE04555122EE00A400255267 /* UIImage+Ext.swift in Sources */,
 				BE04555322EE00A400255267 /* UITableView+Ext.swift in Sources */,
 				BE51DCC822F5F2B00018110B /* UseerDefault+Ext.swift in Sources */,
@@ -434,6 +453,7 @@
 				BE04555022EE00A400255267 /* UICollectionView+Ext.swift in Sources */,
 				BE51DCD022F5F6730018110B /* PaddingLabel.swift in Sources */,
 				BE04557022EE00AF00255267 /* URL+Ext.swift in Sources */,
+				BE51DCDD22F6B1570018110B /* OhConfigurator.swift in Sources */,
 				BE51DCCE22F5F53A0018110B /* ScreenRatio.swift in Sources */,
 				BE51DCC422F5F0B50018110B /* DispatchQueue+Ext.swift in Sources */,
 				BE51DCCB22F5F4810018110B /* SafeArea+iOS10+Ext.swift in Sources */,
