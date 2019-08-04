@@ -8,13 +8,40 @@
 
 import UIKit
 
-extension UIViewController {
-    @objc func dismissSelf(_ animation: Bool = true, _ completion: Completion? = nil) {
+public extension UIViewController {
+    
+    @objc func dismiss(_ animated: Bool = true, _ completion: Completion? = nil) {
         dismiss(animated: true, completion: completion)
+    }
+    
+    @objc func present(_ vc: UIViewController, animated: Bool = true, _ completion: Completion? = nil) {
+        present(vc, animated: animated, completion: completion)
+    }
+    
+    @objc func push(_ vc: UIViewController, animated: Bool = true, _ completion: Completion? = nil) {
+        navigationController?.pushViewController(vc, animated: animated)
+        
+        guard animated, let _completion = completion, let coordinator = transitionCoordinator else {
+            DispatchQueue.main.async { completion?() }
+            return
+        }
+        
+        coordinator.animate(alongsideTransition: nil) { _ in _completion() }
+    }
+    
+    @objc func popViewController(animated: Bool, completion: Completion? = nil) {
+        navigationController?.popViewController(animated: animated)
+        
+        guard animated, let _completion = completion, let coordinator = transitionCoordinator else {
+            DispatchQueue.main.async { completion?() }
+            return
+        }
+        
+        coordinator.animate(alongsideTransition: nil) { _ in _completion() }
     }
 }
 
-extension UIViewController {
+public extension UIViewController {
     
     var isPresent: Bool {
         if let navigationController = navigationController {
@@ -26,7 +53,7 @@ extension UIViewController {
     }
 }
 
-extension UIViewController {
+public extension UIViewController {
     func addChild(_ child: UIViewController, containerView: UIView) {
         addChild(child)
         containerView.bounds = child.view.bounds

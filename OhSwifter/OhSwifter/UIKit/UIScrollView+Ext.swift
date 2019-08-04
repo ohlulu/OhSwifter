@@ -9,7 +9,7 @@
 import UIKit
 
 @available(iOS 11, *)
-struct AssociatedKeys {
+private struct Keys {
     static var enableHeightToFit: UInt8 = 0
     static var scrollViewObserverObj: UInt8 = 0
     static var minimunHeightToFit: UInt8 = 0
@@ -17,16 +17,20 @@ struct AssociatedKeys {
 }
 
 @available(iOS 11, *)
-extension UIScrollView {
+public extension UIScrollView {
+    
+    @discardableResult
+    func setHeightToFit(_ flag: Bool) -> Self {
+        enableHeightToFit = flag
+        return self
+    }
+    
     var enableHeightToFit: Bool {
         get {
-            guard let enable = objc_getAssociatedObject(self, &AssociatedKeys.enableHeightToFit) as? Bool else {
-                return false
-            }
-            return enable
+            return getAsscociatedValue(self, key: &Keys.enableHeightToFit) ?? false
         }
         set {
-            objc_setAssociatedObject(self, &AssociatedKeys.enableHeightToFit, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            setAsscociatedValue(self, key: &Keys.enableHeightToFit, value: newValue)
             if newValue {
                 addObserver()
             } else {
@@ -37,53 +41,44 @@ extension UIScrollView {
     
     var scrollViewObserverObj: NSKeyValueObservation? {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.scrollViewObserverObj) as? NSKeyValueObservation
+            return getAsscociatedValue(self, key: &Keys.scrollViewObserverObj)
         }
         set {
-            objc_setAssociatedObject(self, &AssociatedKeys.scrollViewObserverObj, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            setAsscociatedValue(self, key: &Keys.scrollViewObserverObj, value: newValue)
         }
     }
     
     var minimunHeightToFit: CGFloat {
         get {
-            guard let h = objc_getAssociatedObject(self, &AssociatedKeys.minimunHeightToFit) as? CGFloat else{
-                return 0
-            }
-            return h
+            return getAsscociatedValue(self, key: &Keys.minimunHeightToFit) ?? 0
         }
         set {
-            objc_setAssociatedObject(self, &AssociatedKeys.minimunHeightToFit, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            setAsscociatedValue(self, key: &Keys.minimunHeightToFit, value: newValue)
         }
     }
     
     var maximunHeightToFit: CGFloat? {
         get {
-            return getAsscociatedValue(self,
-                                       key: &AssociatedKeys.maximunHeightToFit)
+            return getAsscociatedValue(self, key: &Keys.maximunHeightToFit)
         }
         set {
-            setAsscociatedValue(self,
-                                key: &AssociatedKeys.maximunHeightToFit,
-                                value: newValue)
+            setAsscociatedValue(self, key: &Keys.maximunHeightToFit, value: newValue)
         }
     }
 }
 
 fileprivate extension UIScrollView {
     func addObserver() {
-        scrollViewObserverObj = observe(\.contentSize) {
-            [weak self] (obj, change) in
-            guard let self = self,
-                self.enableHeightToFit == true else {
-                    return
+        scrollViewObserverObj = observe(\.contentSize) { [weak self] (obj, change) in
+            guard let self = self, self.enableHeightToFit else {
+                return
             }
             
-            var height = obj.contentSize.height < self.minimunHeightToFit
-                ? self.minimunHeightToFit : obj.contentSize.height
+            var height = max(obj.contentSize.height, self.minimunHeightToFit)
             
             if let maxHeight = self.maximunHeightToFit {
                 obj.isScrollEnabled = height > maxHeight
-                height = height > maxHeight ? maxHeight : height
+                height = min(maxHeight, height)
             }
             
             let heightContraint = obj.constraints.first(where: {

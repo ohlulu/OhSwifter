@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Thread {
+public extension Thread {
     static func mainThread(_ closure: @escaping () -> Void) {
         if Thread.isMainThread {
             closure()

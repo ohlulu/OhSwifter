@@ -8,7 +8,8 @@
 
 import UIKit
 
-extension Int {
+public extension Int {
+    
     var double: Double {
         return Double(self)
     }
@@ -16,9 +17,14 @@ extension Int {
     var cgfloat: CGFloat {
         return CGFloat(self)
     }
+    
+    var float: Float {
+        return Float(self)
+    }
 }
 
-extension Double {
+public extension Double {
+    
     var int: Int {
         return Int(self)
     }
@@ -26,14 +32,38 @@ extension Double {
     var cgfloat: CGFloat {
         return CGFloat(self)
     }
+    
+    var float: Float {
+        return Float(self)
+    }
 }
 
-extension CGFloat {
+public extension CGFloat {
+    
     var int: Int {
         return Int(self)
     }
     
     var double: Double {
         return Double(self)
+    }
+    
+    var float: Float {
+        return Float(self)
+    }
+}
+
+public extension Float {
+    
+    var int: Int {
+        return Int(self)
+    }
+    
+    var double: Double {
+        return Double(self)
+    }
+    
+    var cgfloat: CGFloat {
+        return CGFloat(self)
     }
 }

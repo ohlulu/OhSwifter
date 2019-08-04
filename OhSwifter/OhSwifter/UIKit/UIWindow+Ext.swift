@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIWindow {
+public extension UIWindow {
     static var topVC: UIViewController? {
         var rs: UIViewController? = nil
         Thread.mainThread {

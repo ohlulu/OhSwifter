@@ -9,9 +9,13 @@
 import Foundation
 
 
-extension TimeInterval {
+public extension TimeInterval {
     
     var dateSince1970: Date{
         return Date(timeIntervalSince1970: self)
+    }
+    
+    func string(format: String = "yyyy-MM-dd HH:mm:ss") -> String {
+        return dateSince1970.string(format: format)
     }
 }

@@ -6,4 +6,4 @@
 //  Copyright © 2018 Goons. All rights reserved.
 //
 
-typealias Completion = (() -> Void)
+public typealias Completion = (() -> Void)

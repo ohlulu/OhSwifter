@@ -11,7 +11,7 @@ import Foundation
 import AVFoundation
 import Photos
 
-class PrivacyAuthorization {
+public class PrivacyAuthorization {
     
     func checkCameraAuthorization(_ completed: @escaping (Bool)->Void ) {
         let videoStatus = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)

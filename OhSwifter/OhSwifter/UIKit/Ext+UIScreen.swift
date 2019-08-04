@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIScreen {
+public extension UIScreen {
     
     static var height: Double {
         return Double(UIScreen.heightf)

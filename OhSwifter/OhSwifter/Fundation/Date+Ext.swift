@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
     init(year: Int? = nil,
          month: Int? = nil,
          day: Int? = nil,
@@ -38,7 +38,7 @@ extension Date {
     }
 }
 
-extension Date {
+public extension Date {
     
     // MARK: - compare
     
@@ -67,7 +67,7 @@ extension Date {
     
     // MARK: - component
     
-    public var year: Int {
+    var year: Int {
         get {
             return Calendar.current.component(.year, from: self)
         }
@@ -81,7 +81,7 @@ extension Date {
         }
     }
 
-    public var month: Int {
+    var month: Int {
         get {
             return Calendar.current.component(.month, from: self)
         }
@@ -97,7 +97,7 @@ extension Date {
         }
     }
     
-    public var day: Int {
+    var day: Int {
         get {
             return Calendar.current.component(.day, from: self)
         }
@@ -113,7 +113,7 @@ extension Date {
         }
     }
     
-    public var hour: Int {
+    var hour: Int {
         get {
             return Calendar.current.component(.hour, from: self)
         }
@@ -129,7 +129,7 @@ extension Date {
         }
     }
     
-    public var minute: Int {
+    var minute: Int {
         get {
             return Calendar.current.component(.minute, from: self)
         }
@@ -145,7 +145,7 @@ extension Date {
         }
     }
     
-    public var second: Int {
+    var second: Int {
         get {
             return Calendar.current.component(.second, from: self)
         }
@@ -162,42 +162,42 @@ extension Date {
     }
     
     @discardableResult
-    public func setYear(_ value: Int) -> Date {
+    func setYear(_ value: Int) -> Date {
         var newDate = self
         newDate.year = value
         return newDate
     }
     
     @discardableResult
-    public func setMonth(_ value: Int) -> Date {
+    func setMonth(_ value: Int) -> Date {
         var newDate = self
         newDate.month = value
         return newDate
     }
     
     @discardableResult
-    public func setDay(_ value: Int) -> Date {
+    func setDay(_ value: Int) -> Date {
         var newDate = self
         newDate.day = value
         return newDate
     }
     
     @discardableResult
-    public func setHour(_ value: Int) -> Date {
+    func setHour(_ value: Int) -> Date {
         var newDate = self
         newDate.hour = value
         return newDate
     }
     
     @discardableResult
-    public func setMinute(_ value: Int) -> Date {
+    func setMinute(_ value: Int) -> Date {
         var newDate = self
         newDate.minute = value
         return newDate
     }
     
     @discardableResult
-    public func setSecond(_ value: Int) -> Date {
+    func setSecond(_ value: Int) -> Date {
         var newDate = self
         newDate.second = value
         return newDate

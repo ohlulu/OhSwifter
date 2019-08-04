@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension FileManager {
+public extension FileManager {
     static func documentDirectoryPath() -> String {
         return documentDirectoryURL().absoluteString
     }

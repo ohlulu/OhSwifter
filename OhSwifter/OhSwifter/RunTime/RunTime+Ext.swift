@@ -8,10 +8,10 @@
 
 import Foundation
 
-func getAsscociatedValue<T>(_ object: Any, key: UnsafeRawPointer) -> T? {
+public func getAsscociatedValue<T>(_ object: Any, key: UnsafeRawPointer) -> T? {
     return objc_getAssociatedObject(object, key) as? T
 }
 
-func setAsscociatedValue<T>(_ object: Any, key: UnsafeRawPointer, value: T) {
+public func setAsscociatedValue<T>(_ object: Any, key: UnsafeRawPointer, value: T) {
     objc_setAssociatedObject(object, key, value, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
 }
