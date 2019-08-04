@@ -42,4 +42,6 @@ public extension OhConfigureWrapper {
     }
 }
 
+extension UIView: OhConfigurator { }
 extension UILabel: OhConfigurator { }
+
