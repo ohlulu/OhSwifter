@@ -48,7 +48,6 @@ public extension OhConfigureWrapper where Base: UILabel {
         return self
     }
     
-    
     @discardableResult
     func textAlignment(_ textAlignment: NSTextAlignment) -> OhConfigureWrapper {
         base.textAlignment = textAlignment
