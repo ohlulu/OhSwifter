@@ -56,6 +56,7 @@
 		BE98505E22FB226E007D2A47 /* UINavigationBar+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98505D22FB226D007D2A47 /* UINavigationBar+Oh.swift */; };
 		BE98506222FB242A007D2A47 /* UIScrollView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98506122FB242A007D2A47 /* UIScrollView+Oh.swift */; };
 		BE98506422FB2672007D2A47 /* UIStackView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98506322FB2672007D2A47 /* UIStackView+Oh.swift */; };
+		BE98506622FB26E6007D2A47 /* UITableView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98506522FB26E6007D2A47 /* UITableView+Oh.swift */; };
 		BEE4A30D22F5B5B700C0F81D /* Float+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE4A30C22F5B5B700C0F81D /* Float+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +136,7 @@
 		BE98505D22FB226D007D2A47 /* UINavigationBar+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Oh.swift"; sourceTree = "<group>"; };
 		BE98506122FB242A007D2A47 /* UIScrollView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Oh.swift"; sourceTree = "<group>"; };
 		BE98506322FB2672007D2A47 /* UIStackView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Oh.swift"; sourceTree = "<group>"; };
+		BE98506522FB26E6007D2A47 /* UITableView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Oh.swift"; sourceTree = "<group>"; };
 		BEE4A30C22F5B5B700C0F81D /* Float+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -302,6 +304,7 @@
 				BE98505D22FB226D007D2A47 /* UINavigationBar+Oh.swift */,
 				BE98506122FB242A007D2A47 /* UIScrollView+Oh.swift */,
 				BE98506322FB2672007D2A47 /* UIStackView+Oh.swift */,
+				BE98506522FB26E6007D2A47 /* UITableView+Oh.swift */,
 			);
 			path = OhConfigurator;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				BE04556E22EE00AF00255267 /* String+Ext.swift in Sources */,
 				BE04556B22EE00AF00255267 /* Date+Ext.swift in Sources */,
 				BE04554F22EE00A400255267 /* UIScreen+Ext.swift in Sources */,
+				BE98506622FB26E6007D2A47 /* UITableView+Oh.swift in Sources */,
 				BE04555822EE00A400255267 /* UIStackView+Ext.swift in Sources */,
 				BE04556C22EE00AF00255267 /* FileMamager+Ext.swift in Sources */,
 				BE04555022EE00A400255267 /* UICollectionView+Ext.swift in Sources */,
