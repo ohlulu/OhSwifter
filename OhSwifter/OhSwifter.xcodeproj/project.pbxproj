@@ -35,7 +35,7 @@
 		BE04556E22EE00AF00255267 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04556522EE00AF00255267 /* String+Ext.swift */; };
 		BE04556F22EE00AF00255267 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04556622EE00AF00255267 /* Array+Ext.swift */; };
 		BE04557022EE00AF00255267 /* URL+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04556722EE00AF00255267 /* URL+Ext.swift */; };
-		BE51100B22F706AC00C3A847 /* UIButton+OhConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51100A22F706AC00C3A847 /* UIButton+OhConfigurator.swift */; };
+		BE51100B22F706AC00C3A847 /* UIButton+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51100A22F706AC00C3A847 /* UIButton+Oh.swift */; };
 		BE51DCC422F5F0B50018110B /* DispatchQueue+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCC322F5F0B50018110B /* DispatchQueue+Ext.swift */; };
 		BE51DCC622F5F1710018110B /* NSAttributedString+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCC522F5F1710018110B /* NSAttributedString+Ext.swift */; };
 		BE51DCC822F5F2B00018110B /* UseerDefault+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCC722F5F2B00018110B /* UseerDefault+Ext.swift */; };
@@ -46,14 +46,14 @@
 		BE51DCD422F600CB0018110B /* OhSwifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE04550C22EDFAC000255267 /* OhSwifter.framework */; };
 		BE51DCD522F600CB0018110B /* OhSwifter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE04550C22EDFAC000255267 /* OhSwifter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE51DCDD22F6B1570018110B /* OhConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCDC22F6B1570018110B /* OhConfigurator.swift */; };
-		BE51DCDF22F6B3FD0018110B /* UILabel+OhConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCDE22F6B3FD0018110B /* UILabel+OhConfigurator.swift */; };
-		BE51DCE122F6BF000018110B /* UIView+OhConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCE022F6BF000018110B /* UIView+OhConfigurator.swift */; };
+		BE51DCDF22F6B3FD0018110B /* UILabel+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCDE22F6B3FD0018110B /* UILabel+Oh.swift */; };
+		BE51DCE122F6BF000018110B /* UIView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCE022F6BF000018110B /* UIView+Oh.swift */; };
 		BE6FD66722EF417C0003B6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6FD66622EF417C0003B6C6 /* AppDelegate.swift */; };
 		BE6FD66922EF417C0003B6C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6FD66822EF417C0003B6C6 /* ViewController.swift */; };
 		BE6FD66C22EF417C0003B6C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6FD66A22EF417C0003B6C6 /* Main.storyboard */; };
 		BE6FD66E22EF417E0003B6C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6FD66D22EF417E0003B6C6 /* Assets.xcassets */; };
 		BE6FD67122EF417E0003B6C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6FD66F22EF417E0003B6C6 /* LaunchScreen.storyboard */; };
-		BE98505E22FB226E007D2A47 /* UINavigationBar+OhConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98505D22FB226D007D2A47 /* UINavigationBar+OhConfigurator.swift */; };
+		BE98505E22FB226E007D2A47 /* UINavigationBar+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98505D22FB226D007D2A47 /* UINavigationBar+Oh.swift */; };
 		BE98506222FB242A007D2A47 /* UIScrollView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98506122FB242A007D2A47 /* UIScrollView+Oh.swift */; };
 		BEE4A30D22F5B5B700C0F81D /* Float+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE4A30C22F5B5B700C0F81D /* Float+Ext.swift */; };
 /* End PBXBuildFile section */
@@ -113,7 +113,7 @@
 		BE04556522EE00AF00255267 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		BE04556622EE00AF00255267 /* Array+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
 		BE04556722EE00AF00255267 /* URL+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Ext.swift"; sourceTree = "<group>"; };
-		BE51100A22F706AC00C3A847 /* UIButton+OhConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+OhConfigurator.swift"; sourceTree = "<group>"; };
+		BE51100A22F706AC00C3A847 /* UIButton+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Oh.swift"; sourceTree = "<group>"; };
 		BE51DCC322F5F0B50018110B /* DispatchQueue+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Ext.swift"; sourceTree = "<group>"; };
 		BE51DCC522F5F1710018110B /* NSAttributedString+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Ext.swift"; sourceTree = "<group>"; };
 		BE51DCC722F5F2B00018110B /* UseerDefault+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UseerDefault+Ext.swift"; sourceTree = "<group>"; };
@@ -122,8 +122,8 @@
 		BE51DCCF22F5F6730018110B /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		BE51DCD222F5F6EC0018110B /* CGSize+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Ext.swift"; sourceTree = "<group>"; };
 		BE51DCDC22F6B1570018110B /* OhConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhConfigurator.swift; sourceTree = "<group>"; };
-		BE51DCDE22F6B3FD0018110B /* UILabel+OhConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+OhConfigurator.swift"; sourceTree = "<group>"; };
-		BE51DCE022F6BF000018110B /* UIView+OhConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+OhConfigurator.swift"; sourceTree = "<group>"; };
+		BE51DCDE22F6B3FD0018110B /* UILabel+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Oh.swift"; sourceTree = "<group>"; };
+		BE51DCE022F6BF000018110B /* UIView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Oh.swift"; sourceTree = "<group>"; };
 		BE6FD66422EF417C0003B6C6 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6FD66622EF417C0003B6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE6FD66822EF417C0003B6C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		BE6FD66D22EF417E0003B6C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE6FD67022EF417E0003B6C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE6FD67222EF417E0003B6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE98505D22FB226D007D2A47 /* UINavigationBar+OhConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+OhConfigurator.swift"; sourceTree = "<group>"; };
+		BE98505D22FB226D007D2A47 /* UINavigationBar+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Oh.swift"; sourceTree = "<group>"; };
 		BE98506122FB242A007D2A47 /* UIScrollView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Oh.swift"; sourceTree = "<group>"; };
 		BEE4A30C22F5B5B700C0F81D /* Float+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -294,10 +294,10 @@
 			isa = PBXGroup;
 			children = (
 				BE51DCDC22F6B1570018110B /* OhConfigurator.swift */,
-				BE51DCE022F6BF000018110B /* UIView+OhConfigurator.swift */,
-				BE51DCDE22F6B3FD0018110B /* UILabel+OhConfigurator.swift */,
-				BE51100A22F706AC00C3A847 /* UIButton+OhConfigurator.swift */,
-				BE98505D22FB226D007D2A47 /* UINavigationBar+OhConfigurator.swift */,
+				BE51DCE022F6BF000018110B /* UIView+Oh.swift */,
+				BE51DCDE22F6B3FD0018110B /* UILabel+Oh.swift */,
+				BE51100A22F706AC00C3A847 /* UIButton+Oh.swift */,
+				BE98505D22FB226D007D2A47 /* UINavigationBar+Oh.swift */,
 				BE98506122FB242A007D2A47 /* UIScrollView+Oh.swift */,
 			);
 			path = OhConfigurator;
@@ -432,7 +432,7 @@
 				BE04555B22EE00A400255267 /* UIView+Ext.swift in Sources */,
 				BE04556F22EE00AF00255267 /* Array+Ext.swift in Sources */,
 				BE04554D22EE00A400255267 /* PrivacyAuthorization.swift in Sources */,
-				BE51DCDF22F6B3FD0018110B /* UILabel+OhConfigurator.swift in Sources */,
+				BE51DCDF22F6B3FD0018110B /* UILabel+Oh.swift in Sources */,
 				BE51DCC622F5F1710018110B /* NSAttributedString+Ext.swift in Sources */,
 				BE04555922EE00A400255267 /* UIWindow+Ext.swift in Sources */,
 				BE04555A22EE00A400255267 /* UIViewController+Ext.swift in Sources */,
@@ -443,17 +443,17 @@
 				BE04555622EE00A400255267 /* UIColor+Ext.swift in Sources */,
 				BE98506222FB242A007D2A47 /* UIScrollView+Oh.swift in Sources */,
 				BE04555222EE00A400255267 /* UITextField+Ext.swift in Sources */,
-				BE98505E22FB226E007D2A47 /* UINavigationBar+OhConfigurator.swift in Sources */,
+				BE98505E22FB226E007D2A47 /* UINavigationBar+Oh.swift in Sources */,
 				BE04555D22EE00A400255267 /* ClosureType.swift in Sources */,
 				BEE4A30D22F5B5B700C0F81D /* Float+Ext.swift in Sources */,
 				BE51DCD322F5F6EC0018110B /* CGSize+Ext.swift in Sources */,
 				BE04555C22EE00A400255267 /* RunTime+Ext.swift in Sources */,
 				BE04556A22EE00AF00255267 /* Double+Ext.swift in Sources */,
-				BE51DCE122F6BF000018110B /* UIView+OhConfigurator.swift in Sources */,
+				BE51DCE122F6BF000018110B /* UIView+Oh.swift in Sources */,
 				BE04555122EE00A400255267 /* UIImage+Ext.swift in Sources */,
 				BE04555322EE00A400255267 /* UITableView+Ext.swift in Sources */,
 				BE51DCC822F5F2B00018110B /* UseerDefault+Ext.swift in Sources */,
-				BE51100B22F706AC00C3A847 /* UIButton+OhConfigurator.swift in Sources */,
+				BE51100B22F706AC00C3A847 /* UIButton+Oh.swift in Sources */,
 				BE04556922EE00AF00255267 /* TimeInterval+Ext.swift in Sources */,
 				BE04555722EE00A400255267 /* UIAlertController+Ext.swift in Sources */,
 				BE04556822EE00AF00255267 /* NumberType+Ext.swift in Sources */,
