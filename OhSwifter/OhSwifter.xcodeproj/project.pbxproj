@@ -174,7 +174,7 @@
 		BE04550E22EDFAC000255267 /* OhSwifter */ = {
 			isa = PBXGroup;
 			children = (
-				BE51DCDB22F6B10B0018110B /* OhConfigure */,
+				BE51DCDB22F6B10B0018110B /* OhConfigurator */,
 				BE04555E22EE00AF00255267 /* Fundation */,
 				BE04553A22EE00A400255267 /* UIKit */,
 				BE04553822EE00A400255267 /* PrivacyAuthorizedCheck */,
@@ -288,7 +288,7 @@
 			path = ConvenienceUI;
 			sourceTree = "<group>";
 		};
-		BE51DCDB22F6B10B0018110B /* OhConfigure */ = {
+		BE51DCDB22F6B10B0018110B /* OhConfigurator */ = {
 			isa = PBXGroup;
 			children = (
 				BE51DCDC22F6B1570018110B /* OhConfigurator.swift */,
@@ -297,7 +297,7 @@
 				BE51100A22F706AC00C3A847 /* UIButton+OhConfigurator.swift */,
 				BE98505D22FB226D007D2A47 /* UINavigationBar+OhConfigurator.swift */,
 			);
-			path = OhConfigure;
+			path = OhConfigurator;
 			sourceTree = "<group>";
 		};
 		BE6FD66522EF417C0003B6C6 /* Example */ = {

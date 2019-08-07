@@ -43,7 +43,6 @@ public extension OhConfigureWrapper where Base: UIButton {
     @discardableResult
     func font(_ font: UIFont) -> OhConfigureWrapper {
         base.titleLabel?.font = font
-        base
         return self
     }
 
