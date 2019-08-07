@@ -54,6 +54,7 @@
 		BE6FD66E22EF417E0003B6C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6FD66D22EF417E0003B6C6 /* Assets.xcassets */; };
 		BE6FD67122EF417E0003B6C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6FD66F22EF417E0003B6C6 /* LaunchScreen.storyboard */; };
 		BE98505E22FB226E007D2A47 /* UINavigationBar+OhConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98505D22FB226D007D2A47 /* UINavigationBar+OhConfigurator.swift */; };
+		BE98506222FB242A007D2A47 /* UIScrollView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98506122FB242A007D2A47 /* UIScrollView+Oh.swift */; };
 		BEE4A30D22F5B5B700C0F81D /* Float+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE4A30C22F5B5B700C0F81D /* Float+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +132,7 @@
 		BE6FD67022EF417E0003B6C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE6FD67222EF417E0003B6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE98505D22FB226D007D2A47 /* UINavigationBar+OhConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+OhConfigurator.swift"; sourceTree = "<group>"; };
+		BE98506122FB242A007D2A47 /* UIScrollView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Oh.swift"; sourceTree = "<group>"; };
 		BEE4A30C22F5B5B700C0F81D /* Float+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -296,6 +298,7 @@
 				BE51DCDE22F6B3FD0018110B /* UILabel+OhConfigurator.swift */,
 				BE51100A22F706AC00C3A847 /* UIButton+OhConfigurator.swift */,
 				BE98505D22FB226D007D2A47 /* UINavigationBar+OhConfigurator.swift */,
+				BE98506122FB242A007D2A47 /* UIScrollView+Oh.swift */,
 			);
 			path = OhConfigurator;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				BE04551922EDFE8F00255267 /* PrintDebug.swift in Sources */,
 				BE04556D22EE00AF00255267 /* Thread+Ext.swift in Sources */,
 				BE04555622EE00A400255267 /* UIColor+Ext.swift in Sources */,
+				BE98506222FB242A007D2A47 /* UIScrollView+Oh.swift in Sources */,
 				BE04555222EE00A400255267 /* UITextField+Ext.swift in Sources */,
 				BE98505E22FB226E007D2A47 /* UINavigationBar+OhConfigurator.swift in Sources */,
 				BE04555D22EE00A400255267 /* ClosureType.swift in Sources */,
