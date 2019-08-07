@@ -290,8 +290,8 @@
 			isa = PBXGroup;
 			children = (
 				BE51DCDC22F6B1570018110B /* OhConfigurator.swift */,
-				BE51DCDE22F6B3FD0018110B /* UILabel+OhConfigurator.swift */,
 				BE51DCE022F6BF000018110B /* UIView+OhConfigurator.swift */,
+				BE51DCDE22F6B3FD0018110B /* UILabel+OhConfigurator.swift */,
 				BE51100A22F706AC00C3A847 /* UIButton+OhConfigurator.swift */,
 			);
 			path = OhConfigure;
