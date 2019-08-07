@@ -54,7 +54,7 @@ public extension OhConfigureWrapper where Base: UIView {
     }
     
     @discardableResult
-    func backgroundColor(_ backgroundColor: UIColor?) -> OhConfigureWrapper {
+    func backgroundColor(_ backgroundColor: UIColor) -> OhConfigureWrapper {
         base.backgroundColor = backgroundColor
         return self
     }
@@ -84,12 +84,6 @@ public extension OhConfigureWrapper where Base: UIView {
     }
     
     @discardableResult
-    func addGestureRecognizerOnView(_ recognizer: UIGestureRecognizer) -> OhConfigureWrapper {
-        base.addGestureRecognizer(recognizer)
-        return self
-    }
-    
-    @discardableResult
     func cornerRadius(_ cornerRadius: CGFloat) -> OhConfigureWrapper {
         base.layer.cornerRadius = cornerRadius
         return self
@@ -108,8 +102,15 @@ public extension OhConfigureWrapper where Base: UIView {
     }
     
     @discardableResult
-    func borderColor(_ color: CGColor) -> OhConfigureWrapper {
-        base.layer.borderColor = color
+    func borderColor(_ color: UIColor) -> OhConfigureWrapper {
+        base.layer.borderColor = color.cgColor
+        return self
+    }
+    
+    @discardableResult
+    func border(color: UIColor, width: CGFloat) -> OhConfigureWrapper {
+        base.layer.borderColor = color.cgColor
+        base.layer.borderWidth = width
         return self
     }
     
@@ -138,8 +139,11 @@ public extension OhConfigureWrapper where Base: UIView {
     }
     
     @discardableResult
-    func zPosition(_ zPosition: CGFloat) -> OhConfigureWrapper {
-        base.layer.zPosition = zPosition
+    func addShadow(color: UIColor, radius: CGFloat, offsetX x: CGFloat = 0, y: CGFloat = 0, opacity: Float) -> OhConfigureWrapper {
+        base.layer.shadowColor = color.cgColor
+        base.layer.shadowRadius = radius
+        base.layer.shadowOpacity = opacity
+        base.layer.shadowOffset = CGSize(width: x, height: y)
         return self
     }
 }

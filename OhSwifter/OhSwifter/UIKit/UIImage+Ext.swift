@@ -48,9 +48,9 @@ public extension UIImage {
                              y: -(imageSize.height-size.height)/2.0,
                              width: imageSize.width,
                              height: imageSize.height))
-        let smallimage = UIGraphicsGetImageFromCurrentImageContext()
+        let smallImage = UIGraphicsGetImageFromCurrentImageContext()
         
         UIGraphicsEndImageContext()
-        return smallimage
+        return smallImage
     }
 }
