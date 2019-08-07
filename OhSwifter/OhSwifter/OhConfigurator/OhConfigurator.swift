@@ -6,7 +6,7 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public struct OhConfigureWrapper<Base> {
     public let base: Base
@@ -43,5 +43,3 @@ public extension OhConfigureWrapper {
 }
 
 extension UIView: OhConfigurator { }
-extension UILabel: OhConfigurator { }
-
