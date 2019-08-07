@@ -45,5 +45,11 @@ public extension OhConfigureWrapper where Base: UIButton {
         base.titleLabel?.font = font
         return self
     }
+    
+    @discardableResult
+    func font<T: RawRepresentable>(rawFont: T) -> OhConfigureWrapper where T.RawValue == UIFont {
+        base.oh.font(rawFont.rawValue)
+        return self
+    }
 
 }
