@@ -9,18 +9,6 @@
 public extension OhConfigureWrapper where Base: UITableView {
     
     @discardableResult
-    func dataSource(_ dataSource: UITableViewDataSource) -> OhConfigureWrapper {
-        base.dataSource = dataSource
-        return self
-    }
-    
-    @discardableResult
-    func delegate(_ delegate: UITableViewDelegate) -> OhConfigureWrapper {
-        base.delegate = delegate
-        return self
-    }
-    
-    @discardableResult
     func regiter<T>(_ cell: T.Type) -> OhConfigureWrapper where T: UITableViewCell {
         base.register(cell: cell)
         return self
