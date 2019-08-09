@@ -18,6 +18,5 @@ public extension OhConfigureWrapper where Base: SwiftOriginDelegate {
     }
 }
 
-extension UITableView: SwiftOriginDelegate { }
-extension UICollectionView: SwiftOriginDelegate { }
+extension UIScrollView: SwiftOriginDelegate { }
 extension UIPickerView: SwiftOriginDelegate { }
