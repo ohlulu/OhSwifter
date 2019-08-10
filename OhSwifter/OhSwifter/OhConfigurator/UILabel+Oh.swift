@@ -23,12 +23,6 @@ public extension OhConfigureWrapper where Base: UILabel {
     }
     
     @discardableResult
-    func color(_ color: UIColor) -> OhConfigureWrapper {
-        base.textColor = color
-        return self
-    }
-    
-    @discardableResult
     func style(font: UIFont, color: UIColor) -> OhConfigureWrapper {
         base.font = font
         base.textColor = color
