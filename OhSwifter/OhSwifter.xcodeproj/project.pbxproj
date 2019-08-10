@@ -64,6 +64,7 @@
 		BEBB7DF022FDB3D100189C72 /* OhConvenient+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB7DEF22FDB3D100189C72 /* OhConvenient+DataSource.swift */; };
 		BEBB7DF222FDB99300189C72 /* UITextField+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB7DF122FDB99300189C72 /* UITextField+Oh.swift */; };
 		BEC896C622FEA54300363117 /* Convenient+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC896C522FEA54300363117 /* Convenient+Font.swift */; };
+		BEC896C822FEA8BF00363117 /* Convenient+TextColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC896C722FEA8BF00363117 /* Convenient+TextColor.swift */; };
 		BEE4A30D22F5B5B700C0F81D /* Float+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE4A30C22F5B5B700C0F81D /* Float+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -151,6 +152,7 @@
 		BEBB7DEF22FDB3D100189C72 /* OhConvenient+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OhConvenient+DataSource.swift"; sourceTree = "<group>"; };
 		BEBB7DF122FDB99300189C72 /* UITextField+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Oh.swift"; sourceTree = "<group>"; };
 		BEC896C522FEA54300363117 /* Convenient+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Convenient+Font.swift"; sourceTree = "<group>"; };
+		BEC896C722FEA8BF00363117 /* Convenient+TextColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Convenient+TextColor.swift"; sourceTree = "<group>"; };
 		BEE4A30C22F5B5B700C0F81D /* Float+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -347,6 +349,7 @@
 				BEBB7DED22FDB12300189C72 /* OhConvenient+Delegate.swift */,
 				BEBB7DEF22FDB3D100189C72 /* OhConvenient+DataSource.swift */,
 				BEC896C522FEA54300363117 /* Convenient+Font.swift */,
+				BEC896C722FEA8BF00363117 /* Convenient+TextColor.swift */,
 			);
 			path = Convenient;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				BE04555622EE00A400255267 /* UIColor+Ext.swift in Sources */,
 				BE98506222FB242A007D2A47 /* UIScrollView+Oh.swift in Sources */,
 				BE04555222EE00A400255267 /* UITextField+Ext.swift in Sources */,
+				BEC896C822FEA8BF00363117 /* Convenient+TextColor.swift in Sources */,
 				BEBB7DF022FDB3D100189C72 /* OhConvenient+DataSource.swift in Sources */,
 				BE98505E22FB226E007D2A47 /* UINavigationBar+Oh.swift in Sources */,
 				BE04555D22EE00A400255267 /* ClosureType.swift in Sources */,
