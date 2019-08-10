@@ -65,6 +65,8 @@
 		BEBB7DF222FDB99300189C72 /* UITextField+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBB7DF122FDB99300189C72 /* UITextField+Oh.swift */; };
 		BEC896C622FEA54300363117 /* Convenient+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC896C522FEA54300363117 /* Convenient+Font.swift */; };
 		BEC896C822FEA8BF00363117 /* Convenient+TextColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC896C722FEA8BF00363117 /* Convenient+TextColor.swift */; };
+		BEC896CA22FEACD300363117 /* UISwitch+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC896C922FEACD300363117 /* UISwitch+Oh.swift */; };
+		BEC896CC22FEB21D00363117 /* UISwitch+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC896CB22FEB21D00363117 /* UISwitch+Ext.swift */; };
 		BEE4A30D22F5B5B700C0F81D /* Float+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE4A30C22F5B5B700C0F81D /* Float+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -153,6 +155,8 @@
 		BEBB7DF122FDB99300189C72 /* UITextField+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Oh.swift"; sourceTree = "<group>"; };
 		BEC896C522FEA54300363117 /* Convenient+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Convenient+Font.swift"; sourceTree = "<group>"; };
 		BEC896C722FEA8BF00363117 /* Convenient+TextColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Convenient+TextColor.swift"; sourceTree = "<group>"; };
+		BEC896C922FEACD300363117 /* UISwitch+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Oh.swift"; sourceTree = "<group>"; };
+		BEC896CB22FEB21D00363117 /* UISwitch+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Ext.swift"; sourceTree = "<group>"; };
 		BEE4A30C22F5B5B700C0F81D /* Float+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,6 +247,7 @@
 				BE04554622EE00A400255267 /* UIWindow+Ext.swift */,
 				BE04554722EE00A400255267 /* UIViewController+Ext.swift */,
 				BE04554822EE00A400255267 /* UIView+Ext.swift */,
+				BEC896CB22FEB21D00363117 /* UISwitch+Ext.swift */,
 				BE51DCCC22F5F4F40018110B /* ScreenRatio */,
 				BE51DCD122F5F6770018110B /* ConvenienceUI */,
 			);
@@ -350,6 +355,7 @@
 				BEBB7DEF22FDB3D100189C72 /* OhConvenient+DataSource.swift */,
 				BEC896C522FEA54300363117 /* Convenient+Font.swift */,
 				BEC896C722FEA8BF00363117 /* Convenient+TextColor.swift */,
+				BEC896C922FEACD300363117 /* UISwitch+Oh.swift */,
 			);
 			path = Convenient;
 			sourceTree = "<group>";
@@ -470,6 +476,7 @@
 				BE04555B22EE00A400255267 /* UIView+Ext.swift in Sources */,
 				BE04556F22EE00AF00255267 /* Array+Ext.swift in Sources */,
 				BE04554D22EE00A400255267 /* PrivacyAuthorization.swift in Sources */,
+				BEC896CC22FEB21D00363117 /* UISwitch+Ext.swift in Sources */,
 				BE51DCDF22F6B3FD0018110B /* UILabel+Oh.swift in Sources */,
 				BE51DCC622F5F1710018110B /* NSAttributedString+Ext.swift in Sources */,
 				BE04555922EE00A400255267 /* UIWindow+Ext.swift in Sources */,
@@ -517,6 +524,7 @@
 				BE51DCCE22F5F53A0018110B /* ScreenRatio.swift in Sources */,
 				BE51DCC422F5F0B50018110B /* DispatchQueue+Ext.swift in Sources */,
 				BE51DCCB22F5F4810018110B /* SafeArea+iOS10+Ext.swift in Sources */,
+				BEC896CA22FEACD300363117 /* UISwitch+Oh.swift in Sources */,
 				BE04555522EE00A400255267 /* UIScrollView+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
