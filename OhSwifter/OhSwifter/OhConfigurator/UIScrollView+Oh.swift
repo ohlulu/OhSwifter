@@ -9,12 +9,6 @@
 extension OhConfigureWrapper where Base: UIScrollView {
     
     @discardableResult
-    public func delegate(_ delegate: UIScrollViewDelegate) -> OhConfigureWrapper {
-        base.delegate = delegate
-        return self
-    }
-    
-    @discardableResult
     public func directionalLockEnabled(_ isDirectionalLockEnabled: Bool) -> OhConfigureWrapper {
         base.isDirectionalLockEnabled = isDirectionalLockEnabled
         return self
