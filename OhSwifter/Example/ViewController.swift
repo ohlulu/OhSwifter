@@ -9,6 +9,30 @@
 import UIKit
 import OhSwifter
 
+enum AppFont: RawRepresentable {
+    
+    case en(_ weight: UIFont.Weight, _ size: CGFloat)
+    case zh(_ weight: UIFont.Weight, _ size: CGFloat)
+    init?(rawValue: UIFont) {
+        return nil
+    }
+    var rawValue: UIFont {
+        switch self {
+        case .en(let weight, let size):
+            return UIFont(name: "HelveticaNeue-\(weight.rawValue)", size: size)!
+        case .zh(let weight, let size):
+            return UIFont(name: "Helvetica-\(weight.rawValue)", size: size)!
+        }
+    }
+}
+
+extension OhConfigureWrapper where Base: UILabel {
+    @discardableResult
+    func font(_ rawFont: AppFont) -> OhConfigureWrapper {
+        return  font(rawFont: rawFont)
+    }
+}
+
 class ViewController: UIViewController {
     
     lazy var table = UITableView().oh
@@ -24,6 +48,46 @@ class ViewController: UIViewController {
     let textField = UITextField().oh
         .textColor(.blue)
         .done()
+    
+    private let label: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 14, weight: .medium)
+        label.textColor = .gray
+        label.text = "Label Wording"
+        label.textAlignment = .left
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    
+    private let ohLabel = UILabel().oh
+        .style(font: UIFont.systemFont(ofSize: 12, weight: .medium), color: .gray)
+        .textAlignment(.left)
+        .text("Label Wording")
+        .numberOfLines(0)
+        .done()
+    
+    private let button: UIButton = {
+        let button = UIButton()
+        button.setTitle("Button Wording", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.setTitleColor(.gray, for: .highlighted)
+        button.layer.cornerRadius = 12
+        button.layer.borderColor = UIColor.darkGray.cgColor
+        button.layer.borderWidth = 1
+        return button
+    }()
+    
+    private let ohButton = UIButton().oh
+        .title("Button Wording", for: .normal)
+        .titleColor(.black, for: .normal)
+        .titleColor(.gray, for: .normal)
+        .cornerRadius(12)
+        .border(color: .darkGray, width: 1)
+        .createConfigurator { (button) in
+            // ...
+        }.done()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
