@@ -7,10 +7,7 @@
 //
 
 extension OhConfigureWrapper where Base: UISwitch {
-    func x() {
-        let x = UISwitch()
-        
-    }
+
     @discardableResult
     func isOn(_ isOn: Bool, animated: Bool = true) -> OhConfigureWrapper {
         base.setOn(isOn, animated: animated)
