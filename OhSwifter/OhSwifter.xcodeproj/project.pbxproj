@@ -331,6 +331,7 @@
 				BEBB7DE722FDA97800189C72 /* UICollectionView+Oh.swift */,
 				BE98506322FB2672007D2A47 /* UIStackView+Oh.swift */,
 				BEBB7DE922FDAB8D00189C72 /* UIDatePicker+Oh.swift */,
+				BEC896C922FEACD300363117 /* UISwitch+Oh.swift */,
 			);
 			path = OhConfigurator;
 			sourceTree = "<group>";
@@ -355,7 +356,6 @@
 				BEBB7DEF22FDB3D100189C72 /* OhConvenient+DataSource.swift */,
 				BEC896C522FEA54300363117 /* Convenient+Font.swift */,
 				BEC896C722FEA8BF00363117 /* Convenient+TextColor.swift */,
-				BEC896C922FEACD300363117 /* UISwitch+Oh.swift */,
 			);
 			path = Convenient;
 			sourceTree = "<group>";

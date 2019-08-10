@@ -46,4 +46,15 @@ extension OhConfigureWrapper where Base: UISwitch {
         base.onTintColor = color
         return self
     }
+    
+    /// OhSwifter+Configurator
+    /// Standard size fixed CGSizee()
+    @discardableResult
+    func size(_ size: CGSize) -> OhConfigureWrapper {
+        let originSize = base.frame.size
+        let transform = CGAffineTransform(scaleX: size.width / originSize.width,
+                                          y: size.height / originSize.height)
+        base.transform = transform
+        return self
+    }
 }
