@@ -55,7 +55,7 @@ private let ohLabel = UILabel().oh
 ```
 
 * First, less to define property type. Ex: `label: UILabel`.
-* Second, use `o` wrapper for namespacing, can distinguish origin function or property, and less smart reminder type.
+* Second, use `oh` wrapper for namespacing, can distinguish origin function or property, and less smart reminder type.
 
 > Note: `.dnoe()` is must. Although I think this is a bit redundant, But there is no better idea at the moment.
 
