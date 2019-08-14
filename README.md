@@ -32,7 +32,7 @@ private let label: UILabel = {
     label.font = UIFont.systemFont(ofSize: 14, weight: .medium)
     label.textColor = .gray
     label.textAlignment = .left
-	  label.text = "Label Wording"
+    label.text = "Label Wording"
     label.numberOfLines = 0
     return label
 }()
@@ -49,13 +49,13 @@ private let label: UILabel = {
 private let ohLabel = UILabel().oh
     .style(font: UIFont.systemFont(ofSize: 12, weight: .medium), color: .gray)
     .textAlignment(.left)
-		.text("Label Wording")
+    .text("Label Wording")
     .numberOfLines(0)
     .done()
 ```
 
 * First, less to define property type. Ex: `label: UILabel`.
-* Second, use `of` wrapper for namespacing, can distinguish origin function or property, and less smart reminder type.
+* Second, use `oh` wrapper for namespacing, can distinguish origin function or property, and less smart reminder type.
 
 > Note: `.dnoe()` is must. Although I think this is a bit redundant, But there is no better idea at the moment.
 
@@ -91,7 +91,7 @@ private let ohButton = UIButton().oh
     .titleColor(.gray, for: .normal)
     .cornerRadius(12)
     .border(color: .darkGray, width: 1)
-		.done()
+    .done()
 ```
 
 * Need not to type any `button`.
