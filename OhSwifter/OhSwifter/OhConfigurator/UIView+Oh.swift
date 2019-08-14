@@ -90,6 +90,14 @@ public extension OhConfigureWrapper where Base: UIView {
     }
     
     @discardableResult
+    func roundCorners(_ corners: UIRectCorner, radius: CGFloat)  -> OhConfigureWrapper {
+        base.clipsToBounds = true
+        base.layer.cornerRadius = radius
+        base.layer.maskedCorners = CACornerMask(rawValue: corners.rawValue)
+        return self
+    }
+    
+    @discardableResult
     func masksToBounds(_ flag: Bool) -> OhConfigureWrapper {
         base.layer.masksToBounds = flag
         return self
