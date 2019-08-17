@@ -21,7 +21,7 @@ public extension UITextField {
     }
 }
 
-extension OhConfigureWrapper where Base: UITextField {
+public extension OhConfigureWrapper where Base: UITextField {
     
     /// OhSwifter
     ///
