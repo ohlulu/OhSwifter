@@ -37,5 +37,22 @@ public extension OhConfigureWrapper where Base: UICollectionViewFlowLayout {
         return self
     }
     
+    @discardableResult
+    func estimatedItemSize(_ size: CGSize) -> OhConfigureWrapper {
+        base.estimatedItemSize = size
+        return self
+    }
+    
+    @discardableResult
+    func itemSize(_ size: CGSize) -> OhConfigureWrapper {
+        base.itemSize = size
+        return self
+    }
+    
+    @discardableResult
+    func scrollDirection(_ direction: UICollectionView.ScrollDirection) -> OhConfigureWrapper {
+        base.scrollDirection = direction
+        return self
+    }
 }
 
