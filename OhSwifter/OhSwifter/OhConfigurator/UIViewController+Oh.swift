@@ -7,7 +7,7 @@
 //
 
 
-extension OhConfigureWrapper where Base: UIViewController {
+public extension OhConfigureWrapper where Base: UIViewController {
     
     @discardableResult
     public func modalPresentationStyle(_ style: UIModalPresentationStyle) -> OhConfigureWrapper {

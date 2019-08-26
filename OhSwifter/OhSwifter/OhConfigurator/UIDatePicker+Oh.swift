@@ -6,7 +6,7 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
-extension OhConfigureWrapper where Base: UIDatePicker {
+public extension OhConfigureWrapper where Base: UIDatePicker {
     
     @discardableResult
     func datePickerMode(_ mode: UIDatePicker.Mode) -> OhConfigureWrapper {

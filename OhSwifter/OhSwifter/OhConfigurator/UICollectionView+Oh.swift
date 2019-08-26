@@ -6,7 +6,7 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
-extension OhConfigureWrapper where Base: UICollectionView {
+public extension OhConfigureWrapper where Base: UICollectionView {
     
     @discardableResult
     func regiter<T>(_ cell: T.Type) -> OhConfigureWrapper where T: UICollectionViewCell {

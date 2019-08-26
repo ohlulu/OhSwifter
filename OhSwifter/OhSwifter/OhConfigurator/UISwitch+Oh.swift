@@ -6,7 +6,7 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
-extension OhConfigureWrapper where Base: UISwitch {
+public extension OhConfigureWrapper where Base: UISwitch {
 
     @discardableResult
     func isOn(_ isOn: Bool, animated: Bool = true) -> OhConfigureWrapper {

@@ -6,7 +6,7 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
-extension OhConfigureWrapper where Base: UIScrollView {
+public extension OhConfigureWrapper where Base: UIScrollView {
     
     @discardableResult
     public func directionalLockEnabled(_ isDirectionalLockEnabled: Bool) -> OhConfigureWrapper {

@@ -81,4 +81,10 @@ public extension OhConfigureWrapper where Base: UITextField {
         base.textAlignment = alignment
         return self
     }
+    
+    @discardableResult
+    func keyboardAppearance(_ mode: UIKeyboardAppearance) -> OhConfigureWrapper {
+        base.keyboardAppearance = .dark
+        return self
+    }
 }
