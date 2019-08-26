@@ -10,19 +10,19 @@
 public extension OhConfigureWrapper where Base: UIViewController {
     
     @discardableResult
-    public func modalPresentationStyle(_ style: UIModalPresentationStyle) -> OhConfigureWrapper {
+    func modalPresentationStyle(_ style: UIModalPresentationStyle) -> OhConfigureWrapper {
         base.modalPresentationStyle = style
         return self
     }
     
     @discardableResult
-    public func modalTransitionStyle(_ style: UIModalTransitionStyle) -> OhConfigureWrapper {
+    func modalTransitionStyle(_ style: UIModalTransitionStyle) -> OhConfigureWrapper {
         base.modalTransitionStyle = style
         return self
     }
     
     @discardableResult
-    public func transitioningDelegate(_ delegate: UIViewControllerTransitioningDelegate?) -> OhConfigureWrapper {
+    func transitioningDelegate(_ delegate: UIViewControllerTransitioningDelegate?) -> OhConfigureWrapper {
         base.transitioningDelegate = delegate
         return self
     }
