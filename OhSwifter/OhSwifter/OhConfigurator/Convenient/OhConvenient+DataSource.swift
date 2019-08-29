@@ -6,6 +6,8 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
+import UIKit
+
 public protocol SwiftOriginDataSource: class {
     associatedtype DataSource
     var dataSource: DataSource { get set }

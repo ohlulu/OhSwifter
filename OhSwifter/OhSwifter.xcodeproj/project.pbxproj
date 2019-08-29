@@ -48,6 +48,8 @@
 		BE51DCDD22F6B1570018110B /* OhConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCDC22F6B1570018110B /* OhConfigurator.swift */; };
 		BE51DCDF22F6B3FD0018110B /* UILabel+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCDE22F6B3FD0018110B /* UILabel+Oh.swift */; };
 		BE51DCE122F6BF000018110B /* UIView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCE022F6BF000018110B /* UIView+Oh.swift */; };
+		BE571E932317E227002C2539 /* OhSwifterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE571E922317E227002C2539 /* OhSwifterTests.swift */; };
+		BE571E952317E227002C2539 /* OhSwifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE04550C22EDFAC000255267 /* OhSwifter.framework */; };
 		BE61F4602314370B002E643C /* UICollectionViewFlowLayout+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE61F45F2314370B002E643C /* UICollectionViewFlowLayout+Oh.swift */; };
 		BE6FD66722EF417C0003B6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6FD66622EF417C0003B6C6 /* AppDelegate.swift */; };
 		BE6FD66922EF417C0003B6C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6FD66822EF417C0003B6C6 /* ViewController.swift */; };
@@ -74,6 +76,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		BE51DCD622F600CB0018110B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE04550322EDFAC000255267 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE04550B22EDFAC000255267;
+			remoteInfo = OhSwifter;
+		};
+		BE571E962317E227002C2539 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BE04550322EDFAC000255267 /* Project object */;
 			proxyType = 1;
@@ -138,6 +147,9 @@
 		BE51DCDC22F6B1570018110B /* OhConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhConfigurator.swift; sourceTree = "<group>"; };
 		BE51DCDE22F6B3FD0018110B /* UILabel+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Oh.swift"; sourceTree = "<group>"; };
 		BE51DCE022F6BF000018110B /* UIView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Oh.swift"; sourceTree = "<group>"; };
+		BE571E902317E227002C2539 /* OhSwifterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OhSwifterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE571E922317E227002C2539 /* OhSwifterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhSwifterTests.swift; sourceTree = "<group>"; };
+		BE571E942317E227002C2539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE61F45F2314370B002E643C /* UICollectionViewFlowLayout+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+Oh.swift"; sourceTree = "<group>"; };
 		BE6FD66422EF417C0003B6C6 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6FD66622EF417C0003B6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +184,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE571E8D2317E226002C2539 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE571E952317E227002C2539 /* OhSwifter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE6FD66122EF417C0003B6C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,6 +208,7 @@
 			children = (
 				BE6FD66522EF417C0003B6C6 /* Example */,
 				BE04550E22EDFAC000255267 /* OhSwifter */,
+				BE571E912317E227002C2539 /* OhSwifterTests */,
 				BE04550D22EDFAC000255267 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -197,6 +218,7 @@
 			children = (
 				BE04550C22EDFAC000255267 /* OhSwifter.framework */,
 				BE6FD66422EF417C0003B6C6 /* Example.app */,
+				BE571E902317E227002C2539 /* OhSwifterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -341,6 +363,15 @@
 			path = OhConfigurator;
 			sourceTree = "<group>";
 		};
+		BE571E912317E227002C2539 /* OhSwifterTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE571E922317E227002C2539 /* OhSwifterTests.swift */,
+				BE571E942317E227002C2539 /* Info.plist */,
+			);
+			path = OhSwifterTests;
+			sourceTree = "<group>";
+		};
 		BE6FD66522EF417C0003B6C6 /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +429,24 @@
 			productReference = BE04550C22EDFAC000255267 /* OhSwifter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		BE571E8F2317E226002C2539 /* OhSwifterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE571E982317E227002C2539 /* Build configuration list for PBXNativeTarget "OhSwifterTests" */;
+			buildPhases = (
+				BE571E8C2317E226002C2539 /* Sources */,
+				BE571E8D2317E226002C2539 /* Frameworks */,
+				BE571E8E2317E226002C2539 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE571E972317E227002C2539 /* PBXTargetDependency */,
+			);
+			name = OhSwifterTests;
+			productName = OhSwifterTests;
+			productReference = BE571E902317E227002C2539 /* OhSwifterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BE6FD66322EF417C0003B6C6 /* Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE6FD67522EF417E0003B6C6 /* Build configuration list for PBXNativeTarget "Example" */;
@@ -430,6 +479,9 @@
 					BE04550B22EDFAC000255267 = {
 						CreatedOnToolsVersion = 10.3;
 					};
+					BE571E8F2317E226002C2539 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					BE6FD66322EF417C0003B6C6 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -450,12 +502,20 @@
 			targets = (
 				BE04550B22EDFAC000255267 /* OhSwifter */,
 				BE6FD66322EF417C0003B6C6 /* Example */,
+				BE571E8F2317E226002C2539 /* OhSwifterTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BE04550A22EDFAC000255267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE571E8E2317E226002C2539 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -537,6 +597,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE571E8C2317E226002C2539 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE571E932317E227002C2539 /* OhSwifterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE6FD66022EF417C0003B6C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -553,6 +621,11 @@
 			isa = PBXTargetDependency;
 			target = BE04550B22EDFAC000255267 /* OhSwifter */;
 			targetProxy = BE51DCD622F600CB0018110B /* PBXContainerItemProxy */;
+		};
+		BE571E972317E227002C2539 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE04550B22EDFAC000255267 /* OhSwifter */;
+			targetProxy = BE571E962317E227002C2539 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -750,6 +823,42 @@
 			};
 			name = Release;
 		};
+		BE571E992317E227002C2539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSTQSY2TJN;
+				INFOPLIST_FILE = OhSwifterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ohlulu.OhSwifterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE571E9A2317E227002C2539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSTQSY2TJN;
+				INFOPLIST_FILE = OhSwifterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ohlulu.OhSwifterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		BE6FD67322EF417E0003B6C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -807,6 +916,15 @@
 			buildConfigurations = (
 				BE04551522EDFAC000255267 /* Debug */,
 				BE04551622EDFAC000255267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE571E982317E227002C2539 /* Build configuration list for PBXNativeTarget "OhSwifterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE571E992317E227002C2539 /* Debug */,
+				BE571E9A2317E227002C2539 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
