@@ -36,6 +36,7 @@ public extension OhConfigureWrapper {
 
 public extension OhConfigureWrapper {
     
+    @discardableResult
     func createConfigurator(_ maker: (_ make: Base) -> Void) -> OhConfigureWrapper {
         maker(base)
         return self
