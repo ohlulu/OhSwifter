@@ -12,6 +12,8 @@ public protocol SwiftOriginDelegate: class {
 }
 
 public extension OhConfigureWrapper where Base: SwiftOriginDelegate {
+    
+    @discardableResult
     func delegate(_ delegate: Base.Delegate) -> OhConfigureWrapper {
         base.delegate = delegate
         return self

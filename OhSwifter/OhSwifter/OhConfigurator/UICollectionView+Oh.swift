@@ -13,4 +13,22 @@ public extension OhConfigureWrapper where Base: UICollectionView {
         base.register(cell: cell)
         return self
     }
+    
+    @discardableResult
+    func isPagingEnabled(_ flag: Bool) -> OhConfigureWrapper {
+        base.isPagingEnabled = flag
+        return self
+    }
+    
+    @discardableResult
+    func showsHorizontalScrollIndicator(_ flag: Bool) -> OhConfigureWrapper {
+        base.showsHorizontalScrollIndicator = flag
+        return self
+    }
+    
+    @discardableResult
+    func showsVerticalScrollIndicator(_ flag: Bool) -> OhConfigureWrapper {
+        base.showsVerticalScrollIndicator = flag
+        return self
+    }
 }

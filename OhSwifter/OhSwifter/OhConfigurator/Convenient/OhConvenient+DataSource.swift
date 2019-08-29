@@ -12,6 +12,8 @@ public protocol SwiftOriginDataSource: class {
 }
 
 public extension OhConfigureWrapper where Base: SwiftOriginDataSource {
+    
+    @discardableResult
     func dataSource(_ dataSource: Base.DataSource) -> OhConfigureWrapper {
         base.dataSource = dataSource
         return self
