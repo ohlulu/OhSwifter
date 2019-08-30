@@ -67,6 +67,7 @@ public extension UIScrollView {
     }
 }
 
+@available(iOS 11, *)
 fileprivate extension UIScrollView {
     func addObserver() {
         scrollViewObserverObj = observe(\.contentSize) { [weak self] (obj, change) in

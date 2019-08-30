@@ -17,7 +17,11 @@ public extension OhConfigureWrapper where Base: UINavigationBar {
     
     @discardableResult
     func largeTitleTextAttributes(_ attributes: [NSAttributedString.Key : Any]) -> OhConfigureWrapper {
-        base.largeTitleTextAttributes = attributes as [NSAttributedString.Key: Any]
+        if #available(iOS 11.0, *) {
+            base.largeTitleTextAttributes = attributes as [NSAttributedString.Key: Any]
+        } else {
+            
+        }
         return self
     }
 }
