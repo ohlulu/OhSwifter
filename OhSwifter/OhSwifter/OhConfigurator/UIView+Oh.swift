@@ -85,15 +85,28 @@ public extension OhConfigureWrapper where Base: UIView {
     
     @discardableResult
     func cornerRadius(_ cornerRadius: CGFloat) -> OhConfigureWrapper {
-        base.layer.cornerRadius = cornerRadius
+        if #available(iOS 11, *) {
+            roundCorners([.allCorners], radius: cornerRadius)
+        } else {
+            base.clipsToBounds = true
+            base.layer.cornerRadius = cornerRadius
+        }
+        
         return self
     }
     
     @discardableResult
     func roundCorners(_ corners: UIRectCorner, radius: CGFloat)  -> OhConfigureWrapper {
         base.clipsToBounds = true
-        base.layer.cornerRadius = radius
-        base.layer.maskedCorners = CACornerMask(rawValue: corners.rawValue)
+        if #available(iOS 11.0, *) {
+            base.layer.cornerRadius = radius
+            base.layer.maskedCorners = CACornerMask(rawValue: corners.rawValue)
+        } else {
+            let path = UIBezierPath(roundedRect: base.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+            let mask = CAShapeLayer()
+            mask.path = path.cgPath
+            base.layer.mask = mask
+        }
         return self
     }
     
