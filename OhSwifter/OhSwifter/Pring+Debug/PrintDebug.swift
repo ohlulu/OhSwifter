@@ -10,16 +10,17 @@ import Foundation
 
 /// Xcode Build Setting -> Other Swift flags -> Debug, add `-D DEBUG`
 
-public func printDebug<T> (_ message: T,
-                    file: String = #file,
-                    method: String = #function,
-                    line: Int = #line){
-#if DEBUG
+public func printDebug<T>(_ message: T,
+                          file: String = #file,
+                          method: String = #function,
+                          line: Int = #line){
+    #if DEBUG
     print(
         """
-        [\((file as NSString).lastPathComponent)] [Line: \(line)] \(message)
+        [\((file as NSString).lastPathComponent), Line: \(line)] [\(Date())]
+        👉 \(message)
         """
     )
-#endif
+    #endif
 }
 
