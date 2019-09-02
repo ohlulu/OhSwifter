@@ -53,4 +53,11 @@ public extension UIImage {
         UIGraphicsEndImageContext()
         return smallImage
     }
+    
+    static func create(from color: UIColor, size: CGSize = .init(width: 1, height: 1)) -> UIImage {
+        return UIGraphicsImageRenderer(size: size).image { rendererContext in
+            color.setFill()
+            rendererContext.fill(CGRect(origin: .zero, size: size))
+        }
+    }
 }

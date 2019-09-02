@@ -91,7 +91,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(table)
+//        view.addSubview(table)
+//        UIColor.red.createImage()
+        let imageView = UIImageView(image: .create(from: .red))
+        imageView.frame = .init(x: 0, y: 0, width: 100, height: 100)
+        view.addSubview(imageView)
     }
 }
 
