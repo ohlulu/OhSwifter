@@ -40,6 +40,7 @@ public extension UIColor {
 
 public extension UIColor {
     
+    @available(*, deprecated, message: "Use `UIimage.create(from: UIColor)`")
     func createImage(alpha: CGFloat = 1) -> UIImage? {
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
         UIGraphicsBeginImageContext(rect.size)
