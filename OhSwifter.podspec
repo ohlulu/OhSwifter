@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = 'OhSwifter'
-  spec.version      = '0.2.10'
+  spec.version      = '0.3.0'
   spec.summary      = 'A convenicence swift library.'
   spec.homepage     = 'https://github.com/z30262226/OhSwifter'
 
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => 'https://github.com/z30262226/OhSwifter.git', :tag => spec.version}
   spec.ios.deployment_target = '10.0'
-  spec.swift_version = '5.1'
+  spec.swift_version = '4.2'
 
   spec.source_files = 'OhSwifter/OhSwifter/**/*.swift'
   spec.exclude_files = 'OhSwifter/**/*.plist'
