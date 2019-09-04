@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => 'https://github.com/z30262226/OhSwifter.git', :tag => spec.version}
   spec.ios.deployment_target = '10.0'
-  spec.swift_version = '4.2'
+  spec.swift_version = '5.1'
 
   spec.source_files = 'OhSwifter/OhSwifter/**/*.swift'
   spec.exclude_files = 'OhSwifter/**/*.plist'
