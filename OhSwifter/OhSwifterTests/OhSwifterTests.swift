@@ -26,4 +26,12 @@ class OhSwifterTests: XCTestCase {
         XCTAssert(true)
     }
 
+    
+    func testSafeCollection() {
+        let arr = ["A", "B", "C"]
+        XCTAssertEqual(arr.safe[0], "A")
+        XCTAssertEqual(arr.safe[1], "B")
+        XCTAssertEqual(arr.safe[2], "C")
+        XCTAssertNil(arr.safe[3])
+    }
 }
