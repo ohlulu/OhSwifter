@@ -13,6 +13,7 @@ public extension Array {
     /// Return `nil` if index out of range
     ///
     /// - Parameter index: index in array
+    @available(*, deprecated, message: "Use `array.safe[index]`")
     subscript(safe index: Int?) -> Element? {
         guard let index = index else { return nil }
         return indices.contains(index) ? self[index] : nil

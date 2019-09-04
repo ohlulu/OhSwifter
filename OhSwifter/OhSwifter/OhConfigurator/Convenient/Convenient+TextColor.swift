@@ -11,6 +11,8 @@ public protocol SwiftOriginTextColorExclamationMark: class {
 }
 
 public extension OhConfigureWrapper where Base: SwiftOriginTextColorExclamationMark {
+    
+    @discardableResult
     func textColor(_ color: UIColor!) -> OhConfigureWrapper {
         base.textColor = color
         return self
@@ -24,6 +26,8 @@ public protocol SwiftOriginTextColorQuestionsMark: class {
 }
 
 public extension OhConfigureWrapper where Base: SwiftOriginTextColorQuestionsMark {
+    
+    @discardableResult
     func textColor(_ color: UIColor?) -> OhConfigureWrapper {
         base.textColor = color
         return self

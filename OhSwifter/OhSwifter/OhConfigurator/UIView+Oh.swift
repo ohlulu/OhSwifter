@@ -167,4 +167,10 @@ public extension OhConfigureWrapper where Base: UIView {
         base.layer.shadowOffset = CGSize(width: x, height: y)
         return self
     }
+    
+    @discardableResult
+    func addOn(view: UIView) -> OhConfigureWrapper {
+        view.addSubview(base)
+        return self
+    }
 }
