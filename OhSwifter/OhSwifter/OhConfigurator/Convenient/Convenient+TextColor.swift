@@ -10,10 +10,10 @@ public protocol SwiftOriginTextColorExclamationMark: class {
     var textColor: UIColor! { get set }
 }
 
-public extension OhConfigureWrapper where Base: SwiftOriginTextColorExclamationMark {
+public extension OhSwifter where Base: SwiftOriginTextColorExclamationMark {
     
     @discardableResult
-    func textColor(_ color: UIColor!) -> OhConfigureWrapper {
+    func textColor(_ color: UIColor!) -> OhSwifter {
         base.textColor = color
         return self
     }
@@ -25,10 +25,10 @@ public protocol SwiftOriginTextColorQuestionsMark: class {
     var textColor: UIColor? { get set }
 }
 
-public extension OhConfigureWrapper where Base: SwiftOriginTextColorQuestionsMark {
+public extension OhSwifter where Base: SwiftOriginTextColorQuestionsMark {
     
     @discardableResult
-    func textColor(_ color: UIColor?) -> OhConfigureWrapper {
+    func textColor(_ color: UIColor?) -> OhSwifter {
         base.textColor = color
         return self
     }

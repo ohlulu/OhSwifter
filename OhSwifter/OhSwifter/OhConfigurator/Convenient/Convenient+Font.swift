@@ -10,8 +10,8 @@ public protocol SwiftOriginFontExclamationMark: class {
     var font: UIFont! { get set }
 }
 
-public extension OhConfigureWrapper where Base: SwiftOriginFontExclamationMark {
-    func font(_ font: UIFont!) -> OhConfigureWrapper {
+public extension OhSwifter where Base: SwiftOriginFontExclamationMark {
+    func font(_ font: UIFont!) -> OhSwifter {
         base.font = font
         return self
     }
@@ -23,8 +23,8 @@ public protocol SwiftOriginFontQuestionMark: class {
     var font: UIFont? { get set }
 }
 
-public extension OhConfigureWrapper where Base: SwiftOriginFontQuestionMark {
-    func font(_ font: UIFont?) -> OhConfigureWrapper {
+public extension OhSwifter where Base: SwiftOriginFontQuestionMark {
+    func font(_ font: UIFont?) -> OhSwifter {
         base.font = font
         return self
     }

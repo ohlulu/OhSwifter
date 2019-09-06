@@ -6,28 +6,47 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
-public extension OhConfigureWrapper where Base: UICollectionView {
+public extension OhSwifter where Base: UICollectionView {
     
     @discardableResult
-    func regiter<T>(_ cell: T.Type) -> OhConfigureWrapper where T: UICollectionViewCell {
+    func dataSource(_ dataSource: UICollectionViewDataSource) -> OhSwifter {
+        base.dataSource = dataSource
+        return self
+    }
+    
+    @discardableResult
+    func delegate(_ delegate: UICollectionViewDelegate) -> OhSwifter {
+        base.delegate = delegate
+        return self
+    }
+    
+    typealias CollectionViewDelegateAndDataScourde = UICollectionViewDelegate & UICollectionViewDataSource
+    @discardableResult
+    func delegateAndDataScourde(_ delegateAndDataScourde: CollectionViewDelegateAndDataScourde) -> OhSwifter {
+        return dataSource(delegateAndDataScourde)
+            .delegate(delegateAndDataScourde)
+    }
+    
+    @discardableResult
+    func regiter<T>(_ cell: T.Type) -> OhSwifter where T: UICollectionViewCell {
         base.register(cell: cell)
         return self
     }
     
     @discardableResult
-    func isPagingEnabled(_ flag: Bool) -> OhConfigureWrapper {
+    func isPagingEnabled(_ flag: Bool) -> OhSwifter {
         base.isPagingEnabled = flag
         return self
     }
     
     @discardableResult
-    func showsHorizontalScrollIndicator(_ flag: Bool) -> OhConfigureWrapper {
+    func showsHorizontalScrollIndicator(_ flag: Bool) -> OhSwifter {
         base.showsHorizontalScrollIndicator = flag
         return self
     }
     
     @discardableResult
-    func showsVerticalScrollIndicator(_ flag: Bool) -> OhConfigureWrapper {
+    func showsVerticalScrollIndicator(_ flag: Bool) -> OhSwifter {
         base.showsVerticalScrollIndicator = flag
         return self
     }

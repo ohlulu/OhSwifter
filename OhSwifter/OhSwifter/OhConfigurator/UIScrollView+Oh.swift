@@ -6,142 +6,148 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
-public extension OhConfigureWrapper where Base: UIScrollView {
+public extension OhSwifter where Base: UIScrollView {
     
     @discardableResult
-    func directionalLockEnabled(_ isDirectionalLockEnabled: Bool) -> OhConfigureWrapper {
+    func delegate(_ delegate: UIScrollViewDelegate) -> OhSwifter {
+        base.delegate = delegate
+        return self
+    }
+    
+    @discardableResult
+    func directionalLockEnabled(_ isDirectionalLockEnabled: Bool) -> OhSwifter {
         base.isDirectionalLockEnabled = isDirectionalLockEnabled
         return self
     }
     
     @discardableResult
-    func bounces(_ bounces: Bool) -> OhConfigureWrapper {
+    func bounces(_ bounces: Bool) -> OhSwifter {
         base.bounces = bounces
         return self
     }
     
     @discardableResult
-    func alwaysBounceVertical(_ alwaysBounceVertical: Bool) -> OhConfigureWrapper {
+    func alwaysBounceVertical(_ alwaysBounceVertical: Bool) -> OhSwifter {
         base.alwaysBounceVertical = alwaysBounceVertical
         return self
     }
     
     @discardableResult
-    func alwaysBounceHorizontal(_ alwaysBounceHorizontal: Bool) -> OhConfigureWrapper {
+    func alwaysBounceHorizontal(_ alwaysBounceHorizontal: Bool) -> OhSwifter {
         base.alwaysBounceHorizontal = alwaysBounceHorizontal
         return self
     }
     
     @discardableResult
-    func pagingEnabled(_ isPagingEnabled: Bool) -> OhConfigureWrapper {
+    func pagingEnabled(_ isPagingEnabled: Bool) -> OhSwifter {
         base.isPagingEnabled = isPagingEnabled
         return self
     }
     
     @discardableResult
-    func scrollEnabled(_ isScrollEnabled: Bool) -> OhConfigureWrapper {
+    func scrollEnabled(_ isScrollEnabled: Bool) -> OhSwifter {
         base.isScrollEnabled = isScrollEnabled
         return self
     }
     
     @discardableResult
-    func showsHorizontalIndicator(_ showsHorizontalScrollIndicator: Bool) -> OhConfigureWrapper {
+    func showsHorizontalIndicator(_ showsHorizontalScrollIndicator: Bool) -> OhSwifter {
         base.showsHorizontalScrollIndicator = showsHorizontalScrollIndicator
         return self
     }
     
     @discardableResult
-    func showsVerticalIndicator(_ showsVerticalScrollIndicator: Bool) -> OhConfigureWrapper {
+    func showsVerticalIndicator(_ showsVerticalScrollIndicator: Bool) -> OhSwifter {
         base.showsVerticalScrollIndicator = showsVerticalScrollIndicator
         return self
     }
     
     @discardableResult
-    func scrollIndicatorInsets(_ scrollIndicatorInsets: UIEdgeInsets) -> OhConfigureWrapper {
+    func scrollIndicatorInsets(_ scrollIndicatorInsets: UIEdgeInsets) -> OhSwifter {
         base.scrollIndicatorInsets = scrollIndicatorInsets
         return self
     }
     
     @discardableResult
-    func indicatorStyle(_ indicatorStyle: UIScrollView.IndicatorStyle) -> OhConfigureWrapper {
+    func indicatorStyle(_ indicatorStyle: UIScrollView.IndicatorStyle) -> OhSwifter {
         base.indicatorStyle = indicatorStyle
         return self
     }
     
     @discardableResult
-    func contentInset(_ insets: UIEdgeInsets) -> OhConfigureWrapper {
+    func contentInset(_ insets: UIEdgeInsets) -> OhSwifter {
         base.contentInset = insets
         return self
     }
     
     @discardableResult
-    func setContentOffset(_ offset: CGPoint, animated: Bool) -> OhConfigureWrapper {
+    func setContentOffset(_ offset: CGPoint, animated: Bool) -> OhSwifter {
         base.setContentOffset(offset, animated: animated)
         return self
     }
     
     @discardableResult
-    func contentOffset(_ offset: CGPoint) -> OhConfigureWrapper {
+    func contentOffset(_ offset: CGPoint) -> OhSwifter {
         base.contentOffset = offset
         return self
     }
     
     @discardableResult
-    func contentSize(_ size: CGSize) -> OhConfigureWrapper {
+    func contentSize(_ size: CGSize) -> OhSwifter {
         base.contentSize = size
         return self
     }
     
     @discardableResult
-    func scrollRectToVisibleRect(_ rect: CGRect, animated: Bool) -> OhConfigureWrapper {
+    func scrollRectToVisibleRect(_ rect: CGRect, animated: Bool) -> OhSwifter {
         base.scrollRectToVisible(rect, animated: animated)
         return self
     }
     
     @discardableResult
-    func minimumZoomScale(_ minimumZoomScale: CGFloat) -> OhConfigureWrapper {
+    func minimumZoomScale(_ minimumZoomScale: CGFloat) -> OhSwifter {
         base.minimumZoomScale = minimumZoomScale
         return self
     }
     
     @discardableResult
-    func maximumZoomScale(_ maximumZoomScale: CGFloat) -> OhConfigureWrapper {
+    func maximumZoomScale(_ maximumZoomScale: CGFloat) -> OhSwifter {
         base.maximumZoomScale = maximumZoomScale
         return self
     }
     
     @discardableResult
-    func zoomScale(_ zoomScale: CGFloat) -> OhConfigureWrapper {
+    func zoomScale(_ zoomScale: CGFloat) -> OhSwifter {
         base.zoomScale = zoomScale
         return self
     }
     
     @discardableResult
-    func setZoomScaleOnScrollView(_ scale: CGFloat, animated: Bool) -> OhConfigureWrapper {
+    func setZoomScaleOnScrollView(_ scale: CGFloat, animated: Bool) -> OhSwifter {
         base.setZoomScale(scale, animated: animated)
         return self
     }
     
     @discardableResult
-    func bouncesZoom(_ bouncesZoom: Bool) -> OhConfigureWrapper {
+    func bouncesZoom(_ bouncesZoom: Bool) -> OhSwifter {
         base.bouncesZoom = bouncesZoom
         return self
     }
     
     @discardableResult
-    func scrollsToTop(_ scrollsToTop: Bool) -> OhConfigureWrapper {
+    func scrollsToTop(_ scrollsToTop: Bool) -> OhSwifter {
         base.scrollsToTop = scrollsToTop
         return self
     }
     
     @discardableResult
-    func keyboardDismissMode(_ keyboardDismissMode: UIScrollView.KeyboardDismissMode) -> OhConfigureWrapper {
+    func keyboardDismissMode(_ keyboardDismissMode: UIScrollView.KeyboardDismissMode) -> OhSwifter {
         base.keyboardDismissMode = keyboardDismissMode
         return self
     }
     
     @discardableResult
-    func refreshControl(_ refreshControl: UIRefreshControl?) -> OhConfigureWrapper {
+    func refreshControl(_ refreshControl: UIRefreshControl?) -> OhSwifter {
         base.refreshControl = refreshControl
         return self
     }

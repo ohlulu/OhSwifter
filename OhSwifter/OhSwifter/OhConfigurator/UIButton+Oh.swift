@@ -6,48 +6,48 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
-public extension OhConfigureWrapper where Base: UIButton {
+public extension OhSwifter where Base: UIButton {
     
     @discardableResult
-    func image(_ image: UIImage, for state: UIControl.State) -> OhConfigureWrapper {
+    func image(_ image: UIImage, for state: UIControl.State) -> OhSwifter {
         base.setImage(image, for: state)
         base.setTitle(nil, for: state)
         return self
     }
     
     @discardableResult
-    func backgroundImage(_ image: UIImage?, for state: UIControl.State) -> OhConfigureWrapper {
+    func backgroundImage(_ image: UIImage?, for state: UIControl.State) -> OhSwifter {
         base.setBackgroundImage(image, for: state)
         return self
     }
     
     @discardableResult
-    func title(_ title: String, for state: UIControl.State) -> OhConfigureWrapper {
+    func title(_ title: String, for state: UIControl.State) -> OhSwifter {
         base.setImage(nil, for: state)
         base.setTitle(title, for: state)
         return self
     }
     
     @discardableResult
-    func attributedTitle(_ title: NSAttributedString?, for state: UIControl.State) -> OhConfigureWrapper {
+    func attributedTitle(_ title: NSAttributedString?, for state: UIControl.State) -> OhSwifter {
         base.setAttributedTitle(title, for: state)
         return self
     }
     
     @discardableResult
-    func titleColor(_ color: UIColor, for state: UIControl.State = .normal) -> OhConfigureWrapper {
+    func titleColor(_ color: UIColor, for state: UIControl.State = .normal) -> OhSwifter {
         base.setTitleColor(color, for: state)
         return self
     }
     
     @discardableResult
-    func font(_ font: UIFont) -> OhConfigureWrapper {
+    func font(_ font: UIFont) -> OhSwifter {
         base.titleLabel?.font = font
         return self
     }
     
     @discardableResult
-    func font<T: RawRepresentable>(rawFont: T) -> OhConfigureWrapper where T.RawValue == UIFont {
+    func font<T: RawRepresentable>(rawFont: T) -> OhSwifter where T.RawValue == UIFont {
         base.oh.font(rawFont.rawValue)
         return self
     }
