@@ -16,6 +16,7 @@ public extension UITextField {
     enum TextType {
         case emailAddress
         case password
+        case plainTextPassword
         case generic
     }
 }
@@ -35,15 +36,28 @@ public extension OhSwifter where Base: UITextField {
     }
     
     @discardableResult
-    func font(_ font: UIFont, color: UIColor) -> OhSwifter {
-        base.font = font
+    func textColor(_ color: UIColor) -> OhSwifter {
         base.textColor = color
         return self
     }
     
     @discardableResult
-    func textColor(_ color: UIColor) -> OhSwifter {
-        base.textColor = color
+    func placeholder(_ text: String) -> OhSwifter {
+        base.placeholder = text
+        return self
+    }
+    
+    @discardableResult
+    func left(view: UIView?, mode: UITextField.ViewMode) -> OhSwifter {
+        base.leftView = view
+        base.leftViewMode = mode
+        return self
+    }
+    
+    @discardableResult
+    func right(view: UIView?, mode: UITextField.ViewMode) -> OhSwifter {
+        base.rightView = view
+        base.rightViewMode = mode
         return self
     }
     
@@ -65,6 +79,11 @@ public extension OhSwifter where Base: UITextField {
                 .autocapitalizationType(.none)
                 .keyboardType(.asciiCapable)
                 .isSecureTextEntry(true)
+        case .plainTextPassword:
+            return autocorrectionType(.no)
+                .autocapitalizationType(.none)
+                .keyboardType(.asciiCapable)
+                .isSecureTextEntry(false)
         case .generic:
             return isSecureTextEntry(false)
         }
