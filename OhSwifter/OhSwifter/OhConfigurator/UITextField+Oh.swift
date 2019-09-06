@@ -8,7 +8,6 @@
 
 public extension UITextField {
     
-    
     /// OhSwifter
     ///
     /// Refrence from SwifterSwift
@@ -21,7 +20,32 @@ public extension UITextField {
     }
 }
 
-public extension OhConfigureWrapper where Base: UITextField {
+public extension OhSwifter where Base: UITextField {
+    
+    @discardableResult
+    func font(_ font: UIFont) -> OhSwifter {
+        base.font = font
+        return self
+    }
+    
+    @discardableResult
+    func font(_ size: CGFloat, weight: UIFont.Weight) -> OhSwifter {
+        base.font = UIFont.systemFont(ofSize: size, weight: weight)
+        return self
+    }
+    
+    @discardableResult
+    func font(_ font: UIFont, color: UIColor) -> OhSwifter {
+        base.font = font
+        base.textColor = color
+        return self
+    }
+    
+    @discardableResult
+    func textColor(_ color: UIColor) -> OhSwifter {
+        base.textColor = color
+        return self
+    }
     
     /// OhSwifter
     ///
@@ -29,7 +53,7 @@ public extension OhConfigureWrapper where Base: UITextField {
     /// https://github.com/SwifterSwift/SwifterSwift
     ///
     @discardableResult
-    func textType(_ type: UITextField.TextType) -> OhConfigureWrapper {
+    func textType(_ type: UITextField.TextType) -> OhSwifter {
         switch type {
         case .emailAddress:
             return autocorrectionType(.no)
@@ -47,43 +71,43 @@ public extension OhConfigureWrapper where Base: UITextField {
     }
     
     @discardableResult
-    func keyboardType(_ type: UIKeyboardType) -> OhConfigureWrapper {
+    func keyboardType(_ type: UIKeyboardType) -> OhSwifter {
         base.keyboardType = type
         return self
     }
     
     @discardableResult
-    func autocorrectionType(_ type: UITextAutocorrectionType) -> OhConfigureWrapper {
+    func autocorrectionType(_ type: UITextAutocorrectionType) -> OhSwifter {
         base.autocorrectionType = type
         return self
     }
     
     @discardableResult
-    func autocapitalizationType(_ type: UITextAutocapitalizationType) -> OhConfigureWrapper {
+    func autocapitalizationType(_ type: UITextAutocapitalizationType) -> OhSwifter {
         base.autocapitalizationType = type
         return self
     }
     
     @discardableResult
-    func isSecureTextEntry(_ bool: Bool) -> OhConfigureWrapper {
+    func isSecureTextEntry(_ bool: Bool) -> OhSwifter {
         base.isSecureTextEntry = bool
         return self
     }
     
     @discardableResult
-    func clearButton(mode: UITextField.ViewMode) -> OhConfigureWrapper {
+    func clearButton(mode: UITextField.ViewMode) -> OhSwifter {
         base.clearButtonMode = mode
         return self
     }
     
     @discardableResult
-    func textAlignment(_ alignment: NSTextAlignment) -> OhConfigureWrapper {
+    func textAlignment(_ alignment: NSTextAlignment) -> OhSwifter {
         base.textAlignment = alignment
         return self
     }
     
     @discardableResult
-    func keyboardAppearance(_ mode: UIKeyboardAppearance) -> OhConfigureWrapper {
+    func keyboardAppearance(_ mode: UIKeyboardAppearance) -> OhSwifter {
         base.keyboardAppearance = .dark
         return self
     }

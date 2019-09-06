@@ -8,7 +8,7 @@
 
 import UIKit
 
-public struct OhConfigureWrapper<Base> {
+public struct OhSwifter<Base> {
     public let base: Base
     public init(_ base: Base) {
         self.base = base
@@ -20,13 +20,13 @@ public protocol OhConfigurator {
 }
 
 public extension OhConfigurator {
-    var oh: OhConfigureWrapper<Self> {
-        get { return OhConfigureWrapper(self) }
+    var oh: OhSwifter<Self> {
+        get { return OhSwifter(self) }
         set { }
     }
 }
 
-public extension OhConfigureWrapper {
+public extension OhSwifter {
     
     @discardableResult
     func done() -> Base {
@@ -34,10 +34,10 @@ public extension OhConfigureWrapper {
     }
 }
 
-public extension OhConfigureWrapper {
+public extension OhSwifter {
     
     @discardableResult
-    func createConfigurator(_ maker: (_ make: Base) -> Void) -> OhConfigureWrapper {
+    func createConfigurator(_ maker: (_ make: Base) -> Void) -> OhSwifter {
         maker(base)
         return self
     }

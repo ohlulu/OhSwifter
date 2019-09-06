@@ -26,12 +26,6 @@ enum AppFont: RawRepresentable {
     }
 }
 
-extension OhConfigureWrapper where Base: UILabel {
-    @discardableResult
-    func font(_ rawFont: AppFont) -> OhConfigureWrapper {
-        return  font(rawFont: rawFont)
-    }
-}
 
 class ViewController: UIViewController {
     
@@ -61,7 +55,7 @@ class ViewController: UIViewController {
     
     
     private let ohLabel = UILabel().oh
-        .style(font: UIFont.systemFont(ofSize: 12, weight: .medium), color: .gray)
+        .font(UIFont.systemFont(ofSize: 12, weight: .medium), color: .gray)
         .textAlignment(.left)
         .text("Label Wording")
         .numberOfLines(0)

@@ -6,40 +6,59 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
-public extension OhConfigureWrapper where Base: UITableView {
+public extension OhSwifter where Base: UITableView {
     
     @discardableResult
-    func regiter<T>(_ cell: T.Type) -> OhConfigureWrapper where T: UITableViewCell {
+    func dataSource(_ dataSource: UITableViewDataSource) -> OhSwifter {
+        base.dataSource = dataSource
+        return self
+    }
+    
+    @discardableResult
+    func delegate(_ delegate: UITableViewDelegate) -> OhSwifter {
+        base.delegate = delegate
+        return self
+    }
+    
+    typealias TableViewDelegateAndDataScourde = UITableViewDelegate & UITableViewDataSource
+    @discardableResult
+    func delegateAndDataScourde(_ delegateAndDataScourde: TableViewDelegateAndDataScourde) -> OhSwifter {
+        return dataSource(delegateAndDataScourde)
+            .delegate(delegateAndDataScourde)
+    }
+    
+    @discardableResult
+    func regiter<T>(_ cell: T.Type) -> OhSwifter where T: UITableViewCell {
         base.register(cell: cell)
         return self
     }
     
     @discardableResult
-    func separatorStyle(_ separatorStyle: UITableViewCell.SeparatorStyle) -> OhConfigureWrapper {
+    func separatorStyle(_ separatorStyle: UITableViewCell.SeparatorStyle) -> OhSwifter {
         base.separatorStyle = separatorStyle
         return self
     }
     
     @discardableResult
-    func separatorInset(_ separatorInset: UIEdgeInsets) -> OhConfigureWrapper {
+    func separatorInset(_ separatorInset: UIEdgeInsets) -> OhSwifter {
         base.separatorInset = separatorInset
         return self
     }
     
     @discardableResult
-    func separatorColor(_ separatorColor: UIColor) -> OhConfigureWrapper {
+    func separatorColor(_ separatorColor: UIColor) -> OhSwifter {
         base.separatorColor = separatorColor
         return self
     }
     
     @discardableResult
-    func allowsSelection(_ allowsSelection: Bool) -> OhConfigureWrapper {
+    func allowsSelection(_ allowsSelection: Bool) -> OhSwifter {
         base.allowsSelection = allowsSelection
         return self
     }
     
     @discardableResult
-    func setEditing(_ editing: Bool, animated: Bool) -> OhConfigureWrapper {
+    func setEditing(_ editing: Bool, animated: Bool) -> OhSwifter {
         base.setEditing(editing, animated: animated)
         return self
     }
@@ -49,7 +68,7 @@ public extension OhConfigureWrapper where Base: UITableView {
     }
     
     @discardableResult
-    func estimatedSectionHeight(_ height: CGFloat, for sectionView: EstimatedSectionView) -> OhConfigureWrapper {
+    func estimatedSectionHeight(_ height: CGFloat, for sectionView: EstimatedSectionView) -> OhSwifter {
         switch sectionView {
         case .header:
             base.estimatedRowHeight = height

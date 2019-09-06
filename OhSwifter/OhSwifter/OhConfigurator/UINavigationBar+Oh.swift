@@ -7,16 +7,16 @@
 //
 
 
-public extension OhConfigureWrapper where Base: UINavigationBar {
+public extension OhSwifter where Base: UINavigationBar {
     
     @discardableResult
-    func titleTextAttributes(_ attributes: [NSAttributedString.Key : Any]) -> OhConfigureWrapper {
+    func titleTextAttributes(_ attributes: [NSAttributedString.Key : Any]) -> OhSwifter {
         base.titleTextAttributes = attributes as [NSAttributedString.Key : Any]
         return self
     }
     
     @discardableResult
-    func largeTitleTextAttributes(_ attributes: [NSAttributedString.Key : Any]) -> OhConfigureWrapper {
+    func largeTitleTextAttributes(_ attributes: [NSAttributedString.Key : Any]) -> OhSwifter {
         if #available(iOS 11.0, *) {
             base.largeTitleTextAttributes = attributes as [NSAttributedString.Key: Any]
         } else {

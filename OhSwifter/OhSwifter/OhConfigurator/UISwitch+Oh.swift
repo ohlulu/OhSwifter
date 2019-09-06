@@ -6,10 +6,10 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
-public extension OhConfigureWrapper where Base: UISwitch {
+public extension OhSwifter where Base: UISwitch {
 
     @discardableResult
-    func isOn(_ isOn: Bool, animated: Bool = true) -> OhConfigureWrapper {
+    func isOn(_ isOn: Bool, animated: Bool = true) -> OhSwifter {
         base.setOn(isOn, animated: animated)
         return self
     }
@@ -19,7 +19,7 @@ public extension OhConfigureWrapper where Base: UISwitch {
     /// - Parameter color: Border color on close state
     /// - Returns: Self
     @discardableResult
-    func tintColor(_ color: UIColor) -> OhConfigureWrapper {
+    func tintColor(_ color: UIColor) -> OhSwifter {
         base.tintColor = color
         return self
     }
@@ -29,7 +29,7 @@ public extension OhConfigureWrapper where Base: UISwitch {
     /// - Parameter color: The circle color
     /// - Returns: Self
     @discardableResult
-    func thumbTintColor(_ color: UIColor) -> OhConfigureWrapper {
+    func thumbTintColor(_ color: UIColor) -> OhSwifter {
         base.thumbTintColor = color
         return self
     }
@@ -39,7 +39,7 @@ public extension OhConfigureWrapper where Base: UISwitch {
     /// - Parameter color: Background color on On state
     /// - Returns: Self
     @discardableResult
-    func onTintColor(_ color: UIColor) -> OhConfigureWrapper {
+    func onTintColor(_ color: UIColor) -> OhSwifter {
         base.onTintColor = color
         return self
     }
@@ -47,7 +47,7 @@ public extension OhConfigureWrapper where Base: UISwitch {
     /// OhSwifter+Configurator
     /// Standard size fixed CGSizee()
     @discardableResult
-    func size(_ size: CGSize) -> OhConfigureWrapper {
+    func size(_ size: CGSize) -> OhSwifter {
         let originSize = base.frame.size
         let transform = CGAffineTransform(scaleX: size.width / originSize.width,
                                           y: size.height / originSize.height)

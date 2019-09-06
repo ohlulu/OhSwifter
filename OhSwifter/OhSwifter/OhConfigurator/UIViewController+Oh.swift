@@ -7,22 +7,22 @@
 //
 
 
-public extension OhConfigureWrapper where Base: UIViewController {
+public extension OhSwifter where Base: UIViewController {
     
     @discardableResult
-    func modalPresentationStyle(_ style: UIModalPresentationStyle) -> OhConfigureWrapper {
+    func modalPresentationStyle(_ style: UIModalPresentationStyle) -> OhSwifter {
         base.modalPresentationStyle = style
         return self
     }
     
     @discardableResult
-    func modalTransitionStyle(_ style: UIModalTransitionStyle) -> OhConfigureWrapper {
+    func modalTransitionStyle(_ style: UIModalTransitionStyle) -> OhSwifter {
         base.modalTransitionStyle = style
         return self
     }
     
     @discardableResult
-    func transitioningDelegate(_ delegate: UIViewControllerTransitioningDelegate?) -> OhConfigureWrapper {
+    func transitioningDelegate(_ delegate: UIViewControllerTransitioningDelegate?) -> OhSwifter {
         base.transitioningDelegate = delegate
         return self
     }

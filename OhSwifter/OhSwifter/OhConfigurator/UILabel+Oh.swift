@@ -8,54 +8,53 @@
 
 import UIKit
 
-public extension OhConfigureWrapper where Base: UILabel {
+public extension OhSwifter where Base: UILabel {
     
     @discardableResult
-    func font(_ font: UIFont) -> OhConfigureWrapper {
+    func font(_ font: UIFont) -> OhSwifter {
         base.font = font
         return self
     }
     
     @discardableResult
-    func font<T: RawRepresentable>(rawFont: T) -> OhConfigureWrapper where T.RawValue == UIFont {
-        base.font = rawFont.rawValue
+    func font(_ size: CGFloat, weight: UIFont.Weight) -> OhSwifter {
+        base.font = UIFont.systemFont(ofSize: size, weight: weight)
         return self
     }
     
     @discardableResult
-    func style(font: UIFont, color: UIColor) -> OhConfigureWrapper {
+    func font(_ font: UIFont, color: UIColor) -> OhSwifter {
         base.font = font
         base.textColor = color
         return self
     }
     
     @discardableResult
-    func style<T>(rawFont: T, color: UIColor) -> OhConfigureWrapper where T: RawRepresentable, T.RawValue == UIFont {
-        base.font = rawFont.rawValue
-        base.textColor = color
-        return self
-    }
-    
-    @discardableResult
-    func text(_ text: String) -> OhConfigureWrapper {
+    func text(_ text: String) -> OhSwifter {
         base.text = text
         return self
     }
     
     @discardableResult
-    func textAlignment(_ textAlignment: NSTextAlignment) -> OhConfigureWrapper {
+    func textColor(_ color: UIColor) -> OhSwifter {
+        base.textColor = color
+        return self
+    }
+    
+    @discardableResult
+    func textAlignment(_ textAlignment: NSTextAlignment) -> OhSwifter {
         base.textAlignment = textAlignment
         return self
     }
     
     @discardableResult
-    func numberOfLines(_ numberOfLines: Int) -> OhConfigureWrapper {
+    func numberOfLines(_ numberOfLines: Int) -> OhSwifter {
         base.numberOfLines = numberOfLines
         return self
     }
     
     @discardableResult
-    func isEnabled(_ isEnabled: Bool) -> OhConfigureWrapper {
+    func isEnabled(_ isEnabled: Bool) -> OhSwifter {
         base.isEnabled = isEnabled
         return self
     }
