@@ -9,6 +9,18 @@
 public extension OhSwifter where Base: UIButton {
     
     @discardableResult
+    func font(_ font: UIFont) -> OhSwifter {
+        base.titleLabel?.font = font
+        return self
+    }
+    
+    @discardableResult
+    func font(_ size: CGFloat, weight: UIFont.Weight) -> OhSwifter {
+        base.titleLabel?.font = UIFont.systemFont(ofSize: size, weight: weight)
+        return self
+    }
+    
+    @discardableResult
     func image(_ image: UIImage, for state: UIControl.State) -> OhSwifter {
         base.setImage(image, for: state)
         base.setTitle(nil, for: state)
@@ -39,17 +51,4 @@ public extension OhSwifter where Base: UIButton {
         base.setTitleColor(color, for: state)
         return self
     }
-    
-    @discardableResult
-    func font(_ font: UIFont) -> OhSwifter {
-        base.titleLabel?.font = font
-        return self
-    }
-    
-    @discardableResult
-    func font<T: RawRepresentable>(rawFont: T) -> OhSwifter where T.RawValue == UIFont {
-        base.oh.font(rawFont.rawValue)
-        return self
-    }
-
 }

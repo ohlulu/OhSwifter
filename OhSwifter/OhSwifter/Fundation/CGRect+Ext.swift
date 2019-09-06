@@ -9,9 +9,29 @@
 import Foundation
 
 public extension CGRect {
+        
+    init(width: Double, height: Double) {
+        self.init(x: 0, y: 0, width: width, height: height)
+    }
+
+    init(width: CGFloat, height: CGFloat) {
+        self.init(x: 0, y: 0, width: width, height: height)
+    }
     
-    static func size(_ length: Double) -> CGRect {
-        return CGRect(x: 0, y: 0, width: length, height: length)
+    init(width: Int, height: Int) {
+        self.init(x: 0, y: 0, width: width, height: height)
+    }
+    
+    init(square: Double) {
+        self.init(x: 0, y: 0, width: square, height: square)
+    }
+    
+    init(square: CGFloat) {
+        self.init(x: 0, y: 0, width: square, height: square)
+    }
+    
+    init(square: Int) {
+        self.init(x: 0, y: 0, width: square, height: square)
     }
 }
 
