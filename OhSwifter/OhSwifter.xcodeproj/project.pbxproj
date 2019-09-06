@@ -38,6 +38,7 @@
 		BE0CD53C231FB0AF00D74EFE /* SafeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CD53B231FB0AF00D74EFE /* SafeCollection.swift */; };
 		BE44D2972321FC7E00F6D186 /* UIPickerView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44D2962321FC7E00F6D186 /* UIPickerView+Oh.swift */; };
 		BE44D2992322002A00F6D186 /* UITextView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44D2982322002A00F6D186 /* UITextView+Oh.swift */; };
+		BE44D29B2322021700F6D186 /* UINavigationController+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44D29A2322021700F6D186 /* UINavigationController+Oh.swift */; };
 		BE51100B22F706AC00C3A847 /* UIButton+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51100A22F706AC00C3A847 /* UIButton+Oh.swift */; };
 		BE51DCC422F5F0B50018110B /* DispatchQueue+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCC322F5F0B50018110B /* DispatchQueue+Ext.swift */; };
 		BE51DCC622F5F1710018110B /* NSAttributedString+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCC522F5F1710018110B /* NSAttributedString+Ext.swift */; };
@@ -48,7 +49,7 @@
 		BE51DCD322F5F6EC0018110B /* CGSize+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCD222F5F6EC0018110B /* CGSize+Ext.swift */; };
 		BE51DCD422F600CB0018110B /* OhSwifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE04550C22EDFAC000255267 /* OhSwifter.framework */; };
 		BE51DCD522F600CB0018110B /* OhSwifter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE04550C22EDFAC000255267 /* OhSwifter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BE51DCDD22F6B1570018110B /* OhConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCDC22F6B1570018110B /* OhConfigurator.swift */; };
+		BE51DCDD22F6B1570018110B /* OhSwifter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCDC22F6B1570018110B /* OhSwifter.swift */; };
 		BE51DCDF22F6B3FD0018110B /* UILabel+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCDE22F6B3FD0018110B /* UILabel+Oh.swift */; };
 		BE51DCE122F6BF000018110B /* UIView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCE022F6BF000018110B /* UIView+Oh.swift */; };
 		BE571E932317E227002C2539 /* OhSwifterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE571E922317E227002C2539 /* OhSwifterTests.swift */; };
@@ -138,6 +139,7 @@
 		BE0CD53B231FB0AF00D74EFE /* SafeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeCollection.swift; sourceTree = "<group>"; };
 		BE44D2962321FC7E00F6D186 /* UIPickerView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPickerView+Oh.swift"; sourceTree = "<group>"; };
 		BE44D2982322002A00F6D186 /* UITextView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Oh.swift"; sourceTree = "<group>"; };
+		BE44D29A2322021700F6D186 /* UINavigationController+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Oh.swift"; sourceTree = "<group>"; };
 		BE51100A22F706AC00C3A847 /* UIButton+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Oh.swift"; sourceTree = "<group>"; };
 		BE51DCC322F5F0B50018110B /* DispatchQueue+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Ext.swift"; sourceTree = "<group>"; };
 		BE51DCC522F5F1710018110B /* NSAttributedString+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Ext.swift"; sourceTree = "<group>"; };
@@ -146,7 +148,7 @@
 		BE51DCCD22F5F53A0018110B /* ScreenRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRatio.swift; sourceTree = "<group>"; };
 		BE51DCCF22F5F6730018110B /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		BE51DCD222F5F6EC0018110B /* CGSize+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Ext.swift"; sourceTree = "<group>"; };
-		BE51DCDC22F6B1570018110B /* OhConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhConfigurator.swift; sourceTree = "<group>"; };
+		BE51DCDC22F6B1570018110B /* OhSwifter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhSwifter.swift; sourceTree = "<group>"; };
 		BE51DCDE22F6B3FD0018110B /* UILabel+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Oh.swift"; sourceTree = "<group>"; };
 		BE51DCE022F6BF000018110B /* UIView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Oh.swift"; sourceTree = "<group>"; };
 		BE571E902317E227002C2539 /* OhSwifterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OhSwifterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -344,12 +346,13 @@
 		BE51DCDB22F6B10B0018110B /* OhConfigurator */ = {
 			isa = PBXGroup;
 			children = (
-				BE51DCDC22F6B1570018110B /* OhConfigurator.swift */,
+				BE51DCDC22F6B1570018110B /* OhSwifter.swift */,
 				BE51DCE022F6BF000018110B /* UIView+Oh.swift */,
 				BE51DCDE22F6B3FD0018110B /* UILabel+Oh.swift */,
 				BE51100A22F706AC00C3A847 /* UIButton+Oh.swift */,
 				BEBB7DF122FDB99300189C72 /* UITextField+Oh.swift */,
 				BEBB7DE322FDA65A00189C72 /* UIViewController+Oh.swift */,
+				BE44D29A2322021700F6D186 /* UINavigationController+Oh.swift */,
 				BE98505D22FB226D007D2A47 /* UINavigationBar+Oh.swift */,
 				BE98506122FB242A007D2A47 /* UIScrollView+Oh.swift */,
 				BE98506522FB26E6007D2A47 /* UITableView+Oh.swift */,
@@ -574,9 +577,10 @@
 				BEBB7DE422FDA65A00189C72 /* UIViewController+Oh.swift in Sources */,
 				BE44D2972321FC7E00F6D186 /* UIPickerView+Oh.swift in Sources */,
 				BE98506422FB2672007D2A47 /* UIStackView+Oh.swift in Sources */,
+				BE44D29B2322021700F6D186 /* UINavigationController+Oh.swift in Sources */,
 				BE51DCD022F5F6730018110B /* PaddingLabel.swift in Sources */,
 				BE04557022EE00AF00255267 /* URL+Ext.swift in Sources */,
-				BE51DCDD22F6B1570018110B /* OhConfigurator.swift in Sources */,
+				BE51DCDD22F6B1570018110B /* OhSwifter.swift in Sources */,
 				BE51DCCE22F5F53A0018110B /* ScreenRatio.swift in Sources */,
 				BE51DCC422F5F0B50018110B /* DispatchQueue+Ext.swift in Sources */,
 				BE51DCCB22F5F4810018110B /* SafeArea+iOS10+Ext.swift in Sources */,
