@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol UserDefaultsSettable {
+public protocol UserDefaultsSettable {
     associatedtype defaultKeys: RawRepresentable
 }
 
-extension UserDefaultsSettable where defaultKeys.RawValue == String {
+public extension UserDefaultsSettable where defaultKeys.RawValue == String {
     
     // Int
     
