@@ -31,4 +31,34 @@ extension OhSwifter where Base: UITextView {
         base.textColor = color
         return self
     }
+    
+    @discardableResult
+    func text(_ text: String) -> OhSwifter {
+        base.text = text
+        return self
+    }
+    
+    @discardableResult
+    func isEditable(_ flag: Bool) -> OhSwifter {
+        base.isEditable = flag
+        return self
+    }
+    
+    @discardableResult
+    func isScrollEnabled(_ flag: Bool) -> OhSwifter {
+        base.isScrollEnabled = flag
+        return self
+    }
+    
+    @discardableResult
+    func sizeThatFits(_ size: CGSize) -> OhSwifter {
+        base.sizeThatFits(size)
+        return self
+    }
+    
+    @discardableResult
+    func textAlignment(_ textAlignment: NSTextAlignment) -> OhSwifter {
+        base.textAlignment = textAlignment
+        return self
+    }
 }
