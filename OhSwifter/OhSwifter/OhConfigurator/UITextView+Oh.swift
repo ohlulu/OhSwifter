@@ -6,7 +6,7 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
-extension OhSwifter where Base: UITextView {
+public extension OhSwifter where Base: UITextView {
     @discardableResult
     func font(_ font: UIFont) -> OhSwifter {
         base.font = font
