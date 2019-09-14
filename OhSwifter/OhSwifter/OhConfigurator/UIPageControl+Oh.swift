@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension OhSwifter where Base: UIPageControl {
+public extension OhSwifter where Base: UIPageControl {
     
     @discardableResult
     func numberOfPages(_ number: Int) -> OhSwifter {
@@ -31,6 +31,12 @@ extension OhSwifter where Base: UIPageControl {
     @discardableResult
     func currentPage(_ index: Int) -> OhSwifter {
         base.currentPage = index
+        return self
+    }
+    
+    @discardableResult
+    func hidesForSinglePage(_ flag: Bool) -> OhSwifter {
+        base.hidesForSinglePage = flag
         return self
     }
 }
