@@ -48,6 +48,12 @@ public extension OhSwifter where Base: UITextField {
     }
     
     @discardableResult
+    func attributedPlaceholder(_ text: String, attribute: [NSAttributedString.Key: Any]) -> OhSwifter {
+        base.attributedPlaceholder = NSAttributedString(string: text, attributes: attribute)
+        return self
+    }
+    
+    @discardableResult
     func left(view: UIView?, mode: UITextField.ViewMode) -> OhSwifter {
         base.leftView = view
         base.leftViewMode = mode
