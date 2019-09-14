@@ -35,6 +35,7 @@
 		BE04556E22EE00AF00255267 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04556522EE00AF00255267 /* String+Ext.swift */; };
 		BE04556F22EE00AF00255267 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04556622EE00AF00255267 /* Array+Ext.swift */; };
 		BE04557022EE00AF00255267 /* URL+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04556722EE00AF00255267 /* URL+Ext.swift */; };
+		BE04A930232CD1A5001C73AF /* UIPageControl+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04A92F232CD1A5001C73AF /* UIPageControl+Oh.swift */; };
 		BE0CD53C231FB0AF00D74EFE /* SafeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CD53B231FB0AF00D74EFE /* SafeCollection.swift */; };
 		BE44D2972321FC7E00F6D186 /* UIPickerView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44D2962321FC7E00F6D186 /* UIPickerView+Oh.swift */; };
 		BE44D2992322002A00F6D186 /* UITextView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44D2982322002A00F6D186 /* UITextView+Oh.swift */; };
@@ -136,6 +137,7 @@
 		BE04556522EE00AF00255267 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		BE04556622EE00AF00255267 /* Array+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
 		BE04556722EE00AF00255267 /* URL+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Ext.swift"; sourceTree = "<group>"; };
+		BE04A92F232CD1A5001C73AF /* UIPageControl+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Oh.swift"; sourceTree = "<group>"; };
 		BE0CD53B231FB0AF00D74EFE /* SafeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeCollection.swift; sourceTree = "<group>"; };
 		BE44D2962321FC7E00F6D186 /* UIPickerView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPickerView+Oh.swift"; sourceTree = "<group>"; };
 		BE44D2982322002A00F6D186 /* UITextView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Oh.swift"; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 				BE44D2962321FC7E00F6D186 /* UIPickerView+Oh.swift */,
 				BEC896C922FEACD300363117 /* UISwitch+Oh.swift */,
 				BE44D2982322002A00F6D186 /* UITextView+Oh.swift */,
+				BE04A92F232CD1A5001C73AF /* UIPageControl+Oh.swift */,
 			);
 			path = OhConfigurator;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				BE04556B22EE00AF00255267 /* Date+Ext.swift in Sources */,
 				BE04554F22EE00A400255267 /* UIScreen+Ext.swift in Sources */,
 				BE98506622FB26E6007D2A47 /* UITableView+Oh.swift in Sources */,
+				BE04A930232CD1A5001C73AF /* UIPageControl+Oh.swift in Sources */,
 				BE04555822EE00A400255267 /* UIStackView+Ext.swift in Sources */,
 				BE04556C22EE00AF00255267 /* FileMamager+Ext.swift in Sources */,
 				BEBB7DE822FDA97800189C72 /* UICollectionView+Oh.swift in Sources */,
