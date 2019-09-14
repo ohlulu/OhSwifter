@@ -33,4 +33,10 @@ public extension OhSwifter where Base: UIPageControl {
         base.currentPage = index
         return self
     }
+    
+    @discardableResult
+    func hidesForSinglePage(_ flag: Bool) -> OhSwifter {
+        base.hidesForSinglePage = flag
+        return self
+    }
 }
