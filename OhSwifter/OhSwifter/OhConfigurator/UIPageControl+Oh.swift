@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension OhSwifter where Base: UIPageControl {
+public extension OhSwifter where Base: UIPageControl {
     
     @discardableResult
     func numberOfPages(_ number: Int) -> OhSwifter {
