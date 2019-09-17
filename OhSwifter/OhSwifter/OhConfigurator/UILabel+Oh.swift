@@ -58,4 +58,28 @@ public extension OhSwifter where Base: UILabel {
         base.isEnabled = isEnabled
         return self
     }
+    
+    @discardableResult
+    func attribute(specialString: String, attribute specialAttribute: [NSAttributedString.Key: Any])
+        -> OhSwifter {
+            guard let text = base.text else {
+                return self
+            }
+            var baseAtt = [NSAttributedString.Key: Any]()
+            if let font = base.font {
+                baseAtt[.font] = font
+            }
+            
+            if let textColor = base.textColor {
+                baseAtt[.foregroundColor] = textColor
+            }
+            
+            let att = NSAttributedString.creat(baseText: text,
+                                               baseAttribute: baseAtt,
+                                               specialText: specialString,
+                                               specialAttribute: specialAttribute)
+            
+            base.attributedText = att
+            return self
+    }
 }
