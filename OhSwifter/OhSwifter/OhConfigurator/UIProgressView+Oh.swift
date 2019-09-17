@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension OhSwifter where Base: UIProgressView {
+public extension OhSwifter where Base: UIProgressView {
     
     @discardableResult
     func progressTintColor(_ color: UIColor) -> OhSwifter {
