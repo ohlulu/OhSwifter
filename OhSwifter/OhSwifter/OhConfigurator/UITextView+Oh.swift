@@ -61,4 +61,23 @@ public extension OhSwifter where Base: UITextView {
         base.textAlignment = textAlignment
         return self
     }
+    
+    @discardableResult
+    func attributeString(_ attStr: NSAttributedString) -> OhSwifter {
+        base.attributedText = attStr
+        return self
+    }
+    
+    @discardableResult
+    func linkTextAttributes(_ att: [NSAttributedString.Key: Any]) -> OhSwifter {
+        base.linkTextAttributes = att
+        return self
+    }
+    
+    
+    @discardableResult
+    func typingAttributes(_ att: [NSAttributedString.Key: Any]) -> OhSwifter {
+        base.typingAttributes = att
+        return self
+    }
 }

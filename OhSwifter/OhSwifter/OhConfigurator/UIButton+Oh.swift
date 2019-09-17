@@ -51,4 +51,22 @@ public extension OhSwifter where Base: UIButton {
         base.setTitleColor(color, for: state)
         return self
     }
+    
+    @discardableResult
+    func isEnabled(_ isEnabled: Bool) -> OhSwifter {
+        base.isEnabled = isEnabled
+        return self
+    }
+    
+    @discardableResult
+    func isSelected(_ isSelected: Bool) -> OhSwifter {
+        base.isSelected = isSelected
+        return self
+    }
+    
+    @discardableResult
+    func isHighlighted(_ isHighlighted: Bool) -> OhSwifter {
+        base.isHighlighted = isHighlighted
+        return self
+    }
 }
