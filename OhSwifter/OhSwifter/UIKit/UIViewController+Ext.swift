@@ -17,28 +17,6 @@ public extension UIViewController {
     @objc func present(_ vc: UIViewController, animated: Bool = true, _ completion: Completion? = nil) {
         present(vc, animated: animated, completion: completion)
     }
-    
-    @objc func push(_ vc: UIViewController, animated: Bool = true, _ completion: Completion? = nil) {
-        navigationController?.pushViewController(vc, animated: animated)
-        
-        guard animated, let _completion = completion, let coordinator = transitionCoordinator else {
-            DispatchQueue.main.async { completion?() }
-            return
-        }
-        
-        coordinator.animate(alongsideTransition: nil) { _ in _completion() }
-    }
-    
-    @objc func popViewController(animated: Bool, completion: Completion? = nil) {
-        navigationController?.popViewController(animated: animated)
-        
-        guard animated, let _completion = completion, let coordinator = transitionCoordinator else {
-            DispatchQueue.main.async { completion?() }
-            return
-        }
-        
-        coordinator.animate(alongsideTransition: nil) { _ in _completion() }
-    }
 }
 
 public extension UIViewController {
