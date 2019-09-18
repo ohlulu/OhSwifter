@@ -9,7 +9,7 @@
 public extension UINavigationController {
   
     @objc func push(_ vc: UIViewController, animated: Bool = true, _ completion: Completion? = nil) {
-        navigationController?.pushViewController(vc, animated: animated)
+        pushViewController(vc, animated: animated)
         
         guard animated, let _completion = completion, let coordinator = transitionCoordinator else {
             DispatchQueue.main.async { completion?() }
@@ -20,7 +20,7 @@ public extension UINavigationController {
     }
     
     @objc func popViewController(animated: Bool = true, completion: Completion? = nil) {
-        navigationController?.popViewController(animated: animated)
+        popViewController(animated: animated)
         
         guard animated, let _completion = completion, let coordinator = transitionCoordinator else {
             DispatchQueue.main.async { completion?() }
