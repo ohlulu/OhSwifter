@@ -30,7 +30,9 @@ class ExtensionTests: XCTestCase {
         XCTAssert(string[7..<8] == "8")
         XCTAssert(string[-1...11] == "123456789")
         XCTAssert(string[-1...2] == "123")
-
     }
 
+    func test_navigation_controller() {
+        
+    }
 }
