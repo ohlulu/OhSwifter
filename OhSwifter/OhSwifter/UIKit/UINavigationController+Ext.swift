@@ -6,7 +6,7 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
-extension UINavigationController {
+public extension UINavigationController {
   
     @objc func push(_ vc: UIViewController, animated: Bool = true, _ completion: Completion? = nil) {
         navigationController?.pushViewController(vc, animated: animated)
