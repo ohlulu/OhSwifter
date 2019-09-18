@@ -14,15 +14,8 @@ public extension OhSwifter where Base: UITextView {
     }
     
     @discardableResult
-    func font(_ size: CGFloat, weight: UIFont.Weight) -> OhSwifter {
+    func font(size: CGFloat, weight: UIFont.Weight) -> OhSwifter {
         base.font = UIFont.systemFont(ofSize: size, weight: weight)
-        return self
-    }
-    
-    @discardableResult
-    func font(_ font: UIFont, color: UIColor) -> OhSwifter {
-        base.font = font
-        base.textColor = color
         return self
     }
     

@@ -30,7 +30,7 @@ public extension OhSwifter where Base: UITextField {
     }
     
     @discardableResult
-    func font(_ size: CGFloat, weight: UIFont.Weight) -> OhSwifter {
+    func font(size: CGFloat, weight: UIFont.Weight) -> OhSwifter {
         base.font = UIFont.systemFont(ofSize: size, weight: weight)
         return self
     }
