@@ -133,7 +133,13 @@ public extension OhSwifter where Base: UITextField {
     
     @discardableResult
     func keyboardAppearance(_ mode: UIKeyboardAppearance) -> OhSwifter {
-        base.keyboardAppearance = .dark
+        base.keyboardAppearance = mode
+        return self
+    }
+    
+    @discardableResult
+    func inputAccessoryView(_ view: UIView) -> OhSwifter {
+        base.inputAccessoryView = view
         return self
     }
 }

@@ -23,7 +23,6 @@ public extension OhSwifter where Base: UIButton {
     @discardableResult
     func image(_ image: UIImage, for state: UIControl.State) -> OhSwifter {
         base.setImage(image, for: state)
-        base.setTitle(nil, for: state)
         return self
     }
     
@@ -35,7 +34,6 @@ public extension OhSwifter where Base: UIButton {
     
     @discardableResult
     func title(_ title: String, for state: UIControl.State) -> OhSwifter {
-        base.setImage(nil, for: state)
         base.setTitle(title, for: state)
         return self
     }
