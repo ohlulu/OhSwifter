@@ -55,7 +55,6 @@ class ViewController: UIViewController {
     
     
     private let ohLabel = UILabel().oh
-        .font(UIFont.systemFont(ofSize: 12, weight: .medium), color: .gray)
         .textAlignment(.left)
         .text("Label Wording")
         .numberOfLines(0)
