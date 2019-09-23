@@ -7,3 +7,22 @@
 //
 
 import UIKit
+
+public extension UIView {
+    
+    func fadOut(duration: TimeInterval = 0.25,
+                delay: TimeInterval = 0,
+                _ completion: ((Bool) -> Void)? = nil) {
+        UIView.animate(withDuration: duration, delay: delay, animations: {
+            self.alpha = 0
+        }, completion: completion)
+    }
+    
+    func fadin(duration: TimeInterval = 0.25,
+                delay: TimeInterval = 0,
+                _ completion: ((Bool) -> Void)? = nil) {
+        UIView.animate(withDuration: duration, delay: delay, animations: {
+            self.alpha = 1
+        }, completion: completion)
+    }
+}
