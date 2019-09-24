@@ -173,4 +173,16 @@ public extension OhSwifter where Base: UIView {
         view.addSubview(base)
         return self
     }
+    
+    @discardableResult
+    func setContentHuggingPriority(_ priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) -> OhSwifter {
+        base.setContentHuggingPriority(priority, for: axis)
+        return self
+    }
+    
+    @discardableResult
+    func setContentCompressionResistancePriority(_ priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) -> OhSwifter {
+        base.setContentCompressionResistancePriority(priority, for: axis)
+        return self
+    }
 }
