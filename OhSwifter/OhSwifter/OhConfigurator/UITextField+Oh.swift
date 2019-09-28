@@ -138,6 +138,12 @@ public extension OhSwifter where Base: UITextField {
     }
     
     @discardableResult
+    func inputView(_ view: UIView) -> OhSwifter {
+        base.inputView = view
+        return self
+    }
+    
+    @discardableResult
     func inputAccessoryView(_ view: UIView) -> OhSwifter {
         base.inputAccessoryView = view
         return self
