@@ -73,4 +73,16 @@ public extension OhSwifter where Base: UITextView {
         base.typingAttributes = att
         return self
     }
+    
+    @discardableResult
+    func inputView(_ view: UIView) -> OhSwifter {
+        base.inputView = view
+        return self
+    }
+    
+    @discardableResult
+    func inputAccessoryView(_ view: UIView) -> OhSwifter {
+        base.inputAccessoryView = view
+        return self
+    }
 }
