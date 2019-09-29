@@ -26,8 +26,23 @@ public extension OhSwifter where Base: UIStackView {
         return self
     }
     
-    @discardableResult func spacing(_ spacing: CGFloat) -> OhSwifter {
+    @discardableResult
+    func spacing(_ spacing: CGFloat) -> OhSwifter {
         base.spacing = spacing
+        return self
+    }
+    
+    @discardableResult
+    func addArrangedSubview(_ view: UIView) -> OhSwifter {
+        base.addArrangedSubview(view)
+        return self
+    }
+    
+    @discardableResult
+    func addArrangedSubviews(_ views: [UIView]) -> OhSwifter {
+        for view in views {
+            base.addArrangedSubview(view)
+        }
         return self
     }
     
