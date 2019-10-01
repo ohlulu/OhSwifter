@@ -77,6 +77,7 @@
 		BEC896CA22FEACD300363117 /* UISwitch+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC896C922FEACD300363117 /* UISwitch+Oh.swift */; };
 		BEC896CC22FEB21D00363117 /* UISwitch+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC896CB22FEB21D00363117 /* UISwitch+Ext.swift */; };
 		BEE4A30D22F5B5B700C0F81D /* Float+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE4A30C22F5B5B700C0F81D /* Float+Ext.swift */; };
+		BEE7C71A23439F6100CE81BE /* UIEdgeInsets+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE7C71923439F6100CE81BE /* UIEdgeInsets+Ext.swift */; };
 		BEECBF70230C4B1C00CFB393 /* CGRect+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEECBF6F230C4B1C00CFB393 /* CGRect+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -185,6 +186,7 @@
 		BEC896C922FEACD300363117 /* UISwitch+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Oh.swift"; sourceTree = "<group>"; };
 		BEC896CB22FEB21D00363117 /* UISwitch+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Ext.swift"; sourceTree = "<group>"; };
 		BEE4A30C22F5B5B700C0F81D /* Float+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Ext.swift"; sourceTree = "<group>"; };
+		BEE7C71923439F6100CE81BE /* UIEdgeInsets+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Ext.swift"; sourceTree = "<group>"; };
 		BEECBF6F230C4B1C00CFB393 /* CGRect+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -328,6 +330,7 @@
 				BE51DCD222F5F6EC0018110B /* CGSize+Ext.swift */,
 				BEECBF6F230C4B1C00CFB393 /* CGRect+Ext.swift */,
 				BE0CD53B231FB0AF00D74EFE /* SafeCollection.swift */,
+				BEE7C71923439F6100CE81BE /* UIEdgeInsets+Ext.swift */,
 			);
 			path = Fundation;
 			sourceTree = "<group>";
@@ -596,6 +599,7 @@
 				BEBB7DE822FDA97800189C72 /* UICollectionView+Oh.swift in Sources */,
 				BE04555022EE00A400255267 /* UICollectionView+Ext.swift in Sources */,
 				BEBB7DE422FDA65A00189C72 /* UIViewController+Oh.swift in Sources */,
+				BEE7C71A23439F6100CE81BE /* UIEdgeInsets+Ext.swift in Sources */,
 				BE44D2972321FC7E00F6D186 /* UIPickerView+Oh.swift in Sources */,
 				BE98506422FB2672007D2A47 /* UIStackView+Oh.swift in Sources */,
 				BE44D29B2322021700F6D186 /* UINavigationController+Oh.swift in Sources */,
