@@ -9,12 +9,32 @@
 import UIKit
 
 public extension UICollectionView {
+    
     func register<T: UICollectionViewCell> (cell: T.Type?) {
         register(T.self, forCellWithReuseIdentifier: String(describing: T.self))
     }
     
     func dequeueReuseableCell<T: UICollectionViewCell>(indexPath: IndexPath) -> T {
         return dequeueReusableCell(withReuseIdentifier: String(describing: T.self), for: indexPath) as! T
+    }
+    
+    enum SectionType {
+        case header
+        case footer
+        var parameter: String {
+            switch self {
+            case .header: return UICollectionView.elementKindSectionHeader
+            case .footer: return UICollectionView.elementKindSectionFooter
+            }
+        }
+    }
+    
+    func register<T: UICollectionViewCell> (cell: T.Type?, kind: SectionType) {
+        register(cell.self, forSupplementaryViewOfKind: kind.parameter, withReuseIdentifier: String(describing: T.self))
+    }
+    
+    func dequeueReuseableCell<T: UICollectionViewCell>(indexPath: IndexPath, ofKind kind: SectionType) -> T {
+        return dequeueReusableSupplementaryView(ofKind: kind.parameter, withReuseIdentifier: String(describing: T.self), for: indexPath) as! T
     }
     
     func reloadData(_ completion: @escaping Completion) {
