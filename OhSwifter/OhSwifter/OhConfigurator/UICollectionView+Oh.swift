@@ -28,13 +28,13 @@ public extension OhSwifter where Base: UICollectionView {
     }
     
     @discardableResult
-    func regiter<T>(_ cell: T.Type) -> OhSwifter where T: UICollectionViewCell {
+    func register<T>(_ cell: T.Type) -> OhSwifter where T: UICollectionViewCell {
         base.register(cell: cell)
         return self
     }
     
     @discardableResult
-    func regiter<T>(_ cell: T.Type, kind: UICollectionView.SectionType) -> OhSwifter where T: UICollectionViewCell {
+    func register<T>(_ cell: T.Type, kind: UICollectionView.SectionType) -> OhSwifter where T: UICollectionViewCell {
         base.register(cell: cell, kind: kind)
         return self
     }
