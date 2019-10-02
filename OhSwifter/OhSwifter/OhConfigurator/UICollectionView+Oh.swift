@@ -34,7 +34,7 @@ public extension OhSwifter where Base: UICollectionView {
     }
     
     @discardableResult
-    func register<T>(_ cell: T.Type, kind: UICollectionView.SectionType) -> OhSwifter where T: UICollectionViewCell {
+    func register(_ cell: AnyClass.Type, kind: UICollectionView.SectionType) -> OhSwifter {
         base.register(cell: cell, kind: kind)
         return self
     }

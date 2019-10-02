@@ -29,8 +29,8 @@ public extension UICollectionView {
         }
     }
     
-    func register<T: UICollectionViewCell> (cell: T.Type?, kind: SectionType) {
-        register(cell.self, forSupplementaryViewOfKind: kind.parameter, withReuseIdentifier: String(describing: T.self))
+    func register(cell: AnyClass.Type?, kind: SectionType) {
+        register(cell.self, forSupplementaryViewOfKind: kind.parameter, withReuseIdentifier: String(describing: cell.self))
     }
     
     func dequeueReuseableCell<T: UICollectionViewCell>(indexPath: IndexPath, ofKind kind: SectionType) -> T {
