@@ -1,5 +1,5 @@
 //
-//  ExtensionTests.swift
+//  StdlibTests.swift
 //  OhSwifterTests
 //
 //  Created by ohlulu on 2019/9/17.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class ExtensionTests: XCTestCase {
+class StdlibTests: XCTestCase {
 
     override func setUp() {
         
@@ -32,7 +32,23 @@ class ExtensionTests: XCTestCase {
         XCTAssert(string[-1...2] == "123")
     }
 
-    func test_navigation_controller() {
+    func test_UIEdgInsets() {
+        var inset: UIEdgeInsets = .init(edge: 10)
+        XCTAssert(inset.top == 10)
+        XCTAssert(inset.bottom == 10)
+        XCTAssert(inset.left == 10)
+        XCTAssert(inset.right == 10)
         
+        inset = .init(horizontalEdge: 20)
+        XCTAssert(inset.top == 0)
+        XCTAssert(inset.bottom == 0)
+        XCTAssert(inset.left == 20)
+        XCTAssert(inset.right == 20)
+        
+        inset = .init(verticalEdge: 30)
+        XCTAssert(inset.top == 30)
+        XCTAssert(inset.bottom == 30)
+        XCTAssert(inset.left == 0)
+        XCTAssert(inset.right == 0)
     }
 }
