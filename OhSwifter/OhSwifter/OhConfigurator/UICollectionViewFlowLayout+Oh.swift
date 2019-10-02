@@ -54,5 +54,11 @@ public extension OhSwifter where Base: UICollectionViewFlowLayout {
         base.scrollDirection = direction
         return self
     }
+    
+    @discardableResult
+    func headerReferenceSize(_ size: CGSize) -> OhSwifter {
+        base.headerReferenceSize = size
+        return self
+    }
 }
 
