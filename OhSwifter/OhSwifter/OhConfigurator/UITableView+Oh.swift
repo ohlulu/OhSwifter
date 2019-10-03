@@ -81,7 +81,7 @@ public extension OhSwifter where Base: UITableView {
     }
     
     @discardableResult
-    func height(_ height: CGFloat, for sectionType: SectionType) -> OhSwifter {
+    func rawHeight(_ height: CGFloat, for sectionType: SectionType) -> OhSwifter {
         switch sectionType {
         case .header:
             base.sectionHeaderHeight = height
@@ -94,7 +94,7 @@ public extension OhSwifter where Base: UITableView {
     }
     
     @discardableResult
-    func footerView(_ view: UIView, for sectionType: SectionType) -> OhSwifter {
+    func tableView(_ sectionType: SectionType, view: UIView) -> OhSwifter {
         switch sectionType {
         case .header:
             base.tableHeaderView = view
