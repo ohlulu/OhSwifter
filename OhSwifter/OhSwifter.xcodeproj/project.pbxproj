@@ -42,6 +42,7 @@
 		BE04A9512330DF98001C73AF /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04A9502330DF98001C73AF /* UINavigationController+Ext.swift */; };
 		BE04A95523311B3E001C73AF /* StdlibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04A95423311B3E001C73AF /* StdlibTests.swift */; };
 		BE0CD53C231FB0AF00D74EFE /* SafeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CD53B231FB0AF00D74EFE /* SafeCollection.swift */; };
+		BE2DDD392344AB3300623A91 /* TextSizeUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DDD382344AB3300623A91 /* TextSizeUtility.swift */; };
 		BE44D2972321FC7E00F6D186 /* UIPickerView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44D2962321FC7E00F6D186 /* UIPickerView+Oh.swift */; };
 		BE44D2992322002A00F6D186 /* UITextView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44D2982322002A00F6D186 /* UITextView+Oh.swift */; };
 		BE44D29B2322021700F6D186 /* UINavigationController+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44D29A2322021700F6D186 /* UINavigationController+Oh.swift */; };
@@ -150,6 +151,7 @@
 		BE04A9502330DF98001C73AF /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
 		BE04A95423311B3E001C73AF /* StdlibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StdlibTests.swift; sourceTree = "<group>"; };
 		BE0CD53B231FB0AF00D74EFE /* SafeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeCollection.swift; sourceTree = "<group>"; };
+		BE2DDD382344AB3300623A91 /* TextSizeUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSizeUtility.swift; sourceTree = "<group>"; };
 		BE44D2962321FC7E00F6D186 /* UIPickerView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPickerView+Oh.swift"; sourceTree = "<group>"; };
 		BE44D2982322002A00F6D186 /* UITextView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Oh.swift"; sourceTree = "<group>"; };
 		BE44D29A2322021700F6D186 /* UINavigationController+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Oh.swift"; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 		BE04550E22EDFAC000255267 /* OhSwifter */ = {
 			isa = PBXGroup;
 			children = (
+				BE2DDD372344AB1C00623A91 /* Utility */,
 				BE51DCDB22F6B10B0018110B /* OhConfigurator */,
 				BE04555E22EE00AF00255267 /* Fundation */,
 				BE04553A22EE00A400255267 /* UIKit */,
@@ -333,6 +336,14 @@
 				BEE7C71923439F6100CE81BE /* UIEdgeInsets+Ext.swift */,
 			);
 			path = Fundation;
+			sourceTree = "<group>";
+		};
+		BE2DDD372344AB1C00623A91 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BE2DDD382344AB3300623A91 /* TextSizeUtility.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		BE51DCC922F5F33A0018110B /* SnapKit+Ext */ = {
@@ -608,6 +619,7 @@
 				BE51DCDD22F6B1570018110B /* OhSwifter.swift in Sources */,
 				BE51DCCE22F5F53A0018110B /* ScreenRatio.swift in Sources */,
 				BE51DCC422F5F0B50018110B /* DispatchQueue+Ext.swift in Sources */,
+				BE2DDD392344AB3300623A91 /* TextSizeUtility.swift in Sources */,
 				BE51DCCB22F5F4810018110B /* SafeArea+iOS10+Ext.swift in Sources */,
 				BEC896CA22FEACD300363117 /* UISwitch+Oh.swift in Sources */,
 				BE04555522EE00A400255267 /* UIScrollView+Ext.swift in Sources */,
