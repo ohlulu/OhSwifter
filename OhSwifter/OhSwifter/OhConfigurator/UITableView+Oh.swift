@@ -63,19 +63,45 @@ public extension OhSwifter where Base: UITableView {
         return self
     }
     
-    enum EstimatedSectionView {
+    enum SectionType {
         case header, footer, row
     }
     
     @discardableResult
-    func estimatedSectionHeight(_ height: CGFloat, for sectionView: EstimatedSectionView) -> OhSwifter {
-        switch sectionView {
+    func estimatedHeight(_ height: CGFloat, for sectionType: SectionType) -> OhSwifter {
+        switch sectionType {
         case .header:
             base.estimatedRowHeight = height
         case .footer:
             base.estimatedSectionHeaderHeight = height
         case .row:
             base.estimatedSectionFooterHeight = height
+        }
+        return self
+    }
+    
+    @discardableResult
+    func height(_ height: CGFloat, for sectionType: SectionType) -> OhSwifter {
+        switch sectionType {
+        case .header:
+            base.sectionHeaderHeight = height
+        case .footer:
+            base.sectionFooterHeight = height
+        case .row:
+            base.rowHeight = height
+        }
+        return self
+    }
+    
+    @discardableResult
+    func footerView(_ view: UIView, for sectionType: SectionType) -> OhSwifter {
+        switch sectionType {
+        case .header:
+            base.tableHeaderView = view
+        case .footer:
+            base.tableFooterView = view
+        case .row:
+            break
         }
         return self
     }
