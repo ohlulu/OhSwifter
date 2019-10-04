@@ -29,11 +29,11 @@ public extension UICollectionView {
         }
     }
     
-    func register(cell: AnyClass.Type?, kind: SectionType) {
-        register(cell.self, forSupplementaryViewOfKind: kind.parameter, withReuseIdentifier: String(describing: cell.self))
+    func registerSupplementaryView(_ view: AnyClass, kind: SectionType) {
+        register(view.self, forSupplementaryViewOfKind: kind.parameter, withReuseIdentifier: String(describing: view.self))
     }
     
-    func dequeueReuseableCell<T: UICollectionViewCell>(indexPath: IndexPath, ofKind kind: SectionType) -> T {
+    func dequeueReuseableSupplementaryView<T: UICollectionReusableView>(indexPath: IndexPath, ofKind kind: SectionType) -> T {
         return dequeueReusableSupplementaryView(ofKind: kind.parameter, withReuseIdentifier: String(describing: T.self), for: indexPath) as! T
     }
     

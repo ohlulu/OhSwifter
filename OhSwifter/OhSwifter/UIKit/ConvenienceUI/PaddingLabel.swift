@@ -8,9 +8,9 @@
 
 import UIKit
 
-@IBDesignable open class PaddingLabel: UILabel {
+@IBDesignable public class PaddingLabel: UILabel {
     
-    @IBInspectable var inset: UIEdgeInsets = .zero {
+    @IBInspectable public var inset: UIEdgeInsets = .zero {
         didSet {
             topInset = inset.top
             bottomInset = inset.bottom
@@ -19,10 +19,10 @@ import UIKit
         }
     }
     
-    @IBInspectable var topInset: CGFloat = 0.0
-    @IBInspectable var bottomInset: CGFloat = 0.0
-    @IBInspectable var leftInset: CGFloat = 0.0
-    @IBInspectable var rightInset: CGFloat = 0.0
+    @IBInspectable public var topInset: CGFloat = 0.0
+    @IBInspectable public var bottomInset: CGFloat = 0.0
+    @IBInspectable public var leftInset: CGFloat = 0.0
+    @IBInspectable public var rightInset: CGFloat = 0.0
     
     override open func drawText(in rect: CGRect) {
         let insets = UIEdgeInsets(top: topInset, left: leftInset, bottom: bottomInset, right: rightInset)

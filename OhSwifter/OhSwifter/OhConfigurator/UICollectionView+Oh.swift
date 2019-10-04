@@ -34,8 +34,8 @@ public extension OhSwifter where Base: UICollectionView {
     }
     
     @discardableResult
-    func register(_ cell: AnyClass.Type, kind: UICollectionView.SectionType) -> OhSwifter {
-        base.register(cell: cell, kind: kind)
+    func registerSupplementaryView(_ view: AnyClass, kind: UICollectionView.SectionType) -> OhSwifter {
+        base.registerSupplementaryView(view, kind: kind)
         return self
     }
     
