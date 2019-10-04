@@ -60,5 +60,17 @@ public extension OhSwifter where Base: UICollectionViewFlowLayout {
         base.headerReferenceSize = size
         return self
     }
+    
+    @discardableResult
+    func sectionHeadersPinToVisibleBounds(_ flag: Bool) -> OhSwifter {
+        base.sectionHeadersPinToVisibleBounds = flag
+        return self
+    }
+    
+    @discardableResult
+    func sectionFootersPinToVisibleBounds(_ flag: Bool) -> OhSwifter {
+        base.sectionFootersPinToVisibleBounds = flag
+        return self
+    }
 }
 

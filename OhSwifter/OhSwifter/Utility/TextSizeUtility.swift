@@ -8,13 +8,13 @@
 
 import UIKit
 
-extension String {
+public extension String {
     func textSize(withFont font: UIFont , maxSize: CGSize) -> CGSize {
         return self.boundingRect(with: maxSize, options: [.usesLineFragmentOrigin], attributes: [.font : font], context: nil).size
     }
 }
 
-extension UILabel {
+public extension UILabel {
     func size(withMaxSize maxSize: CGSize) -> CGSize {
         return (text ?? "").textSize(withFont: font, maxSize: maxSize)
     }
