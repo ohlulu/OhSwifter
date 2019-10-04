@@ -8,7 +8,7 @@
 
 import UIKit
 
-@available(iOS 11, *)
+//@available(iOS 11, *)
 private struct Keys {
     static var enableHeightToFit: UInt8 = 0
     static var scrollViewObserverObj: UInt8 = 0
@@ -16,7 +16,7 @@ private struct Keys {
     static var maximunHeightToFit: UInt8 = 0
 }
 
-@available(iOS 11, *)
+//@available(iOS 11, *)
 public extension UIScrollView {
     
     @discardableResult
@@ -67,7 +67,7 @@ public extension UIScrollView {
     }
 }
 
-@available(iOS 11, *)
+//@available(iOS 11, *)
 fileprivate extension UIScrollView {
     func addObserver() {
         scrollViewObserverObj = observe(\.contentSize) { [weak self] (obj, change) in

@@ -151,6 +151,12 @@ public extension OhSwifter where Base: UIScrollView {
         base.refreshControl = refreshControl
         return self
     }
+    
+    @discardableResult
+    func enableHeightToFit(_ flag: Bool) -> OhSwifter {
+        base.enableHeightToFit = flag
+        return self
+    }
 }
 
 
