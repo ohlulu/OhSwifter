@@ -85,4 +85,10 @@ public extension OhSwifter where Base: UITextView {
         base.inputAccessoryView = view
         return self
     }
+    
+    @discardableResult
+    func returnKeyType(_ type: UIReturnKeyType) -> OhSwifter {
+        base.returnKeyType = type
+        return self
+    }
 }
