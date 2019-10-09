@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIView {
     
-    func fadOut(duration: TimeInterval = 0.25,
+    func fadeOut(duration: TimeInterval = 0.25,
                 delay: TimeInterval = 0,
                 _ completion: ((Bool) -> Void)? = nil) {
         UIView.animate(withDuration: duration, delay: delay, animations: {
@@ -18,7 +18,7 @@ public extension UIView {
         }, completion: completion)
     }
     
-    func fadin(duration: TimeInterval = 0.25,
+    func fadein(duration: TimeInterval = 0.25,
                 delay: TimeInterval = 0,
                 _ completion: ((Bool) -> Void)? = nil) {
         UIView.animate(withDuration: duration, delay: delay, animations: {
