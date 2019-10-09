@@ -78,7 +78,6 @@ fileprivate extension UIScrollView {
             var height = max(obj.contentSize.height, self.minimunHeightToFit)
             
             if let maxHeight = self.maximunHeightToFit {
-                obj.isScrollEnabled = height > maxHeight
                 height = min(maxHeight, height)
             }
             

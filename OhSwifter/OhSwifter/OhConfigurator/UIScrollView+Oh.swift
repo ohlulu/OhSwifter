@@ -157,6 +157,18 @@ public extension OhSwifter where Base: UIScrollView {
         base.enableHeightToFit = flag
         return self
     }
+    
+    @discardableResult
+    func maximunHeightToFit(_ height: CGFloat) -> OhSwifter {
+        base.maximunHeightToFit = height
+        return self
+    }
+    
+    @discardableResult
+    func minimunHeightToFit(_ height: CGFloat) -> OhSwifter {
+        base.minimunHeightToFit = height
+        return self
+    }
 }
 
 
