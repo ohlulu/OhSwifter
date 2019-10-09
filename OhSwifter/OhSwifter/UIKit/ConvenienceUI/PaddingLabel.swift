@@ -37,3 +37,10 @@ import UIKit
     }
 }
 
+public extension OhSwifter where Base == PaddingLabel {
+    @discardableResult
+    func inset(_ edge: UIEdgeInsets) -> OhSwifter {
+        base.inset = edge
+        return self
+    }
+}
