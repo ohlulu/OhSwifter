@@ -20,7 +20,7 @@ class UIPageControlsTests: XCTestCase {
     }
     
     func test_UIPageControl() {
-        var pageConrol = UIPageControl()
+        let pageConrol = UIPageControl()
         pageConrol.oh
             .currentPageIndicatorTintColor(.blue)
         XCTAssertTrue(pageConrol.currentPageIndicatorTintColor == .blue)
