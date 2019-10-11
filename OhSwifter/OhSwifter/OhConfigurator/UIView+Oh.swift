@@ -31,7 +31,7 @@ public extension OhSwifter where Base: UIView {
     
     @discardableResult
     func offsetBy(x: CGFloat, y: CGFloat) -> OhSwifter {
-        base.frame.offsetBy(dx: x, dy: y)
+        base.frame = base.frame.offsetBy(dx: x, dy: y)
         return self
     }
     
