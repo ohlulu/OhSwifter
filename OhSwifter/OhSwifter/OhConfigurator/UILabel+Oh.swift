@@ -67,10 +67,10 @@ public extension OhSwifter where Base: UILabel {
                 baseAtt[.foregroundColor] = textColor
             }
             
-            let att = NSAttributedString.creat(baseText: text,
-                                               baseAttribute: baseAtt,
-                                               specialText: specialString,
-                                               specialAttribute: specialAttribute)
+            let att = NSAttributedString.builder
+                .setBase(text: text, attribute: baseAtt)
+                .setSpecial(text: specialString, attribute: specialAttribute)
+                .build()
             
             base.attributedText = att
             return self
