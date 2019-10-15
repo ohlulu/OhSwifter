@@ -8,6 +8,7 @@
 
 import XCTest
 import OhSwifter
+import WebKit
 
 class OhSwifterTests: XCTestCase {
 
@@ -61,5 +62,35 @@ class OhSwifterTests: XCTestCase {
         pageConrol.oh
             .pageIndicatorTintColor(.black)
         XCTAssertTrue(pageConrol.pageIndicatorTintColor == .black)
+    }
+    
+    func test_WebKit() {
+        
+        let config = WKWebViewConfiguration().oh
+            .injectionMetaAttribute()
+            .done()
+        
+        let webView = WKWebView(frame: .zero, configuration: config).oh
+            .scrollView {
+                $0.oh.scrollEnabled(false)
+                    .showsVerticalIndicator(false)
+            }.done()
+        
+        XCTAssertTrue(webView.scrollView.isScrollEnabled == false)
+        XCTAssertTrue(webView.scrollView.showsVerticalScrollIndicator == false)
+        
+       let injectionSource = """
+            var meta = document.createElement('meta');
+            meta.setAttribute('name', 'viewport');
+            meta.setAttribute('content', 'width=device-width');
+            document.getElementsByTagName('head')[0].appendChild(meta);
+        """
+        let webScript = webView.configuration
+            .userContentController
+            .userScripts
+            .first?
+            .source
+        
+        XCTAssertTrue(webScript == injectionSource)
     }
 }

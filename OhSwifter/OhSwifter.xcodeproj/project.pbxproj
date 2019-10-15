@@ -59,6 +59,9 @@
 		BE51DCE122F6BF000018110B /* UIView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51DCE022F6BF000018110B /* UIView+Oh.swift */; };
 		BE571E932317E227002C2539 /* OhSwifterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE571E922317E227002C2539 /* OhSwifterTests.swift */; };
 		BE571E952317E227002C2539 /* OhSwifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE04550C22EDFAC000255267 /* OhSwifter.framework */; };
+		BE5B7B8D23555CF60007182F /* WKWebView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B7B8C23555CF60007182F /* WKWebView+Oh.swift */; };
+		BE5B7B8F23555DFF0007182F /* WKWebViewConfiguration+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B7B8E23555DFF0007182F /* WKWebViewConfiguration+Oh.swift */; };
+		BE5B7B9123555FE00007182F /* WKPreferences+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5B7B9023555FE00007182F /* WKPreferences+Oh.swift */; };
 		BE61F4602314370B002E643C /* UICollectionViewFlowLayout+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE61F45F2314370B002E643C /* UICollectionViewFlowLayout+Oh.swift */; };
 		BE6FD66722EF417C0003B6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6FD66622EF417C0003B6C6 /* AppDelegate.swift */; };
 		BE6FD66922EF417C0003B6C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6FD66822EF417C0003B6C6 /* ViewController.swift */; };
@@ -165,6 +168,9 @@
 		BE571E902317E227002C2539 /* OhSwifterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OhSwifterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE571E922317E227002C2539 /* OhSwifterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhSwifterTests.swift; sourceTree = "<group>"; };
 		BE571E942317E227002C2539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE5B7B8C23555CF60007182F /* WKWebView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Oh.swift"; sourceTree = "<group>"; };
+		BE5B7B8E23555DFF0007182F /* WKWebViewConfiguration+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebViewConfiguration+Oh.swift"; sourceTree = "<group>"; };
+		BE5B7B9023555FE00007182F /* WKPreferences+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKPreferences+Oh.swift"; sourceTree = "<group>"; };
 		BE61F45F2314370B002E643C /* UICollectionViewFlowLayout+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+Oh.swift"; sourceTree = "<group>"; };
 		BE6FD66422EF417C0003B6C6 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6FD66622EF417C0003B6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -388,6 +394,9 @@
 				BE44D2982322002A00F6D186 /* UITextView+Oh.swift */,
 				BE04A92F232CD1A5001C73AF /* UIPageControl+Oh.swift */,
 				BE04A94923307C32001C73AF /* UIProgressView+Oh.swift */,
+				BE5B7B9023555FE00007182F /* WKPreferences+Oh.swift */,
+				BE5B7B8E23555DFF0007182F /* WKWebViewConfiguration+Oh.swift */,
+				BE5B7B8C23555CF60007182F /* WKWebView+Oh.swift */,
 			);
 			path = OhConfigurator;
 			sourceTree = "<group>";
@@ -578,6 +587,7 @@
 				BE98505E22FB226E007D2A47 /* UINavigationBar+Oh.swift in Sources */,
 				BE04555D22EE00A400255267 /* ClosureType.swift in Sources */,
 				BEE4A30D22F5B5B700C0F81D /* Float+Ext.swift in Sources */,
+				BE5B7B8D23555CF60007182F /* WKWebView+Oh.swift in Sources */,
 				BE51DCD322F5F6EC0018110B /* CGSize+Ext.swift in Sources */,
 				BE04555C22EE00A400255267 /* RunTime+Ext.swift in Sources */,
 				BE04556A22EE00AF00255267 /* Double+Ext.swift in Sources */,
@@ -585,6 +595,7 @@
 				BEBB7DEA22FDAB8D00189C72 /* UIDatePicker+Oh.swift in Sources */,
 				BE51DCE122F6BF000018110B /* UIView+Oh.swift in Sources */,
 				BE04555122EE00A400255267 /* UIImage+Ext.swift in Sources */,
+				BE5B7B9123555FE00007182F /* WKPreferences+Oh.swift in Sources */,
 				BE04555322EE00A400255267 /* UITableView+Ext.swift in Sources */,
 				BE51DCC822F5F2B00018110B /* UseerDefault+Ext.swift in Sources */,
 				BE44D2992322002A00F6D186 /* UITextView+Oh.swift in Sources */,
@@ -595,6 +606,7 @@
 				BE04556822EE00AF00255267 /* NumberType+Ext.swift in Sources */,
 				BE04556E22EE00AF00255267 /* String+Ext.swift in Sources */,
 				BE04556B22EE00AF00255267 /* Date+Ext.swift in Sources */,
+				BE5B7B8F23555DFF0007182F /* WKWebViewConfiguration+Oh.swift in Sources */,
 				BE04554F22EE00A400255267 /* UIScreen+Ext.swift in Sources */,
 				BE98506622FB26E6007D2A47 /* UITableView+Oh.swift in Sources */,
 				BE04A930232CD1A5001C73AF /* UIPageControl+Oh.swift in Sources */,
