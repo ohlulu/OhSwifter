@@ -38,7 +38,7 @@
 		BE04A930232CD1A5001C73AF /* UIPageControl+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04A92F232CD1A5001C73AF /* UIPageControl+Oh.swift */; };
 		BE04A94A23307C32001C73AF /* UIProgressView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04A94923307C32001C73AF /* UIProgressView+Oh.swift */; };
 		BE04A9512330DF98001C73AF /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04A9502330DF98001C73AF /* UINavigationController+Ext.swift */; };
-		BE04A95523311B3E001C73AF /* StdlibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04A95423311B3E001C73AF /* StdlibTests.swift */; };
+		BE04A95523311B3E001C73AF /* FoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04A95423311B3E001C73AF /* FoundationTests.swift */; };
 		BE0CD53C231FB0AF00D74EFE /* SafeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CD53B231FB0AF00D74EFE /* SafeCollection.swift */; };
 		BE2DDD392344AB3300623A91 /* TextSizeUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DDD382344AB3300623A91 /* TextSizeUtility.swift */; };
 		BE44D2972321FC7E00F6D186 /* UIPickerView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44D2962321FC7E00F6D186 /* UIPickerView+Oh.swift */; };
@@ -148,7 +148,7 @@
 		BE04A92F232CD1A5001C73AF /* UIPageControl+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Oh.swift"; sourceTree = "<group>"; };
 		BE04A94923307C32001C73AF /* UIProgressView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIProgressView+Oh.swift"; sourceTree = "<group>"; };
 		BE04A9502330DF98001C73AF /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
-		BE04A95423311B3E001C73AF /* StdlibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StdlibTests.swift; sourceTree = "<group>"; };
+		BE04A95423311B3E001C73AF /* FoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationTests.swift; sourceTree = "<group>"; };
 		BE0CD53B231FB0AF00D74EFE /* SafeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeCollection.swift; sourceTree = "<group>"; };
 		BE2DDD382344AB3300623A91 /* TextSizeUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSizeUtility.swift; sourceTree = "<group>"; };
 		BE44D2962321FC7E00F6D186 /* UIPickerView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPickerView+Oh.swift"; sourceTree = "<group>"; };
@@ -405,7 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				BE571E922317E227002C2539 /* OhSwifterTests.swift */,
-				BE04A95423311B3E001C73AF /* StdlibTests.swift */,
+				BE04A95423311B3E001C73AF /* FoundationTests.swift */,
 				BE571E942317E227002C2539 /* Info.plist */,
 			);
 			path = OhSwifterTests;
@@ -637,7 +637,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE571E932317E227002C2539 /* OhSwifterTests.swift in Sources */,
-				BE04A95523311B3E001C73AF /* StdlibTests.swift in Sources */,
+				BE04A95523311B3E001C73AF /* FoundationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
