@@ -10,6 +10,18 @@ import UIKit
 
 public extension UIScreen {
     
+    static var safeAreaInset: UIEdgeInsets {
+        guard let window = UIApplication.shared.delegate?.window as? UIWindow else {
+            return .init(edge: 0)
+        }
+        
+        if #available(iOS 11.0, *) {
+            return window.safeAreaInsets
+        } else {
+            return .init(edge: 0)
+        }
+    }
+    
     static var height: Double {
         return Double(UIScreen.heightf)
     }
