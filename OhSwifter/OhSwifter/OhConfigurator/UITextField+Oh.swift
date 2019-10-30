@@ -154,4 +154,10 @@ public extension OhSwifter where Base: UITextField {
         base.returnKeyType = type
         return self
     }
+    
+    @discardableResult
+    func delegate(_ delegate: UITextFieldDelegate) -> OhSwifter {
+        base.delegate = delegate
+        return self
+    }
 }

@@ -28,7 +28,7 @@ public extension OhSwifter where Base: UITableView {
     }
     
     @discardableResult
-    func regiter<T>(_ cell: T.Type) -> OhSwifter where T: UITableViewCell {
+    func register<T>(_ cell: T.Type) -> OhSwifter where T: UITableViewCell {
         base.register(cell: cell)
         return self
     }
