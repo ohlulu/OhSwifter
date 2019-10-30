@@ -18,11 +18,36 @@ public extension UIView {
         }, completion: completion)
     }
     
-    func fadein(duration: TimeInterval = 0.25,
+    func fadeIn(duration: TimeInterval = 0.25,
                 delay: TimeInterval = 0,
                 _ completion: ((Bool) -> Void)? = nil) {
         UIView.animate(withDuration: duration, delay: delay, animations: {
             self.alpha = 1
         }, completion: completion)
+    }
+
+    func errorshake(completion:(() -> Void)? = nil) {
+        shake(duration: 0.35,
+              offsets: [-10.0, 10.0, -10.0, 10.0, -5.0, 5.0, 0.0 ],
+              completion: completion)
+    }
+    
+    func shake(duration: CFTimeInterval,
+               offsets: [CGFloat],
+               completion:(() -> Void)? = nil) {
+        constraints.forEach { $0.isActive = false }
+        translatesAutoresizingMaskIntoConstraints = true
+        CATransaction.begin()
+        let animation: CAKeyframeAnimation
+        
+        animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
+        
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
+        
+        CATransaction.setCompletionBlock(completion)
+        animation.duration = duration
+        animation.values = offsets
+        layer.add(animation, forKey: "shake")
+        CATransaction.commit()
     }
 }
