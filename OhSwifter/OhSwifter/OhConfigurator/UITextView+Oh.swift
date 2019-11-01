@@ -7,6 +7,7 @@
 //
 
 public extension OhSwifter where Base: UITextView {
+    
     @discardableResult
     func font(_ font: UIFont) -> OhSwifter {
         base.font = font
@@ -89,6 +90,12 @@ public extension OhSwifter where Base: UITextView {
     @discardableResult
     func returnKeyType(_ type: UIReturnKeyType) -> OhSwifter {
         base.returnKeyType = type
+        return self
+    }
+    
+    @discardableResult
+    func delegate(_ delegate: UITextViewDelegate) -> OhSwifter {
+        base.delegate = delegate
         return self
     }
 }
