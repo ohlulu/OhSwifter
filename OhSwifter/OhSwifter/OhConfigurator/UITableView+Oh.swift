@@ -94,7 +94,7 @@ public extension OhSwifter where Base: UITableView {
     }
     
     @discardableResult
-    func tableView(_ sectionType: SectionType, view: UIView) -> OhSwifter {
+    func sectionView(_ view: UIView, for sectionType: SectionType) -> OhSwifter {
         switch sectionType {
         case .header:
             base.tableHeaderView = view
