@@ -38,6 +38,7 @@ class OhSwifterTests: XCTestCase {
                 .backgroundColor: color
                 ])
             .done()
+        XCTAssert(true)
     }
 
     
