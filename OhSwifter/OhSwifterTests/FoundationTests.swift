@@ -89,7 +89,6 @@ class FoundationTests: XCTestCase {
         let originAtt4 = NSMutableAttributedString(string: "123456123", attributes: [.foregroundColor: UIColor.white])
         
         XCTAssertTrue(attFromBulider4 == originAtt4)
-        
-        _ = NSAttributedString.creat(baseText: "", baseAttribute: [:], specialAttString: [:])
+
     }
 }
