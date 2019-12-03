@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Initialize
 public extension UIEdgeInsets {
     init(edge: CGFloat) {
         self.init(top: edge, left: edge, bottom: edge, right: edge)
@@ -27,5 +28,16 @@ public extension UIEdgeInsets {
     
     init(horizontalEdge hEdge: CGFloat, verticalEdge vEdge: CGFloat) {
         self.init(top: vEdge, left: hEdge, bottom: vEdge, right: hEdge)
+    }
+}
+
+/// Usage
+public extension UIEdgeInsets {
+    var vertical: CGFloat {
+        return top + bottom
+    }
+    
+    var horizontal: CGFloat {
+        return left + right
     }
 }
