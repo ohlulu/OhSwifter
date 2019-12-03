@@ -52,6 +52,8 @@ public extension OhSwifter where Base: UILabel {
         return self
     }
     
+    
+    /// 此方法一個 UILabel 只能使用一次
     @discardableResult
     func attribute(specialString: String, attribute specialAttribute: [NSAttributedString.Key: Any])
         -> OhSwifter {
