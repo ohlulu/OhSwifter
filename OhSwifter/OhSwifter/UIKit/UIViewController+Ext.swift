@@ -11,7 +11,7 @@ import UIKit
 public extension UIViewController {
     
     @objc func dismiss(_ animated: Bool = true, _ completion: Completion? = nil) {
-        dismiss(animated: true, completion: completion)
+        dismiss(animated: animated, completion: completion)
     }
     
     @objc func present(_ vc: UIViewController, animated: Bool = true, _ completion: Completion? = nil) {
