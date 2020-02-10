@@ -75,7 +75,8 @@ fileprivate extension UIScrollView {
                 return
             }
             
-            var height = max(obj.contentSize.height, self.minimunHeightToFit)
+            var height = max(obj.contentSize.height + obj.contentInset.vertical,
+                             self.minimunHeightToFit)
             
             if let maxHeight = self.maximunHeightToFit {
                 height = min(maxHeight, height)
