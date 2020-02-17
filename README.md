@@ -112,7 +112,7 @@ like this:
 }
 ```
 
-[My Webside](https://www.ohlulu.tw/2019/08/13/ohswifterframework/)
+[My Website](https://www.ohlulu.tw/2019/08/13/ohswifterframework/)
 
 ## License
 
