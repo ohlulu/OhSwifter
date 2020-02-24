@@ -20,9 +20,9 @@ public extension OhSwifter where Base: UICollectionView {
         return self
     }
     
-    typealias CollectionViewDelegateAndDataScourde = UICollectionViewDelegate & UICollectionViewDataSource
+    typealias CollectionViewDelegateAndDataScource = UICollectionViewDelegate & UICollectionViewDataSource
     @discardableResult
-    func delegateAndDataScourde(_ delegateAndDataScourde: CollectionViewDelegateAndDataScourde) -> OhSwifter {
+    func delegateAndDataScource(_ delegateAndDataScourde: CollectionViewDelegateAndDataScource) -> OhSwifter {
         return dataSource(delegateAndDataScourde)
             .delegate(delegateAndDataScourde)
     }

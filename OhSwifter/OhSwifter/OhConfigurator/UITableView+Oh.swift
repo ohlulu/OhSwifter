@@ -20,9 +20,9 @@ public extension OhSwifter where Base: UITableView {
         return self
     }
     
-    typealias TableViewDelegateAndDataScourde = UITableViewDelegate & UITableViewDataSource
+    typealias TableViewDelegateAndDataScource = UITableViewDelegate & UITableViewDataSource
     @discardableResult
-    func delegateAndDataScourde(_ delegateAndDataScourde: TableViewDelegateAndDataScourde) -> OhSwifter {
+    func TableViewDelegateAndDataScource(_ delegateAndDataScourde: TableViewDelegateAndDataScource) -> OhSwifter {
         return dataSource(delegateAndDataScourde)
             .delegate(delegateAndDataScourde)
     }
