@@ -55,6 +55,9 @@ public extension UIView {
         
         animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
         
+        animation.isRemovedOnCompletion = false
+        animation.fillMode = .forwards
+        
         animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
         
         CATransaction.setCompletionBlock(completion)
