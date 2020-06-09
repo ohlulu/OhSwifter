@@ -27,9 +27,10 @@ xcuserdata/
 *.ipa
 *.dSYM.zip
 *.dSYM
+*.DS_Store
 
 ## Playgrounds
-timeline.xctimeline
+timeline.xctimelineｚ
 playground.xcworkspace
 
 # Swift Package Manager
@@ -46,6 +47,7 @@ playground.xcworkspace
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
+
 Pods/
 
 # Carthage
@@ -67,3 +69,4 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 OhSwifter/Example/ViewController.swift
+*/.DS_Store
