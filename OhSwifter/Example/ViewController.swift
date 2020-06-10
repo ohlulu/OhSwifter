@@ -86,9 +86,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        view.addSubview(table)
 //        UIColor.red.createImage()
-        let imageView = UIImageView(image: .create(from: .red))
-        imageView.frame = .init(x: 0, y: 0, width: 100, height: 100)
-        view.addSubview(imageView)
+//        let imageView = UIImageView(image: .create(from: .red))
+//        imageView.frame = .init(x: 0, y: 0, width: 100, height: 100)
+//        view.addSubview(imageView)
     }
 }
 

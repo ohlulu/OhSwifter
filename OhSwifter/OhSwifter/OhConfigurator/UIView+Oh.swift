@@ -169,12 +169,6 @@ public extension OhSwifter where Base: UIView {
     }
     
     @discardableResult
-    func addOn(view: UIView) -> OhSwifter {
-        view.addSubview(base)
-        return self
-    }
-    
-    @discardableResult
     func setContentHuggingPriority(_ priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) -> OhSwifter {
         base.setContentHuggingPriority(priority, for: axis)
         return self

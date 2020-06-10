@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftMinions
 
 public struct OhSwifter<Base> {
     public let base: Base

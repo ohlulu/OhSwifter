@@ -17,13 +17,6 @@ class OhSwifterTests: XCTestCase {
 
     override func tearDown() {
     }
-
-    func testPrintDebug() {
-        for x in 0...10 {
-            printDebug("\(x)")
-        }
-        XCTAssert(true)
-    }
     
     func test_textField() {
         let textField = UITextField()

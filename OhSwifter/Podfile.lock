@@ -1,7 +1,7 @@
 PODS:
-  - SwiftMinions (5.0.1):
-    - SwiftMinions/Core (= 5.0.1)
-  - SwiftMinions/Core (5.0.1)
+  - SwiftMinions (5.0.2):
+    - SwiftMinions/Core (= 5.0.2)
+  - SwiftMinions/Core (5.0.2)
 
 DEPENDENCIES:
   - SwiftMinions
@@ -11,7 +11,7 @@ SPEC REPOS:
     - SwiftMinions
 
 SPEC CHECKSUMS:
-  SwiftMinions: 50abe22d9a8cdf103e28fcc5067096562fecab22
+  SwiftMinions: 56fc1e2508ce49f944bf75a7a7030f208cf32437
 
 PODFILE CHECKSUM: 6083ea86de975a8723c795eb29eb1f57097d45d1
 

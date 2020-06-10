@@ -6,6 +6,21 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
+public extension UICollectionView {
+    
+    enum SectionType {
+        
+        case header
+        case footer
+        var elementKindString: String {
+            switch self {
+            case .header: return UICollectionView.elementKindSectionHeader
+            case .footer: return UICollectionView.elementKindSectionFooter
+            }
+        }
+    }
+}
+
 public extension OhSwifter where Base: UICollectionView {
     
     @discardableResult
@@ -29,13 +44,13 @@ public extension OhSwifter where Base: UICollectionView {
     
     @discardableResult
     func register<T>(_ cell: T.Type) -> OhSwifter where T: UICollectionViewCell {
-        base.register(cell: cell)
+        base.registerCell(type: cell)
         return self
     }
     
     @discardableResult
     func registerSupplementaryView(_ view: AnyClass, kind: UICollectionView.SectionType) -> OhSwifter {
-        base.registerSupplementaryView(view, kind: kind)
+        base.register(view.self, forSupplementaryViewOfKind: kind.elementKindString, withReuseIdentifier: String(describing: view.self))
         return self
     }
     
