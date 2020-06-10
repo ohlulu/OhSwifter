@@ -1,0 +1,18 @@
+PODS:
+  - SwiftMinions (5.0.2):
+    - SwiftMinions/Core (= 5.0.2)
+  - SwiftMinions/Core (5.0.2)
+
+DEPENDENCIES:
+  - SwiftMinions
+
+SPEC REPOS:
+  trunk:
+    - SwiftMinions
+
+SPEC CHECKSUMS:
+  SwiftMinions: 56fc1e2508ce49f944bf75a7a7030f208cf32437
+
+PODFILE CHECKSUM: 6083ea86de975a8723c795eb29eb1f57097d45d1
+
+COCOAPODS: 1.9.0
