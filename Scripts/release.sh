@@ -91,7 +91,7 @@ replace_info_plist() {
 
     printf "${YELLOW} [ Step 4-1 ] : Modify Info.plist version.${NC}\n"
 
-    cd_and_print "${MainPath}"
+    # cd_and_print "${MainPath}"
     printf "replace ${GREEN}${currentVersion}${NC} -> ${GREEN}${newVersion}${NC}\n"
     plutil -replace CFBundleShortVersionString -string "${newVersion}" Info.plist
 }
