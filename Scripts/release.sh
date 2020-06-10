@@ -104,7 +104,7 @@ replace_pod_spec() {
     cd_and_print ".."
     origin="s.version          = \'[0-9\.]+\'"
     new="s.version          = '${newVersion}'"
-    sed -i "" -E "s/${origin}/${new}/g" "SwiftMinions.podspec" || exit $?
+    sed -i "" -E "s/${origin}/${new}/g" "OhSwift.podspec" || exit $?
 }
 
 # stage and commit
@@ -150,7 +150,7 @@ pod_lint_and_push() {
 
 get_current_version
 get_new_version
-build
+# build
 start_release
 replace_info_plist
 replace_pod_spec

@@ -6,21 +6,35 @@
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
-Pod::Spec.new do |spec|
+Pod::Spec.new do |s|
 
-  spec.name         = 'OhSwifter'
-  spec.version      = '0.5.14'
-  spec.summary      = 'A convenicence swift library.'
-  spec.homepage     = 'https://github.com/z30262226/OhSwifter'
+  s.name             = 'OhSwifter'
+  s.version          = '5.0.2'
+  s.summary          = 'A convenicence swift library.'
+  s.homepage         = 'https://github.com/z30262226/OhSwifter'
+  s.description      = <<-DESC
+  
+  A fluent style for UIKit initialize. 
+  
+  It dependency SwiftMinions, because I'm one of authors :)
 
-  spec.license      = { :type => 'MIT', :file => 'LICENSE' }
-  spec.author       = { 'ohlulu' => 'z30262226@gmail.com' }
+  DESC
 
-  spec.source       = { :git => 'https://github.com/z30262226/OhSwifter.git', :tag => spec.version}
-  spec.ios.deployment_target = '10.0'
-  spec.swift_version = '5.1'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'ohlulu' => 'z30262226@gmail.com' }
 
-  spec.source_files = 'OhSwifter/OhSwifter/**/*.swift'
-  spec.exclude_files = 'OhSwifter/**/*.plist'
+  s.source           = { :git => 'https://github.com/z30262226/OhSwifter.git', :tag => spec.version}
+
+  s.cocoapods_version     = '>= 1.4.0'
+  s.ios.deployment_target = '10.0'
+  s.swift_version    = '5.1'
+
+  s.requires_arc     = true
+  s.default_subspec  = 'Core'
+
+  s.subspec 'Core' do |ss|
+    ss.source_files  = 'Sources/*.swift', 'Sources/**/*.swift'
+    ss.dependency "SwiftMinions", "~> 5.0"
+  end
 
 end
