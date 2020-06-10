@@ -13,7 +13,6 @@
 		BE04A930232CD1A5001C73AF /* UIPageControl+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04A92F232CD1A5001C73AF /* UIPageControl+Oh.swift */; };
 		BE04A94A23307C32001C73AF /* UIProgressView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04A94923307C32001C73AF /* UIProgressView+Oh.swift */; };
 		BE04A95523311B3E001C73AF /* FoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04A95423311B3E001C73AF /* FoundationTests.swift */; };
-		BE2DDD392344AB3300623A91 /* TextSizeUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2DDD382344AB3300623A91 /* TextSizeUtility.swift */; };
 		BE44D2972321FC7E00F6D186 /* UIPickerView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44D2962321FC7E00F6D186 /* UIPickerView+Oh.swift */; };
 		BE44D2992322002A00F6D186 /* UITextView+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44D2982322002A00F6D186 /* UITextView+Oh.swift */; };
 		BE44D29B2322021700F6D186 /* UINavigationController+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE44D29A2322021700F6D186 /* UINavigationController+Oh.swift */; };
@@ -90,7 +89,6 @@
 		BE04A92F232CD1A5001C73AF /* UIPageControl+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Oh.swift"; sourceTree = "<group>"; };
 		BE04A94923307C32001C73AF /* UIProgressView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIProgressView+Oh.swift"; sourceTree = "<group>"; };
 		BE04A95423311B3E001C73AF /* FoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationTests.swift; sourceTree = "<group>"; };
-		BE2DDD382344AB3300623A91 /* TextSizeUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSizeUtility.swift; sourceTree = "<group>"; };
 		BE44D2962321FC7E00F6D186 /* UIPickerView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPickerView+Oh.swift"; sourceTree = "<group>"; };
 		BE44D2982322002A00F6D186 /* UITextView+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Oh.swift"; sourceTree = "<group>"; };
 		BE44D29A2322021700F6D186 /* UINavigationController+Oh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Oh.swift"; sourceTree = "<group>"; };
@@ -198,21 +196,12 @@
 		BE04550E22EDFAC000255267 /* OhSwifter */ = {
 			isa = PBXGroup;
 			children = (
-				BE2DDD372344AB1C00623A91 /* Utility */,
 				BE51DCDB22F6B10B0018110B /* OhConfigurator */,
 				BE51DCC922F5F33A0018110B /* SnapKit+Ext */,
 				BE04550F22EDFAC000255267 /* OhSwifter.h */,
 				BE04551022EDFAC000255267 /* Info.plist */,
 			);
 			path = OhSwifter;
-			sourceTree = "<group>";
-		};
-		BE2DDD372344AB1C00623A91 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				BE2DDD382344AB3300623A91 /* TextSizeUtility.swift */,
-			);
-			path = Utility;
 			sourceTree = "<group>";
 		};
 		BE51DCC922F5F33A0018110B /* SnapKit+Ext */ = {
@@ -505,7 +494,6 @@
 				BE98506422FB2672007D2A47 /* UIStackView+Oh.swift in Sources */,
 				BE44D29B2322021700F6D186 /* UINavigationController+Oh.swift in Sources */,
 				BE51DCDD22F6B1570018110B /* OhSwifter.swift in Sources */,
-				BE2DDD392344AB3300623A91 /* TextSizeUtility.swift in Sources */,
 				BE51DCCB22F5F4810018110B /* SafeArea+iOS10+Ext.swift in Sources */,
 				BEC896CA22FEACD300363117 /* UISwitch+Oh.swift in Sources */,
 			);
