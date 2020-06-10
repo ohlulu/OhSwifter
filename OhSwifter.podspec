@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ohlulu' => 'z30262226@gmail.com' }
 
-  s.source           = { :git => 'https://github.com/z30262226/OhSwifter.git', :tag => spec.version}
+  s.source           = { :git => 'https://github.com/z30262226/OhSwifter.git', :tag => s.version.to_s }
 
   s.cocoapods_version     = '>= 1.4.0'
   s.ios.deployment_target = '10.0'
