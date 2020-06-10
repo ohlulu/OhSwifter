@@ -63,10 +63,10 @@ build() {
     printf "${YELLOW} [ Step 3 ] : Run 'xcodebuild'.${NC}\n"
 
     cd_and_print ".."
-    printf "${GREEN}start xcodebuild...\n${NC}"
+
     xcodebuild \
-        -project SwiftMinions.xcodeproj \
-        -scheme SwiftMinions \
+        -project OhSwifter.xcodeproj \
+        -scheme OhSwifter \
         -sdk iphonesimulator \
         -destination 'platform=iOS Simulator,name=iPhone 11 pro,OS=13.0' 
     if [ $? != 0 ]; then
