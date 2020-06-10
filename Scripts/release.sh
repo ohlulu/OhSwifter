@@ -99,12 +99,12 @@ replace_info_plist() {
 # 修改 .podspec
 replace_pod_spec() {
 
-    printf "${YELLOW} [ Step 4-2 ] : Modify OhSwift.podspec version.${NC}\n"
+    printf "${YELLOW} [ Step 4-2 ] : Modify OhSwifter.podspec version.${NC}\n"
 
     cd_and_print ".."
     origin="s.version          = \'[0-9\.]+\'"
     new="s.version          = '${newVersion}'"
-    sed -i "" -E "s/${origin}/${new}/g" "OhSwift.podspec" || exit $?
+    sed -i "" -E "s/${origin}/${new}/g" "OhSwifter.podspec" || exit $?
 }
 
 # stage and commit
