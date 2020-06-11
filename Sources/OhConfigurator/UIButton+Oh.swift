@@ -15,37 +15,37 @@ public extension OhSwifter where Base: UIButton {
     }
     
     @discardableResult
-    func font(size: CGFloat, weight: UIFont.Weight) -> OhSwifter {
-        base.titleLabel?.font = UIFont.systemFont(ofSize: size, weight: weight)
+    func font(size: CGFloat) -> OhSwifter {
+        base.titleLabel?.font = base.titleLabel?.font.withSize(size)
         return self
     }
     
     @discardableResult
-    func image(_ image: UIImage, for state: UIControl.State) -> OhSwifter {
+    func setImage(_ image: UIImage, for state: UIControl.State) -> OhSwifter {
         base.setImage(image, for: state)
         return self
     }
     
     @discardableResult
-    func backgroundImage(_ image: UIImage?, for state: UIControl.State) -> OhSwifter {
+    func setBackgroundImage(_ image: UIImage?, for state: UIControl.State) -> OhSwifter {
         base.setBackgroundImage(image, for: state)
         return self
     }
     
     @discardableResult
-    func title(_ title: String, for state: UIControl.State) -> OhSwifter {
+    func setTitle(_ title: String, for state: UIControl.State) -> OhSwifter {
         base.setTitle(title, for: state)
         return self
     }
     
     @discardableResult
-    func attributedTitle(_ title: NSAttributedString?, for state: UIControl.State) -> OhSwifter {
+    func setAttributedTitle(_ title: NSAttributedString?, for state: UIControl.State) -> OhSwifter {
         base.setAttributedTitle(title, for: state)
         return self
     }
     
     @discardableResult
-    func titleColor(_ color: UIColor, for state: UIControl.State = .normal) -> OhSwifter {
+    func setTitleColor(_ color: UIColor, for state: UIControl.State = .normal) -> OhSwifter {
         base.setTitleColor(color, for: state)
         return self
     }
@@ -53,6 +53,12 @@ public extension OhSwifter where Base: UIButton {
     @discardableResult
     func isEnabled(_ isEnabled: Bool) -> OhSwifter {
         base.isEnabled = isEnabled
+        return self
+    }
+    
+    @discardableResult
+    func isDisabled(_ isDisabled: Bool) -> OhSwifter {
+        base.isDisabled = isDisabled
         return self
     }
     

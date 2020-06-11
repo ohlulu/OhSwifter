@@ -72,6 +72,12 @@ public extension OhSwifter where Base: UIView {
     }
     
     @discardableResult
+    func isShow(_ isShow: Bool) -> OhSwifter {
+        base.isShow = isShow
+        return self
+    }
+    
+    @discardableResult
     func contentMode(_ contentMode: UIView.ContentMode) -> OhSwifter {
         base.contentMode = contentMode
         return self

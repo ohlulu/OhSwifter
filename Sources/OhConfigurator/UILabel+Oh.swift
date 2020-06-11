@@ -17,8 +17,8 @@ public extension OhSwifter where Base: UILabel {
     }
     
     @discardableResult
-    func font(size: CGFloat, weight: UIFont.Weight) -> OhSwifter {
-        base.font = UIFont.systemFont(ofSize: size, weight: weight)
+    func font(size: CGFloat) -> OhSwifter {
+        base.font = base.font.withSize(size)
         return self
     }
     
