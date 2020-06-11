@@ -8,6 +8,9 @@
 
 public extension OhSwifter where Base: UIStackView {
     
+    
+    /// 排列方式：水平 or 垂直
+    /// - Parameter axis: .horizontal / .vertical
     @discardableResult
     func axis(_ axis: NSLayoutConstraint.Axis) -> OhSwifter {
         base.axis = axis

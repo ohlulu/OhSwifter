@@ -14,33 +14,34 @@ public extension OhSwifter where Base: UISwitch {
         return self
     }
     
-    /// OhSwifter+Configurator
-    ///
-    /// - Parameter color: Border color on close state
-    /// - Returns: Self
-    @discardableResult
-    func tintColor(_ color: UIColor) -> OhSwifter {
-        base.tintColor = color
-        return self
-    }
-    
-    /// OhSwifter+Configurator
+    /// 圓圈的顏色
     ///
     /// - Parameter color: The circle color
     /// - Returns: Self
     @discardableResult
-    func thumbTintColor(_ color: UIColor) -> OhSwifter {
+    func circleColor(_ color: UIColor) -> OhSwifter {
         base.thumbTintColor = color
         return self
     }
     
-    /// OhSwifter+Configurator
+    /// 開啟狀態的背景色
     ///
     /// - Parameter color: Background color on On state
     /// - Returns: Self
     @discardableResult
-    func onTintColor(_ color: UIColor) -> OhSwifter {
+    func onStateBgColor(_ color: UIColor) -> OhSwifter {
         base.onTintColor = color
+        return self
+    }
+    
+    /// 關閉狀態的背景色
+    ///
+    /// - Parameter color: Background color on Off state
+    /// - Returns: Self
+    @discardableResult
+    func offStateBgColor(_ color: UIColor) -> OhSwifter {
+        base.backgroundColor = color
+        base.layer.cornerRadius = base.frame.height / 2
         return self
     }
     
@@ -49,8 +50,10 @@ public extension OhSwifter where Base: UISwitch {
     @discardableResult
     func size(_ size: CGSize) -> OhSwifter {
         let originSize = base.frame.size
-        let transform = CGAffineTransform(scaleX: size.width / originSize.width,
-                                          y: size.height / originSize.height)
+        let transform = CGAffineTransform(
+            scaleX: size.width / originSize.width,
+            y: size.height / originSize.height
+        )
         base.transform = transform
         return self
     }
