@@ -6,9 +6,7 @@
 //  Copyright © 2019 ohlulu. All rights reserved.
 //
 
-extension UICollectionViewFlowLayout: OhConfigurator {
-    
-}
+extension UICollectionViewFlowLayout: OhConfigurator { }
 
 public extension OhSwifter where Base: UICollectionViewFlowLayout {
     

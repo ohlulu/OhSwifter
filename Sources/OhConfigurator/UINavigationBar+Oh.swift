@@ -19,8 +19,6 @@ public extension OhSwifter where Base: UINavigationBar {
     func largeTitleTextAttributes(_ attributes: [NSAttributedString.Key : Any]) -> OhSwifter {
         if #available(iOS 11.0, *) {
             base.largeTitleTextAttributes = attributes as [NSAttributedString.Key: Any]
-        } else {
-            
         }
         return self
     }
@@ -38,7 +36,7 @@ public extension OhSwifter where Base: UINavigationBar {
     }
     
     @discardableResult
-    func backgroundImage(_ image: UIImage) -> OhSwifter {
+    func setBackgroundImage(_ image: UIImage) -> OhSwifter {
         base.setBackgroundImage(image, for: .default)
         return self
     }
@@ -53,7 +51,7 @@ public extension OhSwifter where Base: UINavigationBar {
     
     @discardableResult
     func shadow(color: UIColor, alpha: CGFloat = 1) -> OhSwifter {
-        base.shadowImage = UIImage.create(from: color.alpha(alpha))
+        base.shadowImage = UIImage.create(from: color.alpha(alpha), size: .init(width: 1, height: 0.5))
         return self
     }
 }
