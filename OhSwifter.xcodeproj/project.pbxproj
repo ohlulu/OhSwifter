@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		413D7E6CC1AB5655323A12A8 /* Pods_OhSwifter_OhSwifterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF65CF426861156DEF51CD3 /* Pods_OhSwifter_OhSwifterTests.framework */; };
+		5044F41F24CFEE85008A1669 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044F41E24CFEE85008A1669 /* Deprecated.swift */; };
 		6B448CFDF1F2AF249B9F0A5C /* Pods_OhSwifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D1685EBECA5DD4CE98F08D /* Pods_OhSwifter.framework */; };
 		BE04551122EDFAC000255267 /* OhSwifter.h in Headers */ = {isa = PBXBuildFile; fileRef = BE04550F22EDFAC000255267 /* OhSwifter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE04A930232CD1A5001C73AF /* UIPageControl+Oh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE04A92F232CD1A5001C73AF /* UIPageControl+Oh.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		09D1685EBECA5DD4CE98F08D /* Pods_OhSwifter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhSwifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF65CF426861156DEF51CD3 /* Pods_OhSwifter_OhSwifterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhSwifter_OhSwifterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5044F41E24CFEE85008A1669 /* Deprecated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
 		68AFBC0CD63BEDAFA071F254 /* Pods-OhSwifter-OhSwifterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhSwifter-OhSwifterTests.release.xcconfig"; path = "Target Support Files/Pods-OhSwifter-OhSwifterTests/Pods-OhSwifter-OhSwifterTests.release.xcconfig"; sourceTree = "<group>"; };
 		9804C9B07C22AA8DE73D8014 /* Pods-OhSwifter-OhSwifterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhSwifter-OhSwifterTests.debug.xcconfig"; path = "Target Support Files/Pods-OhSwifter-OhSwifterTests/Pods-OhSwifter-OhSwifterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9ECB97FB667AB5D8639BD7C0 /* Pods-OhSwifter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhSwifter.debug.xcconfig"; path = "Target Support Files/Pods-OhSwifter/Pods-OhSwifter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				BE5B7B9023555FE00007182F /* WKPreferences+Oh.swift */,
 				BE5B7B8E23555DFF0007182F /* WKWebViewConfiguration+Oh.swift */,
 				BE5B7B8C23555CF60007182F /* WKWebView+Oh.swift */,
+				5044F41E24CFEE85008A1669 /* Deprecated.swift */,
 			);
 			path = OhConfigurator;
 			sourceTree = "<group>";
@@ -255,7 +258,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = ohlulu;
 				TargetAttributes = {
 					BE04550B22EDFAC000255267 = {
@@ -378,6 +381,7 @@
 				BE5B7B8D23555CF60007182F /* WKWebView+Oh.swift in Sources */,
 				BEBB7DF222FDB99300189C72 /* UITextField+Oh.swift in Sources */,
 				BEBB7DEA22FDAB8D00189C72 /* UIDatePicker+Oh.swift in Sources */,
+				5044F41F24CFEE85008A1669 /* Deprecated.swift in Sources */,
 				BE51DCE122F6BF000018110B /* UIView+Oh.swift in Sources */,
 				BE5B7B9123555FE00007182F /* WKPreferences+Oh.swift in Sources */,
 				BE44D2992322002A00F6D186 /* UITextView+Oh.swift in Sources */,
@@ -442,6 +446,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -506,6 +511,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -551,7 +557,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,6 +567,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tw.ohlulu.OhSwifter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -579,7 +586,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -589,6 +596,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tw.ohlulu.OhSwifter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -601,7 +609,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSTQSY2TJN;
 				INFOPLIST_FILE = OhSwifterTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -621,7 +629,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSTQSY2TJN;
 				INFOPLIST_FILE = OhSwifterTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
