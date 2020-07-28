@@ -26,26 +26,14 @@ public extension OhSwifter where Base: WKPreferences {
     }
     
     @discardableResult
-    func javaEnabled(_ flag: Bool) -> OhSwifter {
-        base.javaEnabled = flag
-        return self
-    }
-    
-    @discardableResult
-    func javaScriptCanOpenWindowsAutomatically(_ flag: Bool) -> OhSwifter {
-        base.javaScriptCanOpenWindowsAutomatically = flag
-        return self
-    }
-    
-    @discardableResult
     func javaScriptEnabled(_ flag: Bool) -> OhSwifter {
         base.javaScriptEnabled = flag
         return self
     }
     
     @discardableResult
-    func plugInsEnabled(_ flag: Bool) -> OhSwifter {
-        base.plugInsEnabled = flag
+    func javaScriptCanOpenWindowsAutomatically(_ flag: Bool) -> OhSwifter {
+        base.javaScriptCanOpenWindowsAutomatically = flag
         return self
     }
 }
