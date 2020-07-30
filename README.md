@@ -1,6 +1,8 @@
 # OhSwifter
 
-![latest version](https://img.shields.io/cocoapods/v/OhSwifter)![license](https://img.shields.io/github/license/z30262226/OhSwifter)![platform](https://img.shields.io/cocoapods/p/OhSwifter)
+![latest version](https://img.shields.io/cocoapods/v/OhSwifter?label=version) 
+![license](https://img.shields.io/github/license/z30262226/OhSwifter)
+![platform](https://img.shields.io/cocoapods/p/OhSwifter)
 
 A convenience Swift extension and initial
 
