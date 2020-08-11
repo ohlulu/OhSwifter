@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name             = 'OhSwifter'
-  s.version          = '0.7.1'
+  s.version          = '0.7.2'
   s.summary          = 'A convenicence swift library.'
   s.homepage         = 'https://github.com/z30262226/OhSwifter'
   s.description      = <<-DESC
