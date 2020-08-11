@@ -10,7 +10,7 @@ public extension UITextField {
     
     /// OhSwifter
     ///
-    /// Refrence from SwifterSwift
+    /// Reference from SwifterSwift
     /// https://github.com/SwifterSwift/SwifterSwift
     ///
     enum TextType {
